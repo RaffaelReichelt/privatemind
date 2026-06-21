@@ -1,7 +1,7 @@
 # PrivateMind GmbH — Businessplan
 
 *Version 2.0 — Internes Steuerungsdokument, Stand: April 2026*
-*Erstellt von: Raffael (Gründer)*
+*Erstellt von: Raffael Reichelt (Gründer)*
 
 > **Hinweis zur Nutzung:** Dieses Dokument dient als internes Steuerungsinstrument. Es enthält operative Ziele, Entscheidungsgrundlagen und Planungsannahmen, die regelmäßig überprüft und aktualisiert werden. Zahlen sind Planwerte auf Basis verfügbarer Marktdaten (Stand April 2026) und müssen durch Steuerberater und Rechtsanwalt validiert werden.
 
@@ -34,7 +34,7 @@
 
 **Rechtsform:** GmbH (in Gründung)
 **Sitz:** Dresden, Sachsen, Deutschland
-**Gründer:** Raffael — Softwareentwickler mit jahrzehntelanger Praxiserfahrung in der IT-Branche
+**Gründer:** Raffael Reichelt — Softwareentwickler mit jahrzehntelanger Praxiserfahrung in der IT-Branche
 **Zielmarkt:** KMU in Europa, 10–250 Mitarbeiter, primär DACH, Niederlande, Nordics, UK
 **Sprache (extern):** Englisch als primäre Geschäftssprache
 
@@ -68,7 +68,7 @@ Drei Hardware-Stufen (Standard / Professional / Premium) kombiniert mit einem ge
 ### Strategische Prioritäten 2026
 
 1. GmbH gründen & Gründungszuschuss sichern
-2. Demo-Gerät beschaffen, Dashboard-MVP entwickeln
+2. Demo-Gerät beschaffen, Dashboard-MVP <!-- **Minimum Viable Product** --> entwickeln
 3. 3–5 Pilotkunden in DACH gewinnen und Referenzen aufbauen
 4. Englischsprachige Website und Vertriebsmaterialien live schalten
 5. Erste europäische Expansion vorbereiten
@@ -92,7 +92,7 @@ Die meistgenutzten KI-Dienste (ChatGPT/OpenAI, Microsoft Copilot, Google Gemini)
 - **Vertraglich:** Geheimhaltungsvereinbarungen (NDAs) mit Kunden schließen Cloud-Verarbeitung oft aus
 
 **Dimension 3: Eigenentwicklung überfordert KMU**
-KMU-typisch: keine dedizierte IT-Abteilung, keine ML-Expertise, keine Ressourcen für Infrastruktur-Projekte. Die technischen Hürden für den Betrieb eines eigenen LLM-Systems sind real: Hardware-Beschaffung, OS-Konfiguration, Modell-Deployment, Netzwerksicherheit, laufende Updates und Modelloptimierung erfordern spezifisches Know-how, das in KMU schlicht nicht vorhanden ist.
+KMU-typisch: keine dedizierte IT-Abteilung, keine ML<!-- Machine Learning-->-Expertise, keine Ressourcen für Infrastruktur-Projekte. Die technischen Hürden für den Betrieb eines eigenen LLM-Systems sind real: Hardware-Beschaffung, OS-Konfiguration, Modell-Deployment, Netzwerksicherheit, laufende Updates und Modelloptimierung erfordern spezifisches Know-how, das in KMU schlicht nicht vorhanden ist.
 
 ### Die Marktlücke
 
@@ -140,7 +140,7 @@ Der europäische KI-Markt befindet sich in einer kritischen Wachstumsphase. Laut
 | Anteil KMU, die KI-Tools aktiv nutzen (EU) | ~18–22% | Bitkom 2025, McKinsey Europe |
 | Anteil KMU mit Datenschutzbedenken bei Cloud-KI | ~45–55% | Bitkom/DSGVO-Befragungen |
 | Jährliches Wachstum europäischer KI-Markt | ~25–30% CAGR | IDC, Gartner |
-| Geschätzte TAM lokale KI-Infrastruktur EU | >€5 Mrd. | Eigenberechnung, konservativ |
+| Geschätzte TAM <!-- Total Addressable Market -->lokale KI-Infrastruktur EU | >€5 Mrd. | Eigenberechnung, konservativ |
 
 **Regulatorischer Rückenwind:** Der EU AI Act (in Kraft seit August 2024, Anwendungsphasen bis 2027) und die weiterhin strenge DSGVO-Durchsetzung (Bußgelder 2024 in Rekordhöhe von über €1,6 Mrd. EU-weit) verstärken den Druck auf Datensouveränität. Lokale KI-Infrastruktur ist kein Nice-to-have — sie wird zur Compliance-Anforderung.
 
@@ -211,16 +211,16 @@ Serviceable Obtainable Market (SOM) — Ziel Jahr 3:
 
 ```
                     LOKAL / DATENSICHER
-                          │
-          Open-Source      │      PrivateMind ←
-          (Ollama etc.)    │
-                          │
+                         │
+          Open-Source    │      PrivateMind ←
+          (Ollama etc.)  │
+                         │
 KOMPLEX ─────────────────┼───────────────────── EINFACH
 (IT-Expertise nötig)     │           (schlüsselfertig)
-                          │
-          Enterprise       │      Cloud-KI
-          (Hochpreisig)    │      (OpenAI, Copilot)
-                          │
+                         │
+          Enterprise     │      Cloud-KI
+          (Hochpreisig)  │      (OpenAI, Copilot)
+                         │
                     CLOUD / DATEN EXTERN
 ```
 
@@ -303,7 +303,7 @@ Das Dashboard ist das primäre Differenzierungsmerkmal auf Software-Seite. Zielg
 | Modul | Funktionsumfang | MVP (Monat 4) | V2 (Monat 9) |
 |---|---|---|---|
 | Chat-Interface | Multi-Modell-Chat, Verlauf, Kontextfenster-Anzeige | ✅ | — |
-| Dokument-Upload | PDF/Word/Text hochladen, ins Kontext einbinden | ✅ | — |
+| Dokument-Upload | PDF/Word/Text hochladen, in Kontext einbinden | ✅ | — |
 | Modellverwaltung | Aktive Modelle anzeigen, wechseln, deaktivieren | ✅ | — |
 | System-Monitor | CPU/GPU-Auslastung, Speicher, Temperatur | ✅ | — |
 | RAG-Pipeline | Dokumentenindex aufbauen, vektorbasierte Suche | — | ✅ |
@@ -515,7 +515,7 @@ Ich würde Ihnen das gerne in einer 20-minütigen Live-Demo zeigen.
 Hätten Sie diese Woche einen kurzen Termin?
 
 Mit freundlichen Grüßen
-Raffael [Nachname]
+Raffael Reichelt
 PrivateMind GmbH
 ```
 
@@ -548,7 +548,7 @@ PrivateMind GmbH
 
 ### 7.1 Gründerprofil
 
-**Raffael — Gründer und Geschäftsführer**
+**Raffael Reichelt — Gründer und Geschäftsführer**
 
 *Hintergrund:* Jahrzehntelange Erfahrung als Softwareentwickler in der IT-Branche. Tiefes technisches Verständnis von Systemarchitektur, Software-Entwicklung und IT-Infrastruktur. Kombination aus Hands-on-Entwickler-Mentalität und strategischem Denken.
 
