@@ -1,6 +1,6 @@
 # PrivateMind GmbH — Businessplan
 
-*Version 2.0 — Internes Steuerungsdokument, Stand: April 2026*
+*Version 2.0 — Internes Steuerungsdokument, Stand: Juni 2026*
 *Erstellt von: Raffael Reichelt (Gründer)*
 
 > **Hinweis zur Nutzung:** Dieses Dokument dient als internes Steuerungsinstrument. Es enthält operative Ziele, Entscheidungsgrundlagen und Planungsannahmen, die regelmäßig überprüft und aktualisiert werden. Zahlen sind Planwerte auf Basis verfügbarer Marktdaten (Stand April 2026) und müssen durch Steuerberater und Rechtsanwalt validiert werden.
@@ -52,15 +52,15 @@ Europäische KMU brauchen KI, dürfen aber ihre Daten nicht in die Cloud geben. 
 
 ### Geschäftsmodell
 
-Drei Hardware-Stufen (Standard / Professional / Premium) kombiniert mit einem gestaffelten monatlichen Service-Abo (€149–€999/Monat). Alternativ: All-Inclusive-Bundles (€299–€999/Monat, 36 Monate). Der strategische Wert liegt in den wiederkehrenden Abo-Einnahmen.
+Vier Hardware-Stufen (Standard / Professional / Premium / Enterprise RZ) kombiniert mit einem gestaffelten monatlichen Service-Abo (€149–€1.999/Monat). Alternativ: All-Inclusive-Bundles (€299–€999/Monat, 36 Monate). Der strategische Wert liegt in den wiederkehrenden Abo-Einnahmen.
 
 ### Finanzieller Ausblick (Planwerte)
 
 | Kennzahl | Jahr 1 | Jahr 2 | Jahr 3 |
 |---|---|---|---|
-| Kunden (kumuliert, konservativ) | 10 | 30 | 70 |
+| Kunden (kumuliert, konservativ) | 10 | 35 | 70 |
 | Monthly Recurring Revenue (MRR, Ende Periode) | ~€2.500 | ~€10.000 | ~€25.000 |
-| Jahresumsatz (Marge + Abo + Setup) | ~€34.000 | ~€150.000 | ~€400.000 |
+| Gesamtumsatz (konservativ) | €63.300 | €195.000 | €493.000 |
 | Break-even | — | Laufe Jahr 2 | Erreicht |
 
 *Das erste Jahr ist bewusst eine Investitions- und Validierungsphase.*
@@ -85,7 +85,7 @@ KMU in ganz Europa stehen vor einem KI-Dilemma, das sich in drei Dimensionen auf
 Der Einsatz von KI-Tools hat sich in vielen Branchen von einem Wettbewerbsvorteil zu einer Wettbewerbsvoraussetzung entwickelt. Unternehmen, die KI nicht einsetzen, verlieren bei Effizienz, Reaktionsgeschwindigkeit und Servicequalität gegenüber Wettbewerbern. Mitarbeiter erwarten KI-gestützte Werkzeuge, Kunden erwarten intelligente Services.
 
 **Dimension 2: Cloud-KI ist für viele KMU keine Option**
-Die meistgenutzten KI-Dienste (ChatGPT/OpenAI, Microsoft Copilot, Google Gemini) sind Cloud-basiert. Sensible Unternehmensdaten — Verträge, Mandantendaten, Patientendaten, Finanzdaten, strategische Unterlagen, interne Kommunikation — verlassen bei jeder Anfrage das Unternehmen und werden auf fremden Servern verarbeitet. Das ist für eine klar definierbare Gruppe von KMU aus regulatorischen, rechtlichen oder ethischen Gründen inakzeptabel:
+Die meistgenutzten KI-Dienste (ChatGPT/OpenAI, Microsoft Copilot, Google Gemini) sind Cloud-basiert. Sensible Unternehmensdaten — Verträge, Mandantendaten, Patientendaten, Finanzdaten, strategische Unterlagen, interne Kommunikation — verlassen bei jeder Anfrage das Unternehmen und werden auf fremden Servern verarbeitet. Das ist für eine klar definierbare Gruppe von KMU aus rechtlichen, regulatorischen oder vertraglichen Gründen inakzeptabel:
 
 - **Rechtlich:** DSGVO Art. 28 (Auftragsverarbeitung), branchenspezifische Geheimhaltungspflichten (§ 203 StGB für Anwälte, Ärzte, Berater), Steuergeheimnis (§ 30 AO)
 - **Regulatorisch:** DORA (Finanzsektor), NIS2-Richtlinie, ISO 27001-Anforderungen
@@ -98,17 +98,7 @@ KMU-typisch: keine dedizierte IT-Abteilung, keine ML<!-- Machine Learning-->-Exp
 
 Die aktuelle Angebotslandschaft lässt eine spezifische KMU-Gruppe systematisch im Stich:
 
-```
-Datenschutzbedarf  │ HOCH │ Kanzleien, Arztpraxen, Beratungen, Ingenieurbüros
-                   │      │
-                   │      │  → Cloud nicht möglich
-                   │      │  → Enterprise zu teuer
-                   │      │  → Self-hosted zu komplex
-                   │      │
-                   │      │  ← HIER IST PRIVATEMIND
-                   │ NIEDRIG ──────────────────────────────────────────────────►
-                                               Ressourcen für IT-Infrastruktur
-```
+![Marktlücke](marktluecke.svg)
 
 Es gibt derzeit kein Angebot, das gleichzeitig erfüllt:
 - ✅ Lokal betrieben (kein Cloud-Datentransfer)
@@ -144,6 +134,8 @@ Der europäische KI-Markt befindet sich in einer kritischen Wachstumsphase. Laut
 
 **Regulatorischer Rückenwind:** Der EU AI Act (in Kraft seit August 2024, Anwendungsphasen bis 2027) und die weiterhin strenge DSGVO-Durchsetzung (Bußgelder 2024 in Rekordhöhe von über €1,6 Mrd. EU-weit) verstärken den Druck auf Datensouveränität. Lokale KI-Infrastruktur ist kein Nice-to-have — sie wird zur Compliance-Anforderung.
 
+**Geopolitisches Infrastrukturrisiko (neu, Juni 2026):** Am 12. Juni 2026 hat die US-Regierung per Exportkontrollrichtlinie den Zugang zu zwei führenden Anthropic-Modellen (Fable 5, Mythos 5) für alle Nutzer weltweit gesperrt — ohne Vorwarnung, ohne Übergangsfrist. Betroffene europäische Unternehmen verloren den Zugang über Nacht. Dies markiert einen Paradigmenwechsel: Cloud-KI-Abhängigkeit ist nicht nur ein Datenschutz-, sondern ein **Infrastrukturrisiko**. US-Exportkontrollrecht kann jederzeit und einseitig den Zugang zu KI-Diensten unterbrechen, unabhängig von Vertragsbeziehungen oder Compliance-Status des Nutzers. Lokale KI-Infrastruktur ist die einzige strukturelle Absicherung gegen dieses Risiko — und dieses Argument ist seit Juni 2026 nicht mehr theoretisch, sondern durch einen konkreten Präzedenzfall belegt.
+
 ### 3.2 Zielmarktsegmente
 
 **Primärsegment: Datenschutzsensible Freiberufler & kleine KMU (10–50 MA)**
@@ -177,20 +169,7 @@ IT-Systemhäuser und MSPs, die ihren KMU-Kunden eine White-Label-KI-Lösung anbi
 
 Konservative SAM-Berechnung für den europäischen Fokusmarkt:
 
-```
-Annahmen:
-- DACH: ~3,8 Mio. KMU, davon ~15% datenschutzsensible Branchen = ~570.000
-- NL + Nordics + UK: Vergleichbare Dichte, geschätzt ~400.000 relevante KMU
-- Gesamt adressierbarer Markt (SAM): ~970.000 KMU
-
-Konversionsannahme:
-- Realistische Durchdringung 5 Jahre: 0,1% des SAM = ~970 Kunden
-- Ø Jahresumsatz pro Kunde (Hardware + Setup + Abo): ~€8.000
-- SAM-Wert für PrivateMind (5 Jahre): ~€7,8 Mio. Umsatz kumuliert
-
-Serviceable Obtainable Market (SOM) — Ziel Jahr 3:
-- 70–150 Kunden × €8.000 Ø = €560.000 – €1.200.000 ARR
-```
+![Marktgröße TAM SAM SOM](marktgroesse.svg)
 
 ### 3.4 Wettbewerbsanalyse
 
@@ -209,20 +188,7 @@ Serviceable Obtainable Market (SOM) — Ziel Jahr 3:
 
 **Positionierungsmatrix:**
 
-```
-                    LOKAL / DATENSICHER
-                         │
-          Open-Source    │      PrivateMind ←
-          (Ollama etc.)  │
-                         │
-KOMPLEX ─────────────────┼───────────────────── EINFACH
-(IT-Expertise nötig)     │           (schlüsselfertig)
-                         │
-          Enterprise     │      Cloud-KI
-          (Hochpreisig)  │      (OpenAI, Copilot)
-                         │
-                    CLOUD / DATEN EXTERN
-```
+![Positionierungsmatrix](positionierungsmatrix.svg)
 
 PrivateMind besetzt den einzigen Quadranten, in dem kein starker Wettbewerber aktiv ist: **lokal + einfach**.
 
@@ -274,21 +240,43 @@ Alle PrivateMind-Appliances basieren auf dem ASUS Ascent GX10, der günstigsten 
 
 ASUS ist der einzige OEM, der den GX10 in drei SSD-Konfigurationen anbietet und dabei preislich deutlich unter dem NVIDIA DGX Spark liegt (bis zu €1.750 günstiger bei gleicher Chip-Performance). Entscheidend: ASUS bietet keinen dedizierten Support für dieses Gerät — genau hier liegt einer der wichtigsten USPs von PrivateMind.
 
-**Backup-Lieferanten:** Dell Pro Max GB10, Lenovo PGX, HP ZGX — gleiche Hardware, höherer Preis, aber mit Hersteller-Support (relevant als Backup bei Lieferengpässen).
+**Backup-Lieferanten (GX10-Linie):** Dell Pro Max GB10, Lenovo PGX, HP ZGX — gleicher Chip, höherer Preis, aber mit Hersteller-Support (relevant bei ASUS-Lieferengpässen).
+
+**Enterprise-Linie:** ASUS ESC4000A-E12 und Dell PowerEdge R760xa sind gleichwertige OEM-Optionen mit identischer GPU-Spezifikation (4× NVIDIA L40S 48 GB) — beide qualifizieren sich gegenseitig als Fallback.
 
 ### 4.2 Produktlinien
 
-|  | **PrivateMind Standard** | **PrivateMind Professional** | **PrivateMind Premium** |
-|---|---|---|---|
-| Hardware | 1× ASUS Ascent GX10 | 1× ASUS Ascent GX10 | 2× ASUS Ascent GX10 (Cluster) |
-| SSD | 1 TB | 2 TB | 2× 2 TB |
-| Unified Memory | 128 GB | 128 GB | 256 GB |
-| Max. Modellgröße | 70B (FP16), 200B (4-bit) | 70B (FP16), 200B (4-bit) | 200B (FP16), 405B (4-bit) |
-| Zielgruppe | Kleine Kanzleien, Praxen, Einzelkämpfer | Mittelstand, Teams, mehrere Nutzer | Große Teams, höchste Modellqualität |
-| Gleichzeitige Nutzer (ca.) | 3–8 | 3–8 | 8–20 |
-| **Hardware-EK (ca.)** | **~€3.050** | **~€3.550** | **~€7.100** |
-| **Hardware-VK (ca.)** | **€3.800** | **€4.500** | **€9.500** |
-| **Hardware-Marge** | **~€750** | **~€950** | **~€2.400** |
+|  | **PrivateMind Standard** | **PrivateMind Professional** | **PrivateMind Premium** | **PrivateMind Enterprise** |
+|---|---|---|---|---|
+| Hardware | 1× ASUS Ascent GX10 | 1× ASUS Ascent GX10 | 2× ASUS Ascent GX10 (Cluster) | 4× NVIDIA L40S 48 GB, 2U Rack ¹ |
+| SSD | 1 TB | 2 TB | 2× 2 TB | 4× NVMe (8+ TB) |
+| GPU VRAM | 128 GB Unified | 128 GB Unified | 256 GB Unified | 4× 48 GB GDDR6 (192 GB total) |
+| Formfaktor | Desktop | Desktop | Desktop-Cluster | 2U Rack, 19" EIA |
+| Max. Modellgröße | 70B (FP16), 200B (4-bit) | 70B (FP16), 200B (4-bit) | 200B (FP16), 405B (4-bit) | 405B (FP16), 700B+ (4-bit) |
+| Zielgruppe | Kleine Kanzleien, Praxen, Einzelkämpfer | Mittelstand, Teams, mehrere Nutzer | Große Teams, höchste Modellqualität | Mittlere Unternehmen, RZ-Betrieb, hohe Nutzerzahl |
+| Gleichzeitige Nutzer (ca.) | 3–8 | 3–8 | 8–20 | 20–100 |
+| **Hardware-EK (ca.)** | **~€3.050** | **~€3.550** | **~€7.100** | **~€50.000** |
+| **Hardware-VK (ca.)** | **€3.800** | **€4.500** | **€9.500** | **€62.500** |
+| **Hardware-Marge** | **~€750** | **~€950** | **~€2.400** | **~€12.500** |
+
+*¹ Enterprise-Hardware: zwei OEM-Optionen je nach Kundenpräferenz — siehe unten.*
+
+**Enterprise-Hardware: OEM-Auswahl**
+
+Der Enterprise-Tier ist hardware-agnostisch aufgebaut — PrivateMind konfiguriert und betreibt beide Plattformen identisch. Die OEM-Wahl richtet sich nach der Infrastruktur und den Vendor-Präferenzen des Kunden:
+
+| | **ASUS ESC4000A-E12** | **Dell PowerEdge R760xa** |
+|---|---|---|
+| **GPUs** | 4× NVIDIA L40S 48 GB | 4× NVIDIA L40S 48 GB |
+| **GPU-VRAM gesamt** | 192 GB | 192 GB |
+| **CPU** | AMD EPYC | 2× Intel Xeon 4th/5th Gen |
+| **Formfaktor** | 2U Rack, 19" EIA | 2U Rack, 19" EIA |
+| **Hersteller-Support** | ASUS (begrenzt) | Dell ProSupport (enterprise-erprobt) |
+| **Remote Management** | — | iDRAC 9 + OpenManage |
+| **EK-Schätzung (konfiguriert)** | ~€45.000–€55.000 | ~€43.000–€54.000 |
+| **Empfohlen für** | Kunden ohne Vendor-Vorgabe, günstigste Option | Kunden mit bestehender Dell-Infrastruktur oder IT-Policy |
+
+**Backup-Lieferant Enterprise:** Beide OEMs qualifizieren sich gegenseitig als Fallback bei Lieferengpässen — identische GPU-Spezifikation, gleicher PrivateMind-Software-Stack.
 
 ### 4.3 Software-Stack (eigenentwickelt & kuratiert)
 
@@ -336,7 +324,7 @@ Nicht jedes verfügbare Modell wird angeboten. PrivateMind kuratiert eine schlan
 - Firmware- und OS-Updates
 - Modell-Updates (neue Versionen, verbesserte Quantisierungen)
 - Technischer Support (SLA je nach Tier)
-- Proaktives Monitoring (ab Professional)
+- Proaktives Monitoring (ab Professional-Abo)
 - Modelloptimierung und Performance-Tuning
 - Neues Modell-Onboarding auf Anfrage
 
@@ -368,6 +356,7 @@ Die Unternehmenslogik ist einfach: **Je mehr Kunden im Abo, desto stabiler das U
 | PrivateMind Standard | 1× GX10, 1 TB | €4.522 brutto / €3.800 netto | ~€3.050 | ~€750 |
 | PrivateMind Professional | 1× GX10, 2 TB | €5.355 brutto / €4.500 netto | ~€3.550 | ~€950 |
 | PrivateMind Premium | 2× GX10 Cluster, je 2 TB | €11.305 brutto / €9.500 netto | ~€7.100 | ~€2.400 |
+| PrivateMind Enterprise | 4× NVIDIA L40S 48 GB, 192 GB GPU-VRAM, 2U Rack — ASUS ESC4000A-E12 oder Dell PowerEdge R760xa (je nach Kundenpräferenz) | €74.375 brutto / €62.500 netto | ~€45.000–€55.000 | ~€7.500–€17.500 |
 
 *Preise netto = B2B-Preise für Geschäftskunden. MwSt. 19% (DE).*
 
@@ -375,18 +364,19 @@ Die Unternehmenslogik ist einfach: **Je mehr Kunden im Abo, desto stabiler das U
 
 |  | **Starter** | **Professional** | **Enterprise** |
 |---|---|---|---|
-| **Monatspreis (netto)** | **€149** | **€349** | **€699** |
-| Vorkonfigurierte Modelle | 3–5 Modelle (Basis-Set) | 6–10 Modelle (erweitertes Set) | Maßgeschneidert |
-| Modell-Updates | Quartalsweise | Monatlich | Kontinuierlich |
-| Support-Kanal | E-Mail | E-Mail + Telefon | Priorität + Remote-Zugriff |
-| Reaktionszeit SLA | 48 Stunden | 24 Stunden | 4 Stunden |
-| System-Monitoring | Basis-Dashboard | Dashboard + Alerts | Proaktiv (PrivateMind monitort) |
-| Modell-Tuning | — | Self-Service + Anleitung | Durch PrivateMind inklusive |
-| RAG-Einrichtung | Dokumentation | Einrichtungshilfe | Vollständige Einrichtung inklusive |
-| Clustering-Support | — | Gegen Aufpreis (€99/Mo.) | Inklusive |
-| Schulung | Quickstart-Guide (PDF/Video) | 2h Onboarding-Call | Workshop + laufende Beratung |
-| Neue Nutzer-Onboarding | — | 1× pro Quartal | Unbegrenzt |
-| **Jahreswert pro Kunde** | **€1.788** | **€4.188** | **€8.388** |
+| **Monatspreis (netto)** | **€149** | **€699** | **€1.999** |
+| Passende Hardware | Standard / Professional | Premium (2× GX10) | Enterprise (ESC4000A-E12 + 4× L40S) |
+| Vorkonfigurierte Modelle | 3–5 Modelle (Basis-Set) | Maßgeschneidert | Maßgeschneidert, mehrere parallel |
+| Modell-Updates | Quartalsweise | Kontinuierlich | Kontinuierlich + Priorität |
+| Support-Kanal | E-Mail | Priorität + Remote-Zugriff | Dedizierter Ansprechpartner + On-Site |
+| Reaktionszeit SLA | 48 Stunden | 4 Stunden | 2 Stunden |
+| System-Monitoring | Basis-Dashboard | Proaktiv (PrivateMind monitort) | 24/7 Proaktiv + Alerting |
+| Modell-Tuning | — | Durch PrivateMind inklusive | Durch PrivateMind + Finetuning |
+| RAG-Einrichtung | Dokumentation | Vollständige Einrichtung inklusive | Vollständige Einrichtung + Mehrinstanz |
+| Clustering-Support | — | Inklusive | Inklusive + Skalierungserweiterung |
+| Schulung | Quickstart-Guide (PDF/Video) | Workshop + laufende Beratung | Dediziertes Onboarding-Programm |
+| Neue Nutzer-Onboarding | — | Unbegrenzt | Unbegrenzt + wiederkehrende Schulungen |
+| **Jahreswert pro Kunde** | **€1.788** | **€8.388** | **€23.988** |
 
 **Setup-Gebühren (einmalig, je nach Komplexität):**
 
@@ -401,15 +391,15 @@ Die Unternehmenslogik ist einfach: **Je mehr Kunden im Abo, desto stabiler das U
 
 Für KMU, die keine Investitionsausgabe (CAPEX) tätigen wollen und eine reine Betriebsausgabe (OPEX) bevorzugen. Steuerlich attraktiv: vollständig als Betriebsausgabe absetzbar, kein aktivierungspflichtiges Anlagevermögen.
 
-|  | **Bundle Standard** | **Bundle Professional** | **Bundle Premium** |
+|  | **Bundle Standard** | **Bundle Professional** | **Bundle Enterprise** |
 |---|---|---|---|
-| Hardware | 1× GX10, 1 TB | 1× GX10, 2 TB | 2× GX10 Cluster, je 2 TB |
+| Hardware | 1× GX10, 1 TB | 2× GX10 Cluster, je 2 TB | ESC4000A-E12 + 4× L40S |
 | Service-Level | Starter | Professional | Enterprise |
-| **Monatspreis (netto)** | **€299** | **€499** | **€999** |
-| **Laufzeit** | 36 Monate | 36 Monate | 36 Monate |
-| Gesamtkosten über 36 Mo. | €10.764 | €17.964 | €35.964 |
+| **Monatspreis (netto)** | **€299** | **€999** | **auf Anfrage (Projektbasis)** |
+| **Laufzeit** | 36 Monate | 36 Monate | 60 Monate |
+| Gesamtkosten über 36 Mo. | €10.764 | €35.964 | individuell |
 | Nach Laufzeitende | Hardware-Eigentum geht auf Kunden über; Service-Abo läuft weiter (opt-out möglich) | ← | ← |
-| **Implikation für PrivateMind** | Hardware-Refinanzierung über ~14 Monate; ab Mo. 15 volle Marge | ← | ← |
+| **Implikation für PrivateMind** | Hardware-Refinanzierung über ~14 Monate; ab Mo. 15 volle Marge | Hardware-Refinanzierung über ~26 Monate; ab Mo. 27 volle Marge | Individuelle Kalkulation, Anzahlung erforderlich |
 
 **Bundle-Kalkulation (Beispiel Bundle Standard):**
 ```
@@ -431,7 +421,7 @@ ROI-Break-even:     Monat 14
 | Bundle-Rate | Wiederkehrend | 36 Monate | Langfristige Bindung |
 | Zusatzleistungen | Projektbezogen | Ad hoc | Ergänzend |
 
-**Umsatzmix-Ziel:** Ab Jahr 2 soll der MRR (Monthly Recurring Revenue) mindestens 60% des Gesamtumsatzes ausmachen. Dieser Anteil erhöht die Prognosesicherheit und den Unternehmenswert erheblich.
+**Umsatzmix-Ziel:** Ab Jahr 3 soll der Serviceumsatz (Abo + Setup) mindestens 55% des Gesamtumsatzes ausmachen — laut Finanzplanung werden 58–59% erreicht. Der wachsende Abo-Anteil erhöht Prognosesicherheit und Unternehmenswert erheblich.
 
 ### 5.5 Pricing-Strategie
 
@@ -443,7 +433,7 @@ ROI-Break-even:     Monat 14
 - Ein freiberuflicher Entwickler für KI-Setup kostet €80–€150/Stunde
 - Eine SaaS-KI-Lösung mit ähnlichem Funktionsumfang: €300–€800/Monat (plus Datenschutzrisiko)
 - Eine eigene IT-Stelle: €3.000–€5.000/Monat
-- PrivateMind Professional: €349/Monat all-in → keine Vergleichspreise, klarer Vorteil
+- PrivateMind Professional: €699/Monat all-in → keine Vergleichspreise, klarer Vorteil
 
 ---
 
@@ -582,7 +572,7 @@ In der Gründungsphase übernimmt der Gründer alle Rollen — bewusst und mit P
 
 | Kunden (kumuliert) | Mitarbeiterzahl | Erste neue Rollen | Personalkosten/Monat (ca.) |
 |---|---|---|---|
-| 1–10 | 1 (Gründer) | — | €3.000–€4.000 GF-Gehalt |
+| 1–10 | 1 (Gründer) | — | €5.000 netto / ~€9.600 Vollkosten GF-Gehalt |
 | 10–20 | 2 | Werkstudent/Freelancer Support | +€1.500–€2.500 |
 | 20–35 | 3 | Vollzeit Technical Support | +€2.500–€3.500 |
 | 35–50 | 4–5 | Vertrieb/Account Manager | +€2.500–€3.500 |
@@ -626,53 +616,53 @@ Dresden bietet strukturelle Vorteile, die für ein KI-Hardware-Startup in der Fr
 
 | Position | Betrag/Monat (ca.) | Low | High |
 |---|---|---|---|
-| GF-Gehalt (netto) | €2.000–€3.000 | €2.000 | €3.000 |
-| GF-Gehalt inkl. Lohnnebenkosten (GmbH-intern) | €3.000–€4.500 | €3.000 | €4.500 |
+| GF-Gehalt netto | **€5.000** | €5.000 | €5.000 |
+| GF-Gehalt inkl. Lohnnebenkosten (GmbH-intern, ~€9.600/Mo.) | **€9.600** | €9.600 | €9.600 |
 | Büro/Coworking | €300–€500 | €300 | €500 |
 | Betriebshaftpflicht & Versicherungen | €150–€300 | €150 | €300 |
 | Software-Lizenzen & Tools | €100–€200 | €100 | €200 |
 | Marketing & Werbung (digital) | €300–€700 | €300 | €700 |
-| Steuerberater (laufend) | €150–€300 | €150 | €300 |
-| Telefon, Internet, Sonstiges | €100–€150 | €100 | €150 |
-| **Summe Fixkosten/Monat** | | **€4.100** | **€6.650** |
-| **Jahres-Fixkosten** | | **€49.200** | **€79.800** |
+| Steuerberater (laufend) | €300–€400 | €300 | €400 |
+| Telefon, Internet, Sonstiges | €100–€200 | €100 | €200 |
+| **Summe Fixkosten/Monat** | | **€10.850** | **€11.900** |
+| **Jahres-Fixkosten** | | **€130.200** | **€142.800** |
 
-*Planungsbasis: Mittelwert ~€5.400/Monat, ~€64.800/Jahr*
+*Planungsbasis: Mittelwert ~€11.500/Monat, ~€138.000/Jahr — davon GF-Vergütung (Vollkosten GmbH) €115.000/Jahr (= €5.000 netto/Monat)*
 
 ### 8.3 Monatliche Umsatz- und Liquiditätsplanung — Jahr 1 (Konservatives Szenario)
 
-Annahmen: Gründung Monat 1, erste Umsätze Monat 3, je 1 Neukunde/Monat ab Monat 4, Mix 60% Standard / 30% Professional / 10% Premium.
+Annahmen: Gründung Monat 1, erste Umsätze Monat 3, je 1 Neukunde/Monat ab Monat 4, Mix 65% Standard+Starter / 35% Professional (Starter- oder Professional-Abo).
 
 | Monat | Neue Kunden | Abo-Kunden kumuliert | Abo-MRR | Hardware-Marge | Setup | Gesamt-Einnahmen | Fixkosten | Monatssaldo | Kumuliert |
 |---|---|---|---|---|---|---|---|---|---|
-| 1 | 0 | 0 | €0 | €0 | €0 | €0 | -€5.400 | -€5.400 | -€5.400 |
-| 2 | 0 | 0 | €0 | €0 | €0 | €0 | -€5.400 | -€5.400 | -€10.800 |
-| 3 | 1 | 1 | €149 | €750 | €500 | €1.399 | -€5.400 | -€4.001 | -€14.801 |
-| 4 | 1 | 2 | €298 | €750 | €500 | €1.548 | -€5.400 | -€3.852 | -€18.653 |
-| 5 | 1 | 3 | €447 | €950 | €750 | €2.147 | -€5.400 | -€3.253 | -€21.906 |
-| 6 | 1 | 4 | €596 | €750 | €500 | €1.846 | -€5.400 | -€3.554 | -€25.460 |
-| 7 | 1 | 5 | €845 | €2.400 | €1.500 | €4.745 | -€5.400 | -€655 | -€26.115 |
-| 8 | 1 | 6 | €994 | €750 | €500 | €2.244 | -€5.400 | -€3.156 | -€29.271 |
-| 9 | 1 | 7 | €1.143 | €950 | €750 | €2.843 | -€5.400 | -€2.557 | -€31.828 |
-| 10 | 1 | 8 | €1.292 | €750 | €500 | €2.542 | -€5.400 | -€2.858 | -€34.686 |
-| 11 | 1 | 9 | €1.491 | €750 | €500 | €2.741 | -€5.400 | -€2.659 | -€37.345 |
-| 12 | 1 | 10 | €1.740 | €2.400 | €2.000 | €6.140 | -€5.400 | +€740 | -€36.605 |
-| **Gesamt Jahr 1** | **10** | **10** | **€8.995** | **€11.200** | **€8.000** | **€28.195** | **-€64.800** | | **-€36.605** |
+| 1 | 0 | 0 | €0 | €0 | €0 | €0 | -€11.500 | -€11.500 | -€11.500 |
+| 2 | 0 | 0 | €0 | €0 | €0 | €0 | -€11.500 | -€11.500 | -€23.000 |
+| 3 | 1 | 1 | €149 | €750 | €500 | €1.399 | -€11.500 | -€10.101 | -€33.101 |
+| 4 | 1 | 2 | €298 | €750 | €500 | €1.548 | -€11.500 | -€9.952 | -€43.053 |
+| 5 | 1 | 3 | €447 | €950 | €750 | €2.147 | -€11.500 | -€9.353 | -€52.406 |
+| 6 | 1 | 4 | €596 | €750 | €500 | €1.846 | -€11.500 | -€9.654 | -€62.060 |
+| 7 | 1 | 5 | €845 | €2.400 | €1.500 | €4.745 | -€11.500 | -€6.755 | -€68.815 |
+| 8 | 1 | 6 | €994 | €750 | €500 | €2.244 | -€11.500 | -€9.256 | -€78.071 |
+| 9 | 1 | 7 | €1.143 | €950 | €750 | €2.843 | -€11.500 | -€8.657 | -€86.728 |
+| 10 | 1 | 8 | €1.292 | €750 | €500 | €2.542 | -€11.500 | -€8.958 | -€95.686 |
+| 11 | 1 | 9 | €1.491 | €750 | €500 | €2.741 | -€11.500 | -€8.759 | -€104.445 |
+| 12 | 1 | 10 | €1.740 | €2.400 | €2.000 | €6.140 | -€11.500 | -€5.360 | -€109.805 |
+| **Gesamt Jahr 1** | **10** | **10** | **€8.995** | **€11.200** | **€8.000** | **€28.195** | **-€138.000** | | **-€109.805** |
 
-*Hinweis: Monat 7 und 12: Premium-Verkauf angenommen. Kumulierter Fehlbetrag ~€37k wird durch Gründungsmittel (Stammkapital + Gründungszuschuss) gedeckt.*
+*Hinweis: Monat 7 und 12: Premium-Verkauf angenommen. Kumulierter Fehlbetrag ~€110k erfordert KfW ERP StartGeld Darlehen (bis €125.000) + Stammkapital + Fördermittel — siehe 8.6.*
 
 ### 8.4 Monatliche Planung — Jahr 1 (Optimistisches Szenario)
 
-Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional/Premium.
+Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional-Tier (Premium-Hardware + Professional-Abo).
 
-| Monat | Neue Kunden | Abo-Kunden | MRR | HW-Marge | Setup | Einnahmen | Saldo |
-|---|---|---|---|---|---|---|---|
-| 1–2 | 0 | 0 | €0 | €0 | €0 | €0 | -€10.800 |
-| 3 | 2 | 2 | €498 | €1.700 | €1.500 | €3.698 | -€1.702 |
-| 4 | 2 | 4 | €996 | €1.700 | €1.500 | €4.196 | -€1.204 |
-| 5 | 3 | 7 | €1.743 | €4.550 | €3.000 | €9.293 | +€3.893 |
-| 6–12 | ~2,5/Mo | 25 Ende | ~€6.225 | ~€2.500 | ~€2.000 | ~€10.725 | ~+€5.325 |
-| **Gesamt Jahr 1** | **~25** | **25** | ~**€31.000** | **~€23.200** | **~€25.000** | **~€79.200** | **~+€14.400** |
+| Monat | Neue Kunden | Abo-Kunden | MRR | HW-Marge | Setup | Einnahmen | Fixkosten | Saldo |
+|---|---|---|---|---|---|---|---|---|
+| 1–2 | 0 | 0 | €0 | €0 | €0 | €0 | -€23.000 | -€23.000 |
+| 3 | 2 | 2 | €498 | €1.700 | €1.500 | €3.698 | -€11.500 | -€7.802 |
+| 4 | 2 | 4 | €996 | €1.700 | €1.500 | €4.196 | -€11.500 | -€7.304 |
+| 5 | 3 | 7 | €1.743 | €4.550 | €3.000 | €9.293 | -€11.500 | -€2.207 |
+| 6–12 | ~2,5/Mo | 25 Ende | ~€6.225 | ~€2.500 | ~€2.000 | ~€10.725 | -€11.500/Mo | ~-€775/Mo |
+| **Gesamt Jahr 1** | **~25** | **25** | ~**€31.000** | **~€23.200** | **~€25.000** | **~€79.200** | **-€138.000** | **~-€58.800** |
 
 ### 8.5 Langfristige Umsatzentwicklung (3-Jahres-Planung)
 
@@ -683,26 +673,31 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional/Premi
 | ARR (Ende Periode) | €29.880 | €74.700 | €120k–€240k | €300k–€600k |
 | Hardware-Umsatz/Jahr | €46.300 | €124.100 | €100k–€200k | €200k–€400k |
 | Setup-Einnahmen/Jahr | €8.000 | €25.000 | €20k–€50k | €50k–€100k |
-| **Gesamt-Jahresumsatz (Marge+Abo+Setup)** | **~€34.000** | **~€110.000** | **€150k–€350k** | **€400k–€750k** |
-| **Ergebnis (vor Steuern)** | **-€30k** | **+€45k** | **+€50k–€150k** | **+€200k–€400k** |
+| **Bruttogewinn (Marge+Abo+Setup)** | **~€28.200** | **~€79.200** | **~€120k–€250k** | **~€330k–€650k** |
+| **Fixkosten (inkl. GF €115k/a)** | **~€138.000** | **~€138.000** | **~€140k–€180k** | **~€200k–€350k** |
+| **Ergebnis (vor Steuern)** | **~-€110.000** | **~-€59.000** | **-€20k bis +€70k** | **+€130k bis +€300k** |
 
 **Break-even-Analyse:**
-- Break-even operativ (MRR deckt Fixkosten): ~15 Kunden im Professional-Tier, oder ~35 Kunden im Starter-Tier
-- Break-even kumuliert (Verluste aus Jahr 1 ausgeglichen): realistisch im Laufe von Jahr 2
+- Break-even operativ (MRR deckt Fixkosten ~€11.500/Mo.): ~17 Professional-Kunden (€699/Mo.) oder ~78 Starter-Kunden (€149/Mo.) — realistisch: Mix aus beiden, ca. 20–25 aktive Kunden
+- Break-even operativ erreichbar: ca. Q3 Jahr 2 (konservativ) / Q2 Jahr 2 (optimistisch)
+- Break-even kumuliert (Verluste aus Jahr 1 ausgeglichen): Laufe Jahr 3 (konservativ) / Ende Jahr 2 (optimistisch)
 
 ### 8.6 Kapitalbedarfsübersicht
 
-| Finanzierungsquelle | Betrag (ca.) | Verfügbarkeit |
-|---|---|---|
-| Eigenkapital (Stammkapital GmbH) | €25.000 | Bei Gründung |
-| Gründungszuschuss Agentur für Arbeit (15 Mo.) | ~€15.000–€20.000 | Bewilligung vor Gründung |
-| InnoStartBonus Sachsen | ~€12.600 | Bei Bewilligung |
-| SAB Mikrodarlehen | bis €20.000 | 3 Monate nach Gründung |
-| **Gesamt verfügbare Mittel (konservativ)** | **~€52.600–€77.600** | |
-| **Kapitalbedarf Jahr 1 (konservatives Szenario)** | **~€75.000–€85.000** | Gründungskosten + Verlust |
-| **Lücke / Puffer** | **negativ bis ~€7.000** | Zeigt Relevanz der Fördermittelkette |
+| Finanzierungsquelle | Betrag (ca.) | Empfänger | Verfügbarkeit |
+|---|---|---|---|
+| Eigenkapital (Stammkapital GmbH) | €25.000 | GmbH | Bei Gründung |
+| **KfW ERP-Gründerkredit StartGeld** | **bis €125.000** | **GmbH** | **Über Hausbank, ≤ 3 Mo. nach Gründung — PRIORITÄT** |
+| SAB Mikrodarlehen | bis €20.000 | GmbH | 3 Monate nach Gründung |
+| Gründungszuschuss AfA (15 Mo.) ¹ | ~€16.500 | Gründer (persönlich) | Bewilligung vor Gründung |
+| InnoStartBonus Sachsen ¹ | ~€12.600 | Gründer (persönlich) | Bei Bewilligung |
+| **Gesamt GmbH-Finanzierung** | **~€145.000–€170.000** | GmbH | |
+| **Kapitalbedarf Jahr 1 (konservativ)** | **~€130.000–€145.000** | GmbH | Gründungskosten + Betriebsverlust inkl. GF-Gehalt |
+| **Puffer** | **~€5.000–€25.000** | | |
 
-*Maßnahme bei Lücke: KfW ERP-Gründerkredit StartGeld (bis €125.000, vergünstigter Zinssatz) oder SAB Sachsenkredit als ergänzende Finanzierungsquelle.*
+*¹ Gründungszuschuss und InnoStartBonus fließen dem Gründer persönlich zu — sie sind von der GmbH-Finanzierung unabhängig und verbessern die persönliche Liquiditätslage zusätzlich zur GmbH-Vergütung.*
+
+*Das GF-Gehalt (€115.000/Jahr Vollkosten) ist expliziter Bestandteil der Finanzierungsplanung. Der KfW ERP-Gründerkredit StartGeld ist damit keine optionale Ergänzung, sondern Pflichtbaustein der Kapitalstruktur.*
 
 ---
 
@@ -728,14 +723,14 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional/Premi
 **Prinzip 1: Der Wert liegt im Service, nicht in der Hardware.**
 Selbst wenn ein Kunde die gleiche Hardware woanders billiger kauft, fehlt ihm ohne PrivateMinds Setup, Konfiguration, Updates und Support das funktionierende System. Der Wechselkosten-Effekt ist real: ein eingerichtetes System mit RAG-Index, angepassten Modellen und eingespieltem Support-Prozess wechselt man nicht ohne Aufwand.
 
-**Prinzip 2: Niedrige Fixkosten als strategischer Vorteil.**
-Die Ein-Personen-GmbH kann mit ~€4.000–€5.400/Monat operieren. Das gibt 12–18 Monate Runway mit Eigenkapital allein — selbst bei null Umsatz. Kein Investor-Druck, kein Wachstumszwang.
+**Prinzip 2: Gesicherter Runway als strategischer Vorteil.**
+Die GmbH operiert mit ~€11.500/Monat Fixkosten (davon €9.600 GF-Vollkosten). Mit Stammkapital (€25.000) + KfW ERP StartGeld (€100.000) + SAB Mikrodarlehen (€20.000) = rund €145.000 Finanzierungsrahmen: über 12 Monate Runway auch bei null Umsatz. Kein Investor-Druck, kein Wachstumszwang.
 
 **Prinzip 3: Europäische Diversifikation.**
 Keine Abhängigkeit von einem nationalen Markt. Fällt DACH schwächer aus als geplant, kann Fokus auf NL/UK verlagert werden.
 
 **Prinzip 4: Recurring Revenue als Stabilitätsanker.**
-Ab ~15 Professional-Kunden deckt der MRR alle Fixkosten. Von diesem Punkt an sind Hardware-Verkäufe "Bonus", nicht Überlebensbedingung.
+Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten inkl. GF-Gehalt (€11.500/Mo.). Von diesem Punkt an sind Hardware-Verkäufe "Bonus", nicht Überlebensbedingung.
 
 ---
 
@@ -743,8 +738,8 @@ Ab ~15 Professional-Kunden deckt der MRR alle Fixkosten. Von diesem Punkt an sin
 
 | Zeitraum | Meilenstein | Konkrete Aktivitäten | Erfolgskriterium |
 |---|---|---|---|
-| **Monat 1** | Rechtliche Gründung | GmbH-Notar, Gesellschaftervertrag, Handelsregistereintrag, Geschäftskonto eröffnen | GmbH eingetragen |
-| **Monat 1** | Förderantrag | Gründungszuschuss bei Agentur für Arbeit beantragen, InnoStartBonus prüfen | Antrag eingereicht |
+| **Vor Monat 1** | GZ-Antrag ⚠️ | Arbeitslos melden (Tag 1 nach AU-Ende), Gründungszuschuss beantragen (VOR GmbH-Gründung!), IHK-Stellungnahme einholen, InnoStartBonus prüfen | GZ-Antrag eingereicht |
+| **Monat 1** | Rechtliche Gründung | GmbH-Notar (erst nach GZ-Bewilligung!), Gesellschaftervertrag, Handelsregistereintrag, Geschäftskonto eröffnen | GmbH eingetragen |
 | **Monat 1–2** | Infrastruktur | Demo-Gerät beschaffen, Entwicklungsumgebung aufbauen, Domain registrieren, E-Mail-Setup | Gerät läuft, Domain aktiv |
 | **Monat 2–4** | Dashboard MVP | Chat-Interface, Dokument-Upload, Modellverwaltung, System-Monitor bauen | Interne Demo-fähig |
 | **Monat 2–4** | Rechtliche Grundlagen | AGB + Serviceverträge (Englisch), Datenschutzkonzept, Haftungsfragen klären | Verträge unterschriftsreif |
@@ -832,15 +827,7 @@ Ab ~15 Professional-Kunden deckt der MRR alle Fixkosten. Von diesem Punkt an sin
 
 ### 11.4 Empfohlene Fördermittel-Timeline
 
-```
-VOR Gründung:    Gründungszuschuss beantragen → ESF Plus Gründungsberatung
-Monat 1:         InnoStartBonus (futureSAX), Silicon Saxony beitreten
-Monat 2:         NVIDIA Inception beantragen
-Monat 3:         SAB Mikrodarlehen (Liquiditätspuffer)
-Monat 6+:        Sachsenkredit oder KfW prüfen (wenn Wachstum vorankommt)
-Jahr 2:          GRW RIGA (bei Investitionen), TGFS/MBG (wenn Wachstumskapital nötig)
-Jahr 2–3:        EU-Fördermittel (mit Beratung)
-```
+![Fördermittel-Timeline](foerdermittel-timeline.svg)
 
 ---
 
@@ -848,9 +835,10 @@ Jahr 2–3:        EU-Fördermittel (mit Beratung)
 
 ### Sofort-Prioritäten (diese Woche)
 
-- [ ] **Gründungszuschuss-Termin** bei Agentur für Arbeit vereinbaren — vor jeder weiteren Gründungsaktivität!
-- [ ] **Notar** für GmbH-Gründung kontaktieren, Termin vereinbaren
-- [ ] **Steuerberater** auswählen und Erstgespräch buchen
+- [ ] **Arbeitsuchend melden** bei der Agentur für Arbeit — spätestens 3 Monate vor geplantem Gründungsdatum (empfohlen: sofort, noch während AU)
+- [ ] **Gründungszuschuss-Unterlagen vorbereiten**: Businessplan (Kurzform), Lebenslauf, Kapitalbedarfsplan, Eigenkapitalnachweis — für IHK-Stellungnahme und AfA-Antrag
+- [ ] **Steuerberater** auswählen: GmbH-Struktur, Stammkapitaleinlage, IP-Einbringung (Sacheinlage vs. Lizenz), Gehaltsoptimierung
+- [ ] **Notar-Termin** vorbereiten — erst NACH GZ-Bewilligung buchen (GmbH-Gründung vor Antrag sperrt GZ!)
 - [ ] **Domain** privatemind.eu und privatemind.de sichern (sofort, noch heute)
 
 ### Geschäftsmodell
@@ -888,7 +876,6 @@ Jahr 2–3:        EU-Fördermittel (mit Beratung)
 ### Finanzen
 
 - [ ] Detaillierten Liquiditätsplan (Monat für Monat, 24 Monate) als Tabelle führen
-- [ ] Gründungszuschuss-Unterlagen vorbereiten (Businessplan-Kurzform, Lebenslauf, Kapitalbedarf)
 - [ ] Geschäftskonto eröffnen (Empfehlung: Commerzbank, Deutsche Bank oder FinTech wie Qonto für KMU)
 
 ---

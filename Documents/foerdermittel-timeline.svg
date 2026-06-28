@@ -1,0 +1,76 @@
+<svg width="720" height="360" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+
+  <!-- Background -->
+  <rect width="720" height="360" fill="#ffffff" rx="12"/>
+
+  <!-- Title -->
+  <text x="360" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a1a" letter-spacing="0.3">Gründungszuschuss &amp; Fördermittel-Timeline</text>
+
+  <!-- Timeline base line -->
+  <line x1="60" y1="180" x2="680" y2="180" stroke="#cccccc" stroke-width="2"/>
+  <!-- End arrow -->
+  <polygon points="680,180 668,174 668,186" fill="#cccccc"/>
+
+  <!-- ─────────────────────────────────────────────────────── -->
+  <!-- Milestones — alternating above/below the line -->
+  <!-- x positions: 90, 200, 310, 420, 515, 608 -->
+  <!-- ─────────────────────────────────────────────────────── -->
+
+  <!-- SOFORT (above, urgent orange) -->
+  <circle cx="90" cy="180" r="10" fill="#c0580a" stroke="white" stroke-width="2"/>
+  <line x1="90" y1="170" x2="90" y2="120" stroke="#c0580a" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <rect x="18" y="62" width="145" height="56" rx="6" fill="#fdf5ee" stroke="#c0580a" stroke-width="1.5"/>
+  <text x="91" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#c0580a">SOFORT</text>
+  <text x="91" y="96" text-anchor="middle" font-size="9.5" fill="#555">Arbeitsuchend melden</text>
+  <text x="91" y="110" text-anchor="middle" font-size="9.5" fill="#555">GZ-Unterlagen vorbereiten</text>
+
+  <!-- Nach AU-Ende ~23.7. (below, amber) -->
+  <circle cx="207" cy="180" r="10" fill="#c0580a" stroke="white" stroke-width="2"/>
+  <line x1="207" y1="190" x2="207" y2="242" stroke="#c0580a" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <rect x="138" y="244" width="140" height="70" rx="6" fill="#fdf5ee" stroke="#c0580a" stroke-width="1.5"/>
+  <text x="208" y="262" text-anchor="middle" font-size="10" font-weight="700" fill="#c0580a">Nach AU-Ende (~Jul.)</text>
+  <text x="208" y="278" text-anchor="middle" font-size="9.5" fill="#555">Arbeitslos melden (Tag 1)</text>
+  <text x="208" y="293" text-anchor="middle" font-size="9.5" fill="#555">GZ-Antrag stellen</text>
+  <text x="208" y="308" text-anchor="middle" font-size="9.5" fill="#c0580a" font-weight="600">⚠ Vor GmbH-Gründung!</text>
+
+  <!-- Woche 1-2 (above, blue) — IHK + Steuerberater -->
+  <circle cx="318" cy="180" r="10" fill="#2980b9" stroke="white" stroke-width="2"/>
+  <line x1="318" y1="170" x2="318" y2="122" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <rect x="248" y="64" width="141" height="56" rx="6" fill="#eef5fb" stroke="#2980b9" stroke-width="1.2"/>
+  <text x="319" y="82" text-anchor="middle" font-size="10" font-weight="700" fill="#2980b9">Woche 1–2</text>
+  <text x="319" y="98" text-anchor="middle" font-size="9.5" fill="#555">IHK Stellungnahme</text>
+  <text x="319" y="112" text-anchor="middle" font-size="9.5" fill="#555">Steuerberater beauftragen</text>
+
+  <!-- Monat 1 (below, blue) — GZ-Bewilligung + GmbH -->
+  <circle cx="422" cy="180" r="10" fill="#2980b9" stroke="white" stroke-width="2"/>
+  <line x1="422" y1="190" x2="422" y2="242" stroke="#2980b9" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <rect x="354" y="244" width="135" height="56" rx="6" fill="#eef5fb" stroke="#2980b9" stroke-width="1.2"/>
+  <text x="421" y="262" text-anchor="middle" font-size="10" font-weight="700" fill="#2980b9">Monat 1</text>
+  <text x="421" y="278" text-anchor="middle" font-size="9.5" fill="#555">GZ-Bewilligung erhalten</text>
+  <text x="421" y="294" text-anchor="middle" font-size="9.5" fill="#555">GmbH-Gründung (Notar)</text>
+
+  <!-- Monat 2 (above, teal) — NVIDIA + Silicon Saxony + InnoStart -->
+  <circle cx="516" cy="180" r="10" fill="#16a085" stroke="white" stroke-width="2"/>
+  <line x1="516" y1="170" x2="516" y2="120" stroke="#16a085" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <rect x="447" y="62" width="140" height="56" rx="6" fill="#e8f6f3" stroke="#16a085" stroke-width="1.2"/>
+  <text x="517" y="80" text-anchor="middle" font-size="10" font-weight="700" fill="#16a085">Monat 2</text>
+  <text x="517" y="96" text-anchor="middle" font-size="9.5" fill="#555">NVIDIA Inception / InnoStartBonus</text>
+  <text x="517" y="110" text-anchor="middle" font-size="9.5" fill="#555">Silicon Saxony · SAB Mikrodarlehen</text>
+
+  <!-- Jahr 2 (below, green) -->
+  <circle cx="610" cy="180" r="10" fill="#1a7a3a" stroke="white" stroke-width="2"/>
+  <line x1="610" y1="190" x2="610" y2="244" stroke="#1a7a3a" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <rect x="545" y="244" width="130" height="56" rx="6" fill="#e8f7ee" stroke="#1a7a3a" stroke-width="1.2"/>
+  <text x="610" y="262" text-anchor="middle" font-size="10" font-weight="700" fill="#1a7a3a">Jahr 2</text>
+  <text x="610" y="278" text-anchor="middle" font-size="9.5" fill="#555">KfW / GRW RIGA</text>
+  <text x="610" y="294" text-anchor="middle" font-size="9.5" fill="#555">TGFS / MBG Sachsen</text>
+
+  <!-- Jahr 2-3 label on timeline end -->
+  <text x="686" y="168" font-size="10" font-weight="600" fill="#888">Jahr 2–3</text>
+  <text x="686" y="181" font-size="9" fill="#aaa">EU-Mittel</text>
+  <text x="686" y="193" font-size="9" fill="#aaa">Horizon/EIC</text>
+
+  <!-- Footer -->
+  <text x="360" y="342" text-anchor="middle" font-size="10" fill="#bbb" font-style="italic">PrivateMind GmbH — Businessplan v2.0, Stand Juni 2026</text>
+
+</svg>

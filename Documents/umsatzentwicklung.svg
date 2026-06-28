@@ -1,0 +1,130 @@
+<svg width="720" height="500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+
+  <!-- Background -->
+  <rect width="720" height="500" fill="#ffffff" rx="12"/>
+
+  <!-- Title -->
+  <text x="360" y="34" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a1a" letter-spacing="0.3">Umsatz- und Ergebnisentwicklung — 3-Jahres-Plan</text>
+
+  <!-- ─────────────────────────────────────────────────── -->
+  <!-- Chart area: x 80–660, y 60–420  (height=360)       -->
+  <!-- Max value: €1.000.000                               -->
+  <!-- Scale: 1px = €2.778 → €1M = 360px                 -->
+  <!-- ─────────────────────────────────────────────────── -->
+
+  <!-- Grid lines & Y-axis labels -->
+  <!-- 0 -->
+  <line x1="80" y1="420" x2="660" y2="420" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="74" y="424" text-anchor="end" font-size="10" fill="#888" dominant-baseline="middle">€0</text>
+
+  <!-- 250k -->
+  <line x1="80" y1="330" x2="660" y2="330" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="74" y="330" text-anchor="end" font-size="10" fill="#888" dominant-baseline="middle">€250k</text>
+
+  <!-- 500k -->
+  <line x1="80" y1="240" x2="660" y2="240" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="74" y="240" text-anchor="end" font-size="10" fill="#888" dominant-baseline="middle">€500k</text>
+
+  <!-- 750k -->
+  <line x1="80" y1="150" x2="660" y2="150" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="74" y="150" text-anchor="end" font-size="10" fill="#888" dominant-baseline="middle">€750k</text>
+
+  <!-- 1M -->
+  <line x1="80" y1="60" x2="660" y2="60" stroke="#e8e8e8" stroke-width="1"/>
+  <text x="74" y="60" text-anchor="end" font-size="10" fill="#888" dominant-baseline="middle">€1 Mio.</text>
+
+  <!-- Y-axis line -->
+  <line x1="80" y1="60" x2="80" y2="425" stroke="#ccc" stroke-width="1.5"/>
+  <!-- X-axis line -->
+  <line x1="80" y1="420" x2="660" y2="420" stroke="#ccc" stroke-width="1.5"/>
+
+  <!-- ─────────────────────────────────────────────────── -->
+  <!-- BARS                                                -->
+  <!-- Groups: Jahr 1 @ cx=190, Jahr 2 @ cx=380, Jahr 3 @ cx=570 -->
+  <!-- Bar width: 60, gap between bars in group: 16       -->
+  <!-- Konservativ (left): cx - 38; Optimistisch (right): cx + 38 -->
+  <!-- ─────────────────────────────────────────────────── -->
+
+  <!-- Revenue values (all /1M * 360 for height):
+       J1 konserv: 63.3k  → h=22.7 → top=397
+       J1 optimist: 180.1k → h=64.8 → top=355
+       J2 konserv: 195k   → h=70.2 → top=350
+       J2 optimist: 400k  → h=144  → top=276
+       J3 konserv: 493k   → h=177.5 → top=243
+       J3 optimist: 950k  → h=342  → top=78   -->
+
+  <!-- JAHR 1 -->
+  <!-- Konservativ -->
+  <rect x="128" y="397" width="60" height="23" rx="4" fill="#7fb3d6" opacity="0.85"/>
+  <text x="158" y="393" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">€63k</text>
+  <!-- Optimistisch -->
+  <rect x="204" y="355" width="60" height="65" rx="4" fill="#2980b9" opacity="0.85"/>
+  <text x="234" y="350" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">€180k</text>
+
+  <!-- JAHR 2 -->
+  <!-- Konservativ -->
+  <rect x="318" y="350" width="60" height="70" rx="4" fill="#7fb3d6" opacity="0.85"/>
+  <text x="348" y="345" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">€195k</text>
+  <!-- Optimistisch -->
+  <rect x="394" y="276" width="60" height="144" rx="4" fill="#2980b9" opacity="0.85"/>
+  <text x="424" y="271" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">€400k</text>
+
+  <!-- JAHR 3 -->
+  <!-- Konservativ -->
+  <rect x="508" y="243" width="60" height="177" rx="4" fill="#7fb3d6" opacity="0.85"/>
+  <text x="538" y="238" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">€493k</text>
+  <!-- Optimistisch -->
+  <rect x="584" y="78" width="60" height="342" rx="4" fill="#2980b9" opacity="0.85"/>
+  <text x="614" y="73" text-anchor="middle" font-size="9" fill="#2980b9" font-weight="600">€950k</text>
+
+  <!-- ─────────────────────────────────────────────────── -->
+  <!-- EBIT indicators (small colored strip on top of bar) -->
+  <!-- Negative = red, Positive = green                   -->
+  <!-- J1 konserv EBIT: -116.5k (negative → red marker)  -->
+  <!-- J1 optimist EBIT: -65.6k (negative)               -->
+  <!-- J2 konserv EBIT: -25.9k (negative)                -->
+  <!-- J2 optimist EBIT: +33.3k (positive → green)       -->
+  <!-- J3 konserv EBIT: +119.1k (positive)               -->
+  <!-- J3 optimist EBIT: +316.9k (positive)              -->
+  <!-- ─────────────────────────────────────────────────── -->
+
+  <!-- EBIT markers (colored dots on bars) -->
+  <circle cx="158" cy="400" r="5" fill="#b03a2e" stroke="white" stroke-width="1.5"/>
+  <circle cx="234" cy="358" r="5" fill="#b03a2e" stroke="white" stroke-width="1.5"/>
+  <circle cx="348" cy="353" r="5" fill="#b03a2e" stroke="white" stroke-width="1.5"/>
+  <circle cx="424" cy="279" r="5" fill="#1a7a3a" stroke="white" stroke-width="1.5"/>
+  <circle cx="538" cy="246" r="5" fill="#1a7a3a" stroke="white" stroke-width="1.5"/>
+  <circle cx="614" cy="81" r="5" fill="#1a7a3a" stroke="white" stroke-width="1.5"/>
+
+  <!-- Break-even annotation line between J2 and J3 -->
+  <line x1="456" y1="70" x2="456" y2="425" stroke="#1a7a3a" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.5"/>
+  <text x="460" y="82" font-size="9.5" fill="#1a7a3a" font-weight="600">Break-even</text>
+  <text x="460" y="95" font-size="9.5" fill="#1a7a3a">Q2–Q3 Jahr 2</text>
+
+  <!-- ─────────────────────────────────────────────────── -->
+  <!-- X-axis group labels -->
+  <!-- ─────────────────────────────────────────────────── -->
+  <text x="191" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#444">Jahr 1</text>
+  <text x="381" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#444">Jahr 2</text>
+  <text x="571" y="440" text-anchor="middle" font-size="12" font-weight="700" fill="#444">Jahr 3</text>
+
+  <text x="191" y="455" text-anchor="middle" font-size="10" fill="#888">Investitionsphase</text>
+  <text x="381" y="455" text-anchor="middle" font-size="10" fill="#888">Wachstumsphase</text>
+  <text x="571" y="455" text-anchor="middle" font-size="10" fill="#1a7a3a" font-weight="600">Profitabilitätsphase</text>
+
+  <!-- ─────────────────────────────────────────────────── -->
+  <!-- Legend -->
+  <!-- ─────────────────────────────────────────────────── -->
+  <rect x="200" y="472" width="14" height="12" rx="3" fill="#7fb3d6" opacity="0.85"/>
+  <text x="220" y="483" font-size="10" fill="#555">Konservativ</text>
+
+  <rect x="290" y="472" width="14" height="12" rx="3" fill="#2980b9" opacity="0.85"/>
+  <text x="310" y="483" font-size="10" fill="#555">Optimistisch</text>
+
+  <circle cx="400" cy="478" r="5" fill="#b03a2e" stroke="white" stroke-width="1.2"/>
+  <text x="412" y="483" font-size="10" fill="#555">EBIT negativ</text>
+
+  <circle cx="490" cy="478" r="5" fill="#1a7a3a" stroke="white" stroke-width="1.2"/>
+  <text x="502" y="483" font-size="10" fill="#555">EBIT positiv</text>
+
+</svg>

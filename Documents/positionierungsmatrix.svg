@@ -1,0 +1,84 @@
+<svg width="720" height="600" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+
+  <!-- Background -->
+  <rect width="720" height="600" fill="#ffffff" rx="12"/>
+
+  <!-- Title -->
+  <text x="360" y="40" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a1a" letter-spacing="0.3">Positionierungsmatrix — PrivateMind im Wettbewerbsumfeld</text>
+
+  <!-- Quadrant fills (center: 360, 315) -->
+  <!-- Top-left: Open-Source — cool blue tint -->
+  <rect x="90" y="90" width="270" height="225" fill="#eef6fb" rx="6"/>
+  <!-- Top-right: PrivateMind — green tint, slightly stronger -->
+  <rect x="360" y="90" width="270" height="225" fill="#e8f7ee" rx="6"/>
+  <!-- Bottom-left: Enterprise — red tint -->
+  <rect x="90" y="315" width="270" height="210" fill="#fdf0ef" rx="6"/>
+  <!-- Bottom-right: Cloud-KI — warm orange tint -->
+  <rect x="360" y="315" width="270" height="210" fill="#fdf5ee" rx="6"/>
+
+  <!-- Quadrant border lines -->
+  <!-- Horizontal axis -->
+  <line x1="90" y1="315" x2="630" y2="315" stroke="#444" stroke-width="2"/>
+  <!-- Vertical axis -->
+  <line x1="360" y1="90" x2="360" y2="525" stroke="#444" stroke-width="2"/>
+
+  <!-- Arrowheads — horizontal -->
+  <polygon points="630,315 618,309 618,321" fill="#444"/>
+  <polygon points="90,315 102,309 102,321" fill="#444"/>
+  <!-- Arrowheads — vertical -->
+  <polygon points="360,90 354,102 366,102" fill="#444"/>
+  <polygon points="360,525 354,513 366,513" fill="#444"/>
+
+  <!-- Axis labels -->
+  <text x="644" y="311" font-size="13" font-weight="700" fill="#333" dominant-baseline="middle">EINFACH</text>
+  <text x="76" y="311" font-size="13" font-weight="700" fill="#333" text-anchor="end" dominant-baseline="middle">KOMPLEX</text>
+  <text x="360" y="76" font-size="13" font-weight="700" fill="#333" text-anchor="middle">LOKAL / DATENSICHER</text>
+  <text x="360" y="543" font-size="13" font-weight="700" fill="#333" text-anchor="middle">CLOUD / DATEN EXTERN</text>
+
+  <!-- Axis sub-labels -->
+  <text x="644" y="327" font-size="10" fill="#777" dominant-baseline="middle">(schlüsselfertig)</text>
+  <text x="76" y="329" font-size="10" fill="#777" text-anchor="end">(IT-Expertise nötig)</text>
+
+  <!-- ─────────────────────────────────────── -->
+  <!-- BUBBLES -->
+  <!-- ─────────────────────────────────────── -->
+
+  <!-- Open-Source (top-left) -->
+  <circle cx="205" cy="193" r="72" fill="#2980b9" opacity="0.82"/>
+  <text x="205" y="186" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700" fill="white">Open-Source</text>
+  <text x="205" y="204" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#cce8f8">Ollama, LocalAI, LM Studio</text>
+
+  <!-- PrivateMind (top-right) — largest, most prominent -->
+  <!-- Outer glow ring -->
+  <circle cx="488" cy="188" r="88" fill="none" stroke="#27ae60" stroke-width="2.5" stroke-dasharray="6,4" opacity="0.55"/>
+  <!-- Main bubble -->
+  <circle cx="488" cy="188" r="82" fill="#1a7a3a" opacity="0.93"/>
+  <!-- Inner highlight -->
+  <ellipse cx="465" cy="158" rx="28" ry="18" fill="white" opacity="0.08"/>
+  <!-- Text -->
+  <text x="488" y="178" text-anchor="middle" dominant-baseline="middle" font-size="17" font-weight="700" fill="white" letter-spacing="0.5">PrivateMind</text>
+  <text x="488" y="200" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#a8f0c0">◀ einzige Marktlücke</text>
+
+  <!-- Enterprise (bottom-left) -->
+  <circle cx="205" cy="405" r="68" fill="#b03a2e" opacity="0.82"/>
+  <text x="205" y="397" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700" fill="white">Enterprise</text>
+  <text x="205" y="415" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#f8c0bb">Hochpreisig, komplex</text>
+
+  <!-- Cloud-KI (bottom-right) -->
+  <circle cx="483" cy="405" r="72" fill="#c0580a" opacity="0.82"/>
+  <text x="483" y="395" text-anchor="middle" dominant-baseline="middle" font-size="13" font-weight="700" fill="white">Cloud-KI</text>
+  <text x="483" y="413" text-anchor="middle" dominant-baseline="middle" font-size="11" fill="#fdd4b8">OpenAI · Copilot · Gemini</text>
+
+  <!-- ─────────────────────────────────────── -->
+  <!-- ANNOTATION: "Keine Konkurrenz" tag -->
+  <!-- ─────────────────────────────────────── -->
+  <rect x="376" y="270" width="196" height="36" rx="6" fill="#e8f7ee" stroke="#27ae60" stroke-width="1.2"/>
+  <text x="474" y="285" text-anchor="middle" font-size="10" fill="#1a7a3a" font-weight="600">Kein etablierter Wettbewerber</text>
+  <text x="474" y="299" text-anchor="middle" font-size="10" fill="#1a7a3a">in diesem Quadranten</text>
+
+  <!-- ─────────────────────────────────────── -->
+  <!-- LEGEND / SUBTITLE -->
+  <!-- ─────────────────────────────────────── -->
+  <text x="360" y="572" text-anchor="middle" font-size="10" fill="#999" font-style="italic">PrivateMind GmbH — Businessplan v2.0, Stand Juni 2026</text>
+
+</svg>
