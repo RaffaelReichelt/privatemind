@@ -133,7 +133,7 @@
 ### Erste Erfolge:
 
 📌 **Gründung:** April 2026
-📌 **Demo-Gerät:** ASUS Ascent GX10 (2TB) im Einsatz
+📌 **Demo-Gerät:** ASUS Ascent GX10 (4TB) im Einsatz ✓
 📌 **Pilotkunden:** Gespräche mit 3 Kanzleien in Dresden
 📌 **Förderanträge:** EXIST Sachsen, KfW Gründerkredit
 
@@ -163,7 +163,7 @@
 
 ### Gründungskosten (einmalig):
 - GmbH-Gründung: €25.000
-- Demo-Gerät: €3.550
+- Demo-Gerät: €0 *(GX10 4TB bereits vorhanden)*
 - Website & Branding: €5.000
 - Rechtsberatung: €4.000
 - Büroausstattung: €1.000

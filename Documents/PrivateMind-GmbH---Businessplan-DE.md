@@ -1,6 +1,6 @@
 # PrivateMind GmbH — Businessplan
 
-*Version 2.0 — Internes Steuerungsdokument, Stand: Juni 2026*
+*Version 2.0 — Internes Steuerungsdokument, Stand: Juli 2026*
 *Erstellt von: Raffael Reichelt (Gründer)*
 
 > **Hinweis zur Nutzung:** Dieses Dokument dient als internes Steuerungsinstrument. Es enthält operative Ziele, Entscheidungsgrundlagen und Planungsannahmen, die regelmäßig überprüft und aktualisiert werden. Zahlen sind Planwerte auf Basis verfügbarer Marktdaten (Stand April 2026) und müssen durch Steuerberater und Rechtsanwalt validiert werden.
@@ -68,7 +68,7 @@ Vier Hardware-Stufen (Standard / Professional / Premium / Enterprise RZ) kombini
 ### Strategische Prioritäten 2026
 
 1. GmbH gründen & Gründungszuschuss sichern
-2. Demo-Gerät beschaffen, Dashboard-MVP <!-- **Minimum Viable Product** --> entwickeln
+2. Dashboard-MVP <!-- **Minimum Viable Product** --> entwickeln *(Demo-Gerät GX10 4TB bereits vorhanden ✓)*
 3. 3–5 Pilotkunden in DACH gewinnen und Referenzen aufbauen
 4. Englischsprachige Website und Vertriebsmaterialien live schalten
 5. Erste europäische Expansion vorbereiten
@@ -598,7 +598,7 @@ Dresden bietet strukturelle Vorteile, die für ein KI-Hardware-Startup in der Fr
 | Position | Betrag (netto, ca.) | Anmerkung |
 |---|---|---|
 | GmbH-Gründung (Notar, Handelsregister, Stammkapital) | €26.500 | Stammkapital €25.000 + ~€1.500 Gebühren |
-| Demo-/Testgerät (1× GX10, 2 TB) | €3.550 | Beschaffung so früh wie möglich |
+| Demo-/Entwicklungsgerät (1× GX10, 4 TB) | €0 | Bereits vorhanden ✓ |
 | Website & Branding | €3.000–€6.000 | Inkl. Domain, Hosting, Design-Grundlage |
 | Software-Entwicklung Dashboard MVP | €0 | Eigenleistung des Gründers |
 | Rechtsberatung (AGB, Verträge, DSGVO-Dokumentation) | €3.000–€5.000 | Einmalig, unbedingt nötig |
@@ -716,7 +716,7 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional-Tier 
 | **Technischer Fehler/Hardware-Ausfall beim Kunden** | Mittel | Hoch | 🟠 Erheblich | Betriebshaftpflicht; klare Haftungsbegrenzung in AGB; schneller Austauschprozess |
 | **Regulatory Surprise (EU AI Act neue Pflichten)** | Niedrig | Mittel | 🟡 Moderat | Rechtsberatung verfolgt EU AI Act; lokale Kontrolle ist compliance-vorteilhaft |
 | **Gründer fällt aus (Krankheit etc.)** | Niedrig | Hoch | 🟠 Erheblich | Versicherung (Berufsunfähigkeit), Notfall-Dokumentation, frühzeitig Netzwerk aufbauen |
-| **Demo-Gerät defekt/verfügbar** | Niedrig | Mittel | 🟡 Moderat | Beschaffung priorisieren; Backup-Lieferant identifizieren |
+| **Demo-Gerät defekt** | Niedrig | Mittel | 🟡 Moderat | GX10 4TB bereits vorhanden; Backup-Lieferant (Dell/Lenovo GB10) identifiziert |
 
 ### 9.2 Strategische Risikominimierung
 
@@ -740,7 +740,7 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 |---|---|---|---|
 | **Vor Monat 1** | GZ-Antrag ⚠️ | Arbeitslos melden (Tag 1 nach AU-Ende), Gründungszuschuss beantragen (VOR GmbH-Gründung!), IHK-Stellungnahme einholen, InnoStartBonus prüfen | GZ-Antrag eingereicht |
 | **Monat 1** | Rechtliche Gründung | GmbH-Notar (erst nach GZ-Bewilligung!), Gesellschaftervertrag, Handelsregistereintrag, Geschäftskonto eröffnen | GmbH eingetragen |
-| **Monat 1–2** | Infrastruktur | Demo-Gerät beschaffen, Entwicklungsumgebung aufbauen, Domain registrieren, E-Mail-Setup | Gerät läuft, Domain aktiv |
+| **Monat 1–2** | Infrastruktur | Entwicklungsumgebung aufbauen, E-Mail-Setup *(Demo-Gerät GX10 4TB und Domains bereits vorhanden ✓)* | Gerät konfiguriert, Domain aktiv |
 | **Monat 2–4** | Dashboard MVP | Chat-Interface, Dokument-Upload, Modellverwaltung, System-Monitor bauen | Interne Demo-fähig |
 | **Monat 2–4** | Rechtliche Grundlagen | AGB + Serviceverträge (Englisch), Datenschutzkonzept, Haftungsfragen klären | Verträge unterschriftsreif |
 | **Monat 3–5** | Pilotkunden | 3–5 Pilotkunden in DACH identifizieren und gewinnen, Installationen durchführen | Mindestens 2 zahlende Kunden |

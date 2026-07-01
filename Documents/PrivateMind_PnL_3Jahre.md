@@ -1,7 +1,7 @@
 # PrivateMind GmbH — Profit & Loss (3-Jahres-Planung)
 
-*Stand: Juni 2026 — Planwerte, nicht geprüft. Alle Beträge in EUR netto.*
-*Grundlage: Businessplan Version 2.0, aktualisiert Juni 2026 (Tier-Struktur + GF-Vergütung)*
+*Stand: Juli 2026 — Planwerte, nicht geprüft. Alle Beträge in EUR netto.*
+*Grundlage: Businessplan Version 2.0, aktualisiert Juli 2026 (Tier-Struktur + GF-Vergütung)*
 
 ---
 
@@ -407,4 +407,4 @@ OPERATING EXPENSES
 
 ---
 
-*Dokument: PrivateMind_PnL_3Jahre.md | Stand: Juni 2026 | Autor: Raffael Reichelt*
+*Dokument: PrivateMind_PnL_3Jahre.md | Stand: Juli 2026 | Autor: Raffael Reichelt*
