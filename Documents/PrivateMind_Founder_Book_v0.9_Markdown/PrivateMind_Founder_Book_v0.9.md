@@ -1,3 +1,10 @@
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+---
+
 # PrivateMind GmbH -- Founder Book 2026
 
 ## Version 0.9 -- Arbeitsentwurf
@@ -7,6 +14,26 @@
 
 > Dieses Dokument ist kein klassischer Businessplan. Es ist das
 > strategische Arbeitsbuch für den Aufbau der PrivateMind GmbH.
+
+------------------------------------------------------------------------
+
+## Inhaltsverzeichnis
+
+1.  [Die Vision](#1-die-vision)
+2.  [Die Gründergeschichte](#2-die-gr%C3%BCndergeschichte)
+3.  [Warum PrivateMind?](#3-warum-privatemind)
+4.  [Werte](#4-werte)
+5.  [Markt](#5-markt)
+6.  [Produkte](#6-produkte)
+7.  [Die eigentliche Innovation](#7-die-eigentliche-innovation)
+8.  [Vertrieb](#8-vertrieb)
+9.  [Marketing](#9-marketing)
+10. [Roadmap](#10-roadmap)
+11. [Finanzen](#11-finanzen)
+12. [Risiken](#12-risiken)
+13. [Erfolgsfaktoren](#13-erfolgsfaktoren)
+14. [Persönliche Gedanken](#14-pers%C3%B6nliche-gedanken)
+15. [Anhänge](#anh%C3%A4nge)
 
 ------------------------------------------------------------------------
 
@@ -172,10 +199,11 @@ Die Kernprobleme vieler Unternehmen sind:
 -   **Steigende Komplexität** -- Modelle, Hardware und Regulatorik
     entwickeln sich schneller, als ein KMU nebenbei mitverfolgen kann.
 
-PrivateMind macht KI einfach, sicher und lokal nutzbar -- als
-schlüsselfertiger, laufend betreuter Service statt als
-Selbstbau-Projekt. Die ausführliche Herleitung aus Marktproblem und
-Marktlücke steht in [Kapitel 5](#5-markt).
+Aus diesen Problemen folgt der Anspruch: KI einfach, sicher und lokal
+nutzbar machen -- als Service, nicht als Selbstbau-Projekt. Was das für
+das eigentliche Produkt von PrivateMind bedeutet, vertieft
+[Kapitel 7](#7-die-eigentliche-innovation); die Herleitung aus
+Marktproblem und Marktlücke steht in [Kapitel 5](#5-markt).
 
 ------------------------------------------------------------------------
 
@@ -336,17 +364,17 @@ PrivateMind verkauft keine Hardware.
 PrivateMind verkauft **Vertrauen in Künstliche Intelligenz.**
 
 Die Hardware (ASUS Ascent GX10) ist frei am Markt erhältlich -- jeder
-könnte sie kaufen. Der eigentliche Wert entsteht durch das, was
-PrivateMind daraus macht: ein fertig konfiguriertes, laufend gepflegtes
-System, das ein Kanzleiinhaber oder Praxisbetreiber ohne eigene
-IT-Abteilung bedienen kann, und dessen Betrieb er sich merken kann wie
-den eines Druckers -- nicht wie den eines Rechenzentrums.
+könnte sie kaufen, auch günstiger als bei PrivateMind. Der eigentliche
+Wert entsteht durch das, was PrivateMind daraus macht: ein fertig
+konfiguriertes, laufend gepflegtes System mit den passenden Modellen
+und der RAG-Anbindung an die eigenen Dokumente, das ein Kanzleiinhaber
+oder Praxisbetreiber ohne eigene IT-Abteilung bedienen kann -- dessen
+Betrieb er sich merken kann wie den eines Druckers, nicht wie den eines
+Rechenzentrums.
 
-Selbst wenn ein Kunde dieselbe Hardware anderswo günstiger fände, fehlt
-ihm ohne PrivateMind das eingerichtete System: die passenden Modelle,
-die RAG-Anbindung an seine Dokumente, den eingespielten Support. Genau
-das ist die Verteidigungslinie -- nicht ein Patent, sondern ein
-funktionierendes Vertrauensverhältnis.
+Genau dieses eingerichtete System, nicht die Hardware, ist die
+Verteidigungslinie -- kein Patent, sondern ein funktionierendes
+Vertrauensverhältnis.
 
 ------------------------------------------------------------------------
 
@@ -405,12 +433,32 @@ Vollständige Ansprache-Templates und Sprachstrategie siehe Anhang
 
 # 9. Marketing
 
--   LinkedIn
--   Whitepaper
--   YouTube
--   Vorträge
--   Pilotkunden
--   Case Studies
+Marketing folgt in der Startphase demselben Prinzip wie der Vertrieb
+(siehe [Kapitel 8](#8-vertrieb)): organisch vor bezahlt, Vertrauen vor
+Reichweite. Ein dediziertes Marketingbudget existiert in Phase 1 nicht
+-- Content und Präsenz entstehen aus der Arbeitszeit des Gründers,
+nicht aus Ad-Spend, passend zur schlanken Kostenstruktur aus
+[Kapitel 11](#11-finanzen). Bezahlte Kanäle kommen erst ab Phase 2
+gezielt hinzu, sobald erste Case Studies vorliegen.
+
+## Content-Säulen
+
+-   **LinkedIn** -- gründergeführtes Thought Leadership: Einblicke aus
+    30 Jahren IT-Beratung, Einordnung von AI-Act- und
+    DSGVO-Entwicklungen, Reichweitenaufbau im DACH-Mittelstand.
+-   **Whitepaper** -- branchenspezifische Compliance-Leitfäden (z. B.
+    "KI in der Kanzlei: § 203 StGB und der AI Act") als Lead-Magnet für
+    die Primärzielgruppe aus [Kapitel 5](#5-markt).
+-   **YouTube** -- kurze Produkt-Demos und Erklärvideos, die dasselbe
+    Format wie die Live-Demo im Vertrieb nutzen ("Ihr Vertrag in
+    10 Sekunden zusammengefasst -- lokal, ohne Cloud").
+-   **Vorträge** -- Auftritte bei Silicon Saxony und regionalen
+    Unternehmerveranstaltungen, ab Phase 2 zusätzlich Fachmessen
+    (DMEXCO, IT-Security-Messen).
+-   **Pilotkunden** -- die ersten 3--5 Kunden aus Vertriebsphase 1
+    liefern die ersten belastbaren Referenzen (siehe [Kapitel 8](#8-vertrieb)).
+-   **Case Studies** -- aus den Pilotkunden entwickelte
+    Referenzgeschichten, zentraler Vertriebsbeschleuniger ab Phase 3.
 
 ## Kernbotschaften
 
@@ -436,6 +484,19 @@ Phase 2 (Europa): Content Marketing, monatliches Webinar, Präsenz auf
 Fachveranstaltungen (DMEXCO, IT-Security-Messen). Phase 3
 (Skalierung): Case Studies, Empfehlungsprogramm, Präsenz auf
 SaaS-Vergleichsportalen (G2, Capterra).
+
+## Marketing-Kennzahlen
+
+| Kennzahl | Monat 6 | Monat 12 | Jahr 2 |
+|---|---|---|---|
+| Content-Veröffentlichungen/Monat | 2--4 | 4--6 | 6--8 |
+| Website-Besucher/Monat | ~200 | ~800 | ~3.000 |
+| Qualifizierte Leads aus Marketing/Monat | 1--2 | 3--5 | 8--12 |
+| Webinar-/Vortrags-Teilnehmer (kumuliert) | -- | 50+ | 300+ |
+
+Diese Werte sind grobe Zielgrößen, keine Prognose -- sie dienen als
+Fortschrittsindikator dafür, ob Content und Präsenz genug qualifizierte
+Gespräche für die Vertriebs-KPIs aus [Kapitel 8](#8-vertrieb) erzeugen.
 
 Detaillierte Ansprache-Templates und Vertriebsmetriken siehe
 [Kapitel 8](#8-vertrieb) und Anhang *Marketingplan*.
@@ -499,11 +560,9 @@ unwiderruflich sperren -- entsprechend strikt ist die Reihenfolge im
 
 # 11. Finanzen
 
--   GuV
--   Cashflow
--   Liquidität
--   Bilanz
--   Szenarien
+Die folgenden Abschnitte geben die strategische Sicht auf
+Kostenstruktur, GuV, Liquidität und Bilanz; die vollständigen
+Zahlenwerke stehen im Anhang *Finanzmodell*.
 
 ## Kostenstruktur
 
@@ -513,6 +572,39 @@ Ein-Personen-Startphase: ca. 11.500 €/Monat (davon 9.600 €
 GF-Vollkosten bei 5.000 € netto Gründergehalt) -- rund 138.000 €/Jahr.
 Demo-Gerät (GX10, 4 TB) und Domains sind bereits vorhanden, senken den
 Kapitalbedarf entsprechend.
+
+## GuV im Überblick
+
+Jahr 1 ist bewusst ein Verlustjahr: Selbst im optimistischen Szenario
+(siehe unten) deckt der Umsatz die Fixkosten noch nicht annähernd.
+Operativer Break-even (MRR deckt Fixkosten) wird für Q2/Q3 Jahr 2
+erwartet, bei ca. 17 Professional-Kunden bzw. realistisch 20--25
+aktiven Kunden im Mix. Ab Jahr 3 soll der Serviceumsatz (Abo + Setup)
+mindestens 55 % des Gesamtumsatzes stellen, damit Hardware-Verkäufe
+Bonus sind, nicht Überlebensbedingung (siehe [Kapitel 5](#5-markt)).
+Die vollständige Monatsplanung mit GuV je Kostenart steht im Anhang
+*Finanzmodell* (PnL 3 Jahre).
+
+## Liquidität und Cashflow
+
+Steuerungsgröße im ersten Jahr ist nicht die GuV, sondern die
+Liquidität: Der laufende Cash-Bedarf entspricht der Fixkostenbasis von
+rund 11.500 €/Monat. Stammkapital, KfW-Kredit, SAB-Darlehen und
+Gründungszuschuss sichern zusammen einen Runway von über 12 Monaten
+*auch bei null Umsatz* (siehe Kapitalbedarf unten). Solange dieser
+Puffer hält, entsteht kein Investoren- oder Wachstumszwang. Die
+monatsgenaue Liquiditätsplanung steht im Anhang *Finanzmodell*
+(Kapitalbedarfsplan).
+
+## Bilanz
+
+Zum Start steht 25.000 € Stammkapital als Eigenkapital einer
+Fremdkapitalaufnahme von bis zu 145.000 € (KfW + SAB) gegenüber. Die
+Eigenkapitalquote sinkt in der Anlaufphase durch die erwarteten
+Anfangsverluste zunächst deutlich, bevor sie mit dem operativen
+Break-even ab Jahr 2 wieder steigt -- ein bei der Kreditvergabe bereits
+einkalkulierter Verlauf. Die detaillierte Bilanzplanung über die
+ersten drei Jahre steht im Anhang *Businessplan*.
 
 ## Zwei Szenarien für Jahr 1
 
@@ -549,16 +641,16 @@ ohne Investorendruck.
 
 | Risiko | Score | Gegenmaßnahme |
 |---|---|---|
-| **Langsame Kundenakquise** | 🔴 Kritisch | Niedrige Fixkosten halten, Pilotkunden früh gewinnen, Fördermittel als Puffer |
-| **Steigende Speicherpreise (LPDDR5X)** | 🟠 Erheblich | Bundle-Modell puffert, mehrere OEM-Quellen, Preisgleitklausel in AGB |
-| **Abhängigkeit NVIDIA/ASUS** | 🟠 Erheblich | Dell/Lenovo/HP als qualifizierte Backup-Lieferanten; Service-Wert ist hardware-agnostisch |
-| **Große Systemhäuser kopieren das Modell** | 🟠 Erheblich | First-Mover-Vorteil nutzen, Nische durch Spezialisierung verteidigen, Referenzen früh aufbauen |
-| **Technischer Fehler/Hardware-Ausfall beim Kunden** | 🟠 Erheblich | Betriebshaftpflicht, klare Haftungsbegrenzung in AGB, schneller Austauschprozess |
-| **Gründer fällt aus (Krankheit etc.)** | 🟠 Erheblich | Berufsunfähigkeitsversicherung, Notfall-Dokumentation, frühzeitig Netzwerk aufbauen |
-| **Cloud-KI wird als "sicher genug" wahrgenommen** | 🟡 Moderat | Regulierte Branchen bleiben; DSGVO bleibt; Positionierung auf Compliance schärfen |
-| **Support-Überlastung im Solo-Betrieb** | 🟡 Moderat | Abo-Tiering begrenzt Anfragevolumen, Monitoring automatisieren, klare SLA-Grenzen |
-| **Regulatorische Überraschung (neue AI-Act-Pflichten)** | 🟡 Moderat | Rechtsberatung verfolgt EU AI Act laufend; lokale Kontrolle ist compliance-vorteilhaft |
-| **Demo-Gerät defekt** | 🟡 Moderat | GX10 4 TB bereits vorhanden; Backup-Lieferant identifiziert |
+| **Langsame Kundenakquise** | Kritisch | Niedrige Fixkosten halten, Pilotkunden früh gewinnen, Fördermittel als Puffer |
+| **Steigende Speicherpreise (LPDDR5X)** | Erheblich | Bundle-Modell puffert, mehrere OEM-Quellen, Preisgleitklausel in AGB |
+| **Abhängigkeit NVIDIA/ASUS** | Erheblich | Dell/Lenovo/HP als qualifizierte Backup-Lieferanten; Service-Wert ist hardware-agnostisch |
+| **Große Systemhäuser kopieren das Modell** | Erheblich | First-Mover-Vorteil nutzen, Nische durch Spezialisierung verteidigen, Referenzen früh aufbauen |
+| **Technischer Fehler/Hardware-Ausfall beim Kunden** | Erheblich | Betriebshaftpflicht, klare Haftungsbegrenzung in AGB, schneller Austauschprozess |
+| **Gründer fällt aus (Krankheit etc.)** | Erheblich | Berufsunfähigkeitsversicherung, Notfall-Dokumentation, frühzeitig Netzwerk aufbauen |
+| **Cloud-KI wird als "sicher genug" wahrgenommen** | Moderat | Regulierte Branchen bleiben; DSGVO bleibt; Positionierung auf Compliance schärfen |
+| **Support-Überlastung im Solo-Betrieb** | Moderat | Abo-Tiering begrenzt Anfragevolumen, Monitoring automatisieren, klare SLA-Grenzen |
+| **Regulatorische Überraschung (neue AI-Act-Pflichten)** | Moderat | Rechtsberatung verfolgt EU AI Act laufend; lokale Kontrolle ist compliance-vorteilhaft |
+| **Demo-Gerät defekt** | Moderat | GX10 4 TB bereits vorhanden; Backup-Lieferant identifiziert |
 
 ## Strategische Risikominimierung
 
@@ -653,8 +745,10 @@ referenziert statt dupliziert:
     Sprachstrategie, KPIs); eigenständige Pläne stehen noch aus
 -   **Gründungs-Terminplan** -- `PrivateMind_Terminplan_Gruendung.md`
 -   **Gesellschaftsvertrag** --
-    `PrivateMind_Gesellschaftsvertrag_Entwurf.md` (Einzelgründer) /
-    `PrivateMind_Gesellschaftsvertrag_Entwurf_V2_ZweiGesellschafter.md`
+    `PrivateMind_Gesellschaftsvertrag_Entwurf.md` (Einzelgründer; aktuell
+    maßgeblicher Stand). Der Zwei-Gesellschafter-Entwurf liegt archiviert
+    unter `../Archiv/PrivateMind_Gesellschaftsvertrag_Entwurf_V2_ZweiGesellschafter.md`
+    -- Option ist nicht verworfen, aber derzeit nicht aktiv verfolgt.
 -   **Preislisten** -- Kapitel 5 im Businessplan (Hardware- und
     Abo-Preise je Tier)
 -   **Förderunterlagen** -- Kapitel 11 im Businessplan
