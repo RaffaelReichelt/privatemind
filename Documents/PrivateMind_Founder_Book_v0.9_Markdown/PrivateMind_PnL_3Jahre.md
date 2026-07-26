@@ -50,7 +50,7 @@
 
 ## 2. Drei-Jahres-Übersicht
 
-![Umsatz- und Ergebnisentwicklung 3 Jahre](umsatzentwicklung.svg)
+![Umsatz- und Ergebnisentwicklung 3 Jahre](../assets/umsatzentwicklung.svg)
 
 ### Konservatives Szenario
 

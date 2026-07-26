@@ -1,3 +1,10 @@
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+---
+
 # Kapitalbedarfsplan
 ## PrivateMind GmbH (in Gründung)
 
@@ -23,25 +30,19 @@
 | Marketing-Startmaterialien (Pitch Deck, Broschüren) | €750 |
 | **Summe Gründungskosten** | **€6.700** |
 
-### 1.2 Sachinvestitionen (Anlagevermögen)
-
-| Position | Betrag (netto) |
-|---|---:|
-| Büroerstausstattung & IT-Peripherie | €1.500 |
-| **Summe Sachinvestitionen** | **€1.500** |
-
-### 1.3 Vorhandenes Anlagevermögen (bereits erworben, kein Finanzierungsbedarf)
+### 1.2 Vorhandenes Anlagevermögen (bereits erworben, kein Finanzierungsbedarf)
 
 | Position | Geschätzter Wert |
 |---|---:|
 | ASUS Ascent GX10, 4 TB NVMe (Demo-/Entwicklungsgerät) — bereits vorhanden | ~€4.200 |
 | Domains privatemind.eu / privatemind.de — bereits registriert | ~€50 |
 | Website auf Odoo 18.0 — bereits erstellt, Launch steht aus | ~€4.000 Eigenleistung |
-| **Summe vorhandenes Anlagevermögen** | **~€8.250** |
+| Büroerstausstattung & IT-Peripherie — bereits vorhanden | ~€1.500 |
+| **Summe vorhandenes Anlagevermögen** | **~€9.750** |
 
-*Diese Positionen sind bereits vorhanden und reduzieren den Finanzierungsbedarf entsprechend. Odoo-Hosting-Kosten (SaaS oder Self-Hosted) sind in den Software-Lizenzen §2.1 enthalten.*
+*Diese Positionen sind bereits vorhanden und reduzieren den Finanzierungsbedarf entsprechend. Sachinvestitionen entfallen damit vollständig aus dem Kapitalbedarf. Odoo-Hosting-Kosten (SaaS oder Self-Hosted) sind in den Software-Lizenzen §2.1 enthalten.*
 
-### 1.4 Stammkapital (Eigenkapital GmbH)
+### 1.3 Stammkapital (Eigenkapital GmbH)
 
 | Position | Betrag |
 |---|---:|
@@ -49,7 +50,7 @@
 
 *Das Stammkapital verbleibt als Liquiditätspuffer in der GmbH und ist keine Ausgabe, sondern Eigenkapital.*
 
----
+<!-- pagebreak -->
 
 ## Teil 2: Betriebsmittelplan (Jahr 1)
 
@@ -79,21 +80,20 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 
 *Kumulierter Betriebsmittelbedarf Jahr 1 (konservatives Szenario): ~€110.000*
 
----
+<!-- pagebreak -->
 
 ## Teil 3: Gesamtkapitalbedarf
 
 | Bedarfsposition | Betrag |
 |---|---:|
 | Gründungskosten (einmalig) | €6.700 |
-| Sachinvestitionen (Büroerstausstattung) | €1.500 |
 | Betriebsmittel Jahr 1 (Fehlbetrag Fixkosten ./. Einnahmen) | €110.000 |
-| Liquiditätspuffer / Reserve (~10 %) | €12.500 |
-| **Gesamtkapitalbedarf (GmbH)** | **€130.700** |
+| Liquiditätspuffer / Reserve (~10 %) | €11.700 |
+| **Gesamtkapitalbedarf (GmbH)** | **€128.400** |
 
-*Gerundet auf: **€131.000** (konservative Planung)*
+*Gerundet auf: **€129.000** (konservative Planung)*
 
-*Hinweis: Demo-/Entwicklungsgerät (ASUS GX10, 4 TB, ~€4.200), Domains sowie Website (Odoo 18.0) bereits vorhanden — kein Finanzierungsbedarf für diese Positionen.*
+*Hinweis: Demo-/Entwicklungsgerät (ASUS GX10, 4 TB, ~€4.200), Domains, Website (Odoo 18.0) sowie Büroerstausstattung (~€1.500) bereits vorhanden — kein Finanzierungsbedarf für diese Positionen. Sachinvestitionen entfallen daher vollständig aus dem Kapitalbedarf.*
 
 ---
 
@@ -104,11 +104,11 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 | Finanzierungsquelle | Art | Betrag | Zeitpunkt |
 |---|---|---:|---|
 | Eigenkapital (Stammkapital) | Eigenkapital | €25.000 | Bei Gründung |
-| KfW ERP-Gründerkredit StartGeld | Fremdkapital (Darlehen) | €100.000 | ≤ 3 Monate nach Gründung |
+| KfW ERP-Gründerkredit StartGeld | Fremdkapital (Darlehen) | €100.000 | innerhalb von 3 Monaten nach Gründung |
 | SAB Mikrodarlehen Sachsen | Fremdkapital (Darlehen) | €20.000 | Ab Monat 3 |
 | **Summe GmbH-Finanzierung** | | **€145.000** | |
-| **Kapitalbedarf GmbH** | | **€138.250** | |
-| **Puffer** | | **€6.750** | |
+| **Kapitalbedarf GmbH** | | **€128.400** | |
+| **Puffer** | | **€16.600** | |
 
 ### 4.2 Persönliche Finanzierung des Gründers (außerhalb GmbH)
 
@@ -120,17 +120,17 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 
 *Der Gründungszuschuss sichert die persönliche Lebensführung des Gründers in der Aufbauphase und ist von der GmbH-Finanzierung vollständig unabhängig. Er reduziert die persönliche Abhängigkeit vom GmbH-Gehalt in der Anlaufphase.*
 
----
+<!-- pagebreak -->
 
 ## Teil 5: Gegenüberstellung Kapitalbedarfs- und Finanzierungsplan
 
 | | Betrag |
 |---|---:|
-| **Gesamtkapitalbedarf GmbH** | **€130.700** |
+| **Gesamtkapitalbedarf GmbH** | **€128.400** |
 | — Eigenkapital (Stammkapital) | -€25.000 |
 | — KfW ERP StartGeld | -€100.000 |
 | — SAB Mikrodarlehen | -€20.000 |
-| **Verbleibender Bedarf** | **-€14.300** *(gedeckt durch Puffer)* |
+| **Verbleibender Bedarf** | **-€16.600** *(gedeckt durch Puffer)* |
 
 **Ergebnis: Der Kapitalbedarf ist vollständig gedeckt. Kein externer Investor erforderlich.**
 
@@ -146,7 +146,7 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 
 *Das Unternehmen ist ab Q3 Jahr 2 operativ break-even (ca. 20–25 aktive Kunden, MRR ~€11.500/Monat). Der Schuldendienst ab Jahr 2 (~€2.275/Monat) ist aus dem laufenden Cashflow darstellbar.*
 
----
+<!-- pagebreak -->
 
 ## Teil 7: Liquiditätsvorschau Jahr 1 (konservatives Szenario)
 
@@ -168,7 +168,7 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 
 *Maximalem Liquiditätsbedarf Ende Jahr 1: ca. €110.000 — gedeckt durch Stammkapital (€25.000) + KfW (€100.000) = €125.000 verfügbar. Puffer: ~€15.000.*
 
----
+<!-- pagebreak -->
 
 ## Erklärung
 

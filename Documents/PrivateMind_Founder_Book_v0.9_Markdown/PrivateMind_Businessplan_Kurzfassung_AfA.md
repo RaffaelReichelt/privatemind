@@ -1,3 +1,10 @@
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+---
+
 # Businessplan Kurzfassung
 ## Gründungszuschuss gemäß § 93 SGB III
 
@@ -20,6 +27,7 @@
 Jahrzehntelange Berufserfahrung als Softwareentwickler in der IT-Branche. Tiefes praktisches Wissen in den Bereichen Systemarchitektur, Software-Entwicklung, Linux/Unix-Administration und IT-Infrastruktur. Erfahrung im technischen Kundensupport sowie in der Kommunikation und Erklärung komplexer technischer Sachverhalte gegenüber nicht-technischen Gesprächspartnern.
 
 **Relevante Kompetenzen für das geplante Unternehmen:**
+
 - Eigenständige Entwicklung der Kernprodukt-Software (kein externer Entwickler erforderlich)
 - Vollständige Handlungsfähigkeit bei Hardware-Setup, Systemkonfiguration und Netzwerkintegration
 - Direkte Kundenbetreuung ohne Delegation in der Frühphase
@@ -40,7 +48,7 @@ Das Alleinstellungsmerkmal: Alle Daten verbleiben ausschließlich im Unternehmen
 **Das Problem, das PrivateMind löst:**
 Moderne KI-Tools (z. B. ChatGPT, Microsoft Copilot) sind für viele Berufsgruppen nicht nutzbar, weil sie sensible Daten auf fremden Servern verarbeiten. Betroffen sind insbesondere Rechtsanwälte, Steuerberater, Ärzte, Unternehmensberater und Finanzdienstleister. Eine technisch eigenständige Lösung zu betreiben übersteigt die Kapazitäten dieser Unternehmen. PrivateMind schließt diese Lücke als vollständig betreuter "KI-Service aus einer Hand".
 
----
+<!-- pagebreak -->
 
 ## 3. Produkt und Dienstleistung
 
@@ -66,7 +74,7 @@ Laufende Betreuung inklusive: Betriebssystem- und Firmware-Updates, KI-Modell-Up
 
 Alternativ: All-Inclusive-Bundles (Hardware + Service, 36 Monate Laufzeit): €299–€999/Monat.
 
----
+<!-- pagebreak -->
 
 ## 4. Markt und Wettbewerb
 
@@ -74,6 +82,7 @@ Alternativ: All-Inclusive-Bundles (Hardware + Service, 36 Monate Laufzeit): €2
 Primär kleine und mittlere Unternehmen in Europa (DACH, Niederlande, UK, Nordics) mit 10–250 Mitarbeitern, die gesetzlich oder vertraglich verpflichtet sind, Kundendaten vertraulich zu behandeln.
 
 Hauptzielgruppen:
+
 - Rechtsanwaltskanzleien und Notariate (§ 203 StGB)
 - Steuerberatungs- und Wirtschaftsprüfungskanzleien (§ 30 AO)
 - Arztpraxen, Zahnarztpraxen, MVZ (Schweigepflicht, Patientendatenschutz)
@@ -85,6 +94,7 @@ In Europa gibt es ca. 23 Millionen KMU (Eurostat 2024). Laut Bitkom-Studien habe
 
 **Wettbewerb:**
 Derzeit existiert kein Wettbewerber, der alle folgenden Kriterien gleichzeitig erfüllt:
+
 - Lokaler Betrieb (kein Cloud-Datentransfer)
 - Schlüsselfertig (keine IT-Expertise beim Kunden nötig)
 - Laufend betreut (Updates, Support)
@@ -96,11 +106,12 @@ Cloud-Anbieter (OpenAI, Microsoft, Google) scheitern am Datenschutz. Open-Source
 **Wettbewerbsvorteil durch Timing:**
 Die Hardware-Generation NVIDIA GB10 ermöglicht erstmals leistungsfähige lokale KI auf Desktop-Hardware. Dieses technologische Fenster hat sich gerade geöffnet — PrivateMind kann als First Mover Marktanteile aufbauen.
 
----
+<!-- pagebreak -->
 
 ## 5. Marketing und Vertrieb
 
 **Phase 1 — Monat 1–6: Direktvertrieb in DACH**
+
 - Persönliche Ansprache von Kanzleiinhabern, Steuerberatern und Praxisinhabern über LinkedIn
 - Netzwerkarbeit im Silicon Saxony e.V. und beim Startup-Ökosystem dresden|exists
 - Live-Demos mit eigenem Demo-Gerät: "Ihr Vertrag wird in 10 Sekunden zusammengefasst — lokal, ohne Cloud"
@@ -108,6 +119,7 @@ Die Hardware-Generation NVIDIA GB10 ermöglicht erstmals leistungsfähige lokale
 - **Ziel:** 3–5 Pilotkunden, 2–3 zahlende Kunden
 
 **Phase 2 — Monat 6–12: Europäische Expansion**
+
 - Englischsprachige Website mit Produktkonfigurator und Demo-Anfrage
 - Content Marketing (Blog, LinkedIn) zu DSGVO-konformer KI
 - Gewinnung erster IT-Reseller in Niederlande, Nordics und UK
@@ -115,12 +127,13 @@ Die Hardware-Generation NVIDIA GB10 ermöglicht erstmals leistungsfähige lokale
 - **Ziel:** 10–15 Kunden europaweit, erste Inbound-Leads
 
 **Phase 3 — ab Jahr 2: Skalierung über Partner**
+
 - Strukturiertes Reseller-/MSP-Programm mit Marge-Sharing (15–25 %)
 - Veröffentlichung von Fallstudien aus Pilotenphase
 - Empfehlungsprogramm für Bestandskunden
 - **Ziel:** 30+ Kunden, stabiler Inbound-Kanal
 
----
+<!-- pagebreak -->
 
 ## 6. Finanzplanung
 
@@ -134,10 +147,10 @@ Die Hardware-Generation NVIDIA GB10 ermöglicht erstmals leistungsfähige lokale
 | Website & Branding (Odoo 18.0, bereits erstellt — noch nicht live) | €0 *(bereits vorhanden)* |
 | Rechtsberatung (AGB, Verträge, DSGVO) | €4.000 |
 | Steuerberatung (Erstberatung & Einrichtung) | €750 |
-| Büroerstausstattung & IT | €1.500 |
+| Büroerstausstattung & IT | €0 *(bereits vorhanden)* |
 | Versicherungen (Erstprämien) | €650 |
 | Marketing-Startmaterialien | €750 |
-| **Gesamt Gründungsaufwand (ohne Stammkapital)** | **~€12.700** |
+| **Gesamt Gründungsaufwand (ohne Stammkapital)** | **~€7.650** |
 
 ### 6.2 Monatliche Fixkosten (Betriebsphase Jahr 1)
 
@@ -149,10 +162,10 @@ Die Hardware-Generation NVIDIA GB10 ermöglicht erstmals leistungsfähige lokale
 | Betriebshaftpflicht & Versicherungen | €200 |
 | Software-Lizenzen & Tools | €150 |
 | Marketing & Werbung (digital) | €500 |
-| Steuerberater (laufend) | €350 |
-| Sonstiges (Telefon, Internet etc.) | €150 |
-| **Gesamt Fixkosten/Monat** | **~€11.350** |
-| **Jahres-Fixkosten** | **~€136.200** |
+| Steuerberater (laufend) | €400 |
+| Sonstiges (Telefon, Internet etc.) | €250 |
+| **Gesamt Fixkosten/Monat** | **~€11.500** |
+| **Jahres-Fixkosten** | **~€138.000** |
 
 *Die Geschäftsführer-Vergütung (€5.000 netto / ~€9.600 Vollkosten) ist expliziter Bestandteil der Finanzierungsplanung.*
 
@@ -167,6 +180,7 @@ Annahmen: 1 Neukunde pro Monat ab Monat 3, Kundenmix 65 % Starter-Abo / 35 % Pro
 | Jahr 3 | 70 | ~€25.000 | ~€493.000 |
 
 **Umsatzzusammensetzung Jahr 1 (konservativ):**
+
 - Hardware-Marge: €11.200
 - Setup-Gebühren: €8.000
 - Abo-Erlöse: €9.000
@@ -195,7 +209,7 @@ Annahmen: 1 Neukunde pro Monat ab Monat 3, Kundenmix 65 % Starter-Abo / 35 % Pro
 
 Der Gründungszuschuss der AfA fließt dem Gründer persönlich zu und sichert die persönliche Lebensführung in der Aufbauphase. Er ist von der GmbH-Finanzierung unabhängig und ergänzt diese.
 
----
+<!-- pagebreak -->
 
 ## 7. Tragfähigkeitsnachweis
 
@@ -213,7 +227,7 @@ Der Gründungszuschuss der AfA fließt dem Gründer persönlich zu und sichert d
 
 6. **Gründerqualifikation passt exakt zum Vorhaben:** Softwareentwicklung, Linux-Systemadministration und technischer Kundensupport sind die Kernkompetenzen, die das Produkt erfordert — und die der Gründer vollständig mitbringt.
 
----
+<!-- pagebreak -->
 
 ## 8. Erklärung
 

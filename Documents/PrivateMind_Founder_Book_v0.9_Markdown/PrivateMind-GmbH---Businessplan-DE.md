@@ -1,3 +1,10 @@
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+---
+
 # PrivateMind GmbH — Businessplan
 
 *Version 2.0 — Internes Steuerungsdokument, Stand: Juli 2026*
@@ -24,7 +31,7 @@
 
 * [Anhang](#anhang)
 
----
+<!-- pagebreak -->
 
 ## 1. Executive Summary
 
@@ -68,12 +75,12 @@ Vier Hardware-Stufen (Standard / Professional / Premium / Enterprise RZ) kombini
 ### Strategische Prioritäten 2026
 
 1. GmbH gründen & Gründungszuschuss sichern
-2. Dashboard-MVP <!-- **Minimum Viable Product** --> entwickeln *(Demo-Gerät GX10 4TB bereits vorhanden ✓)*
+2. Dashboard-MVP <!-- **Minimum Viable Product** --> entwickeln *(Demo-Gerät GX10 4TB bereits vorhanden)*
 3. 3–5 Pilotkunden in DACH gewinnen und Referenzen aufbauen
 4. Englischsprachige Website und Vertriebsmaterialien live schalten
 5. Erste europäische Expansion vorbereiten
 
----
+<!-- pagebreak -->
 
 ## 2. Problem & Marktchance
 
@@ -98,14 +105,17 @@ KMU-typisch: keine dedizierte IT-Abteilung, keine ML<!-- Machine Learning-->-Exp
 
 Die aktuelle Angebotslandschaft lässt eine spezifische KMU-Gruppe systematisch im Stich:
 
-![Marktlücke](marktluecke.svg)
+![Marktlücke](../assets/marktluecke.svg)
 
 Es gibt derzeit kein Angebot, das gleichzeitig erfüllt:
-- ✅ Lokal betrieben (kein Cloud-Datentransfer)
-- ✅ Schlüsselfertig (keine IT-Expertise nötig)
-- ✅ Laufend betreut (Updates, Support, Weiterentwicklung)
-- ✅ KMU-Preisrahmen (unter €1.000/Monat all-in)
-- ✅ Unternehmensqualität der KI-Modelle (70B+ Parameter)
+
+- Lokal betrieben (kein Cloud-Datentransfer)
+- Schlüsselfertig (keine IT-Expertise nötig)
+- Laufend betreut (Updates, Support, Weiterentwicklung)
+- KMU-Preisrahmen (unter €1.000/Monat all-in)
+- Unternehmensqualität der KI-Modelle (70B+ Parameter)
+
+
 
 ### Die Chance
 
@@ -113,7 +123,7 @@ Es gibt derzeit kein Angebot, das gleichzeitig erfüllt:
 
 Der Zeitpunkt ist ideal: Die Hardware-Generation des NVIDIA GB10 Grace Blackwell ermöglicht erstmals Enterprise-Grade LLM-Inferenz auf Desktop-Hardware. Was vor 18 Monaten noch ein Rechenzentrum benötigte, passt heute in eine Schachtel von 15×15×5 cm und verbraucht 240 Watt. Das technologische Fenster öffnet sich gerade — PrivateMind kann als First Mover diesen Markt definieren.
 
----
+<!-- pagebreak -->
 
 ## 3. Marktanalyse
 
@@ -152,6 +162,7 @@ Das wirtschaftlich attraktivste Primärsegment sind Unternehmen mit gesetzlicher
 | Finanzdienstleister (unabhängig) | 2–20 MA | DORA, MiFID II | Hoch |
 
 **Charakteristik des Idealkunden:**
+
 - Regelmäßige Arbeit mit vertraulichen Dokumenten (Verträge, Gutachten, Patientenakten)
 - 1–5 Mitarbeiter, die täglich mit KI-gestütztem Schreiben, Zusammenfassen oder Recherchieren profitieren würden
 - Entscheidungsträger ist der Inhaber/Geschäftsführer (kurze Vertriebszyklen)
@@ -169,7 +180,7 @@ IT-Systemhäuser und MSPs, die ihren KMU-Kunden eine White-Label-KI-Lösung anbi
 
 Konservative SAM-Berechnung für den europäischen Fokusmarkt:
 
-![Marktgröße TAM SAM SOM](marktgroesse.svg)
+![Marktgröße TAM SAM SOM](../assets/marktgroesse.svg)
 
 ### 3.4 Wettbewerbsanalyse
 
@@ -184,11 +195,15 @@ Konservative SAM-Berechnung für den europäischen Fokusmarkt:
 | NVIDIA DGX Spark (direkt) | Hardware für Entwickler | Gleiche Hardware, NVIDIA-Marke | Kein Service, kein KMU-Support, teurer als ASUS GX10 | Service + günstigere Hardware |
 | Dell/HP/Lenovo GB10-Systeme | Hardware-Anbieter | Hersteller-Support | Kein KI-spezifischer Service, höherer Hardware-Preis | Spezialisierung, KMU-Fokus |
 | Lokale IT-Systemhäuser | IT-Dienstleister | Regionale Präsenz, Kundenvertrauen | Individuallösungen = teuer, kein standardisiertes KI-Angebot, fehlendes LLM-Know-how | Standardisiert, LLM-spezialisiert |
+| DATUREX GmbH (Dresden) | Regionale KI-Beratung/Implementierung | Regionale Präsenz im selben Markt (Dresden); angrenzender Datenschutzbeauftragten-Service ab 250 €/Monat beziffert | Keine öffentlichen Projektpreise für KI-Implementierung — nur individuelles Angebot nach kostenloser Erstberatung, keine Preistransparenz | Transparenter Fixpreis (Hardware + Abo) statt individuellem Angebotsprozess |
+| kiba solutions (Berlin) | KI-Beratung (Tagessatz-Consulting) | BAFA-förderfähig (bis 80 % der Beratungskosten), kostenloses Erstgespräch | Tagessatzmodell, marktüblich 1.200–2.500 €/Tag (Spanne 1.200–5.000 €/Tag) — Projektkosten schnell im fünfstelligen Bereich, keine laufende Betreuung inbegriffen | Planbarer monatlicher Fixpreis statt Tagessatzrisiko; laufender Service statt einmaligem Beratungsprojekt |
+| IntraGPT | KI-Implementierung (projektbasiert) | — | Keine öffentlichen Preislisten, rein anfragebasiert — keine Preisvergleichbarkeit für KMU | Klare, öffentlich einsehbare Preisstruktur |
+| Netzhandwerker | KI-Implementierung (projektbasiert) | — | Keine öffentlichen Preislisten, rein anfragebasiert — keine Preisvergleichbarkeit für KMU | Klare, öffentlich einsehbare Preisstruktur |
 | **PrivateMind** | **KI-Appliance + Service** | **Komplett aus einer Hand, lokal, KMU-Preis** | — | — |
 
 **Positionierungsmatrix:**
 
-![Positionierungsmatrix](positionierungsmatrix.svg)
+![Positionierungsmatrix](../assets/positionierungsmatrix.svg)
 
 PrivateMind besetzt den einzigen Quadranten, in dem kein starker Wettbewerber aktiv ist: **lokal + einfach**.
 
@@ -201,7 +216,7 @@ PrivateMind besetzt den einzigen Quadranten, in dem kein starker Wettbewerber ak
 5. **Europäische Werte** — Ein deutsches Unternehmen, das europäisches Datenschutzrecht nicht als Marketingargument, sondern als Grundprinzip behandelt.
 6. **Kosteneffizienz** — Durch ASUS GX10 als günstigstes GB10-System am Markt: bestmögliche Hardware zu niedrigstem Preis, weitergegeben an den Kunden.
 
----
+<!-- pagebreak -->
 
 ## 4. Produkt & Dienstleistung
 
@@ -218,7 +233,7 @@ Alle PrivateMind-Appliances basieren auf dem ASUS Ascent GX10, der günstigsten 
 | RAM | 128 GB LPDDR5X Unified Memory | CPU & GPU teilen sich Speicher — entscheidend für große Modelle |
 | Speicher | 1 TB / 2 TB / 4 TB NVMe SSD | Modelle benötigen 40–80 GB; 1 TB = 2–3 Modelle gleichzeitig vorgehalten |
 | Netzwerk | ConnectX-7 200Gbps, 10GbE, Wi-Fi 7 | Hochgeschwindigkeits-Clustering und Netzwerkintegration |
-| Clustering | 2 Geräte via QSFP-Kabel verbindbar → 256 GB Speicherpool | Ermöglicht 200B+ Parameter Modelle |
+| Clustering | 2 Geräte via QSFP-Kabel verbindbar -> 256 GB Speicherpool | Ermöglicht 200B+ Parameter Modelle |
 | Formfaktor | 150 × 150 × 51 mm, 1,48 kg | Passt auf jeden Schreibtisch, kein Serverraum nötig |
 | Stromverbrauch | 240W (USB-C Netzteil) | Wie ein Gaming-PC — normale Büroinfrastruktur ausreichend |
 | Betriebssystem | NVIDIA DGX OS (Ubuntu 22.04-basiert) | Vollständiger NVIDIA-Software-Stack vorinstalliert |
@@ -281,6 +296,7 @@ Der Enterprise-Tier ist hardware-agnostisch aufgebaut — PrivateMind konfigurie
 ### 4.3 Software-Stack (eigenentwickelt & kuratiert)
 
 **Basis-Stack (mitgeliefert):**
+
 - NVIDIA DGX OS mit CUDA 13, cuDNN, TensorRT-LLM — vollständiger ML-Stack
 - Docker + container-basierte Modell-Isolation
 - Ollama-kompatibles Serving-Layer für standardisierte Model-API
@@ -290,14 +306,14 @@ Das Dashboard ist das primäre Differenzierungsmerkmal auf Software-Seite. Zielg
 
 | Modul | Funktionsumfang | MVP (Monat 4) | V2 (Monat 9) |
 |---|---|---|---|
-| Chat-Interface | Multi-Modell-Chat, Verlauf, Kontextfenster-Anzeige | ✅ | — |
-| Dokument-Upload | PDF/Word/Text hochladen, in Kontext einbinden | ✅ | — |
-| Modellverwaltung | Aktive Modelle anzeigen, wechseln, deaktivieren | ✅ | — |
-| System-Monitor | CPU/GPU-Auslastung, Speicher, Temperatur | ✅ | — |
-| RAG-Pipeline | Dokumentenindex aufbauen, vektorbasierte Suche | — | ✅ |
-| Nutzerverwaltung | Multi-User, Rollen (Admin/Nutzer) | — | ✅ |
-| Update-Center | Modell-Updates, System-Updates (genehmigen/installieren) | — | ✅ |
-| Audit-Log | Wer hat was gefragt (für Compliance-Nachweis) | — | ✅ |
+| Chat-Interface | Multi-Modell-Chat, Verlauf, Kontextfenster-Anzeige | Ja | — |
+| Dokument-Upload | PDF/Word/Text hochladen, in Kontext einbinden | Ja | — |
+| Modellverwaltung | Aktive Modelle anzeigen, wechseln, deaktivieren | Ja | — |
+| System-Monitor | CPU/GPU-Auslastung, Speicher, Temperatur | Ja | — |
+| RAG-Pipeline | Dokumentenindex aufbauen, vektorbasierte Suche | — | Ja |
+| Nutzerverwaltung | Multi-User, Rollen (Admin/Nutzer) | — | Ja |
+| Update-Center | Modell-Updates, System-Updates (genehmigen/installieren) | — | Ja |
+| Audit-Log | Wer hat was gefragt (für Compliance-Nachweis) | — | Ja |
 
 **LLM-Auswahl — Kurationslogik:**
 Nicht jedes verfügbare Modell wird angeboten. PrivateMind kuratiert eine schlanke, getestete Auswahl:
@@ -314,6 +330,7 @@ Nicht jedes verfügbare Modell wird angeboten. PrivateMind kuratiert eine schlan
 ### 4.4 Service-Portfolio
 
 **Einmalige Leistungen:**
+
 - Hardware-Lieferung, Erstkonfiguration (remote oder vor Ort)
 - Modellauswahl und -installation nach Kundenbedarf
 - Netzwerkintegration (LAN, VLAN, Firewall-Regeln)
@@ -321,6 +338,7 @@ Nicht jedes verfügbare Modell wird angeboten. PrivateMind kuratiert eine schlan
 - DSGVO-Dokumentation für Kundenzwecke (Verarbeitungsverzeichnis-Vorlage)
 
 **Laufende Leistungen (im Abo):**
+
 - Firmware- und OS-Updates
 - Modell-Updates (neue Versionen, verbesserte Quantisierungen)
 - Technischer Support (SLA je nach Tier)
@@ -329,12 +347,13 @@ Nicht jedes verfügbare Modell wird angeboten. PrivateMind kuratiert eine schlan
 - Neues Modell-Onboarding auf Anfrage
 
 **Optionale Zusatzleistungen (projektbezogen):**
+
 - Finetuning auf Kundendaten (z.B. unternehmensspezifisches Vokabular, Prozesse)
 - Entwicklung kundenspezifischer RAG-Pipelines
 - API-Integration in bestehende Software (CRM, DMS, ERP)
 - Erweiterter Vor-Ort-Support
 
----
+<!-- pagebreak -->
 
 ## 5. Geschäftsmodell & Preisgestaltung
 
@@ -398,7 +417,7 @@ Für KMU, die keine Investitionsausgabe (CAPEX) tätigen wollen und eine reine B
 | **Monatspreis (netto)** | **€299** | **€999** | **auf Anfrage (Projektbasis)** |
 | **Laufzeit** | 36 Monate | 36 Monate | 60 Monate |
 | Gesamtkosten über 36 Mo. | €10.764 | €35.964 | individuell |
-| Nach Laufzeitende | Hardware-Eigentum geht auf Kunden über; Service-Abo läuft weiter (opt-out möglich) | ← | ← |
+| Nach Laufzeitende | Hardware-Eigentum geht auf Kunden über; Service-Abo läuft weiter (opt-out möglich) | wie links | wie links |
 | **Implikation für PrivateMind** | Hardware-Refinanzierung über ~14 Monate; ab Mo. 15 volle Marge | Hardware-Refinanzierung über ~26 Monate; ab Mo. 27 volle Marge | Individuelle Kalkulation, Anzahlung erforderlich |
 
 **Bundle-Kalkulation (Beispiel Bundle Standard):**
@@ -430,12 +449,13 @@ ROI-Break-even:     Monat 14
 **Preiserhöhungspotenzial:** Sobald Referenzkunden und Fallstudien vorhanden sind, können Preise um 10–20% angehoben werden. Preis sollte immer kommuniziert werden als "Kosten einer Teilzeitkraft geteilt durch 10".
 
 **Vergleichsrahmen für Kundengespräche:**
+
 - Ein freiberuflicher Entwickler für KI-Setup kostet €80–€150/Stunde
 - Eine SaaS-KI-Lösung mit ähnlichem Funktionsumfang: €300–€800/Monat (plus Datenschutzrisiko)
 - Eine eigene IT-Stelle: €3.000–€5.000/Monat
-- PrivateMind Professional: €699/Monat all-in → keine Vergleichspreise, klarer Vorteil
+- PrivateMind Professional: €699/Monat all-in -> keine Vergleichspreise, klarer Vorteil
 
----
+<!-- pagebreak -->
 
 ## 6. Marketing & Vertrieb
 
@@ -446,6 +466,7 @@ ROI-Break-even:     Monat 14
 Ziel: 3–5 Pilotkunden, 2–3 zahlende Kunden bis Monat 6.
 
 Kanäle und konkrete Maßnahmen:
+
 - **LinkedIn-Direktakquise**: Systematische Ansprache von Kanzleiinhabern, Steuerberatern, Praxis-Inhabern in DACH. Ziel: 10 qualifizierte Gespräche pro Monat.
 - **Netzwerk Dresden/Silicon Saxony**: Persönliche Kontakte aktivieren, Vorträge/Demos bei lokalen Unternehmerveranstaltungen.
 - **Kaltakquise per E-Mail (personalisiert)**: Fokus auf Datenschutz-Pain-Point, kurze Demo-Einladung.
@@ -457,6 +478,7 @@ Kanäle und konkrete Maßnahmen:
 Ziel: 10–15 Kunden europaweit, erste Inbound-Leads.
 
 Kanäle:
+
 - **Englischsprachige Website live**: Konfigurator, Demo-Anfrage, klare Produktseiten, FAQs zu DSGVO/Datenschutz.
 - **Content Marketing (Blog, LinkedIn)**: Themen: "AI for law firms without cloud", "GDPR-compliant AI in 2026", "How SMEs use local LLMs". SEO-Fokus auf Long-Tail-Keywords.
 - **IT-Partnergewinnung**: Aktive Ansprache von IT-Dienstleistern in NL, Nordics, UK. Ziel: 2–3 Reseller-Vereinbarungen.
@@ -468,6 +490,7 @@ Kanäle:
 Ziel: 30+ Kunden, stabiler Inbound-Kanal.
 
 Kanäle:
+
 - **Reseller/MSP-Programm**: Strukturierte Partnerschaft mit IT-Dienstleistern. Marge-Sharing (15–25% auf Abo-Einnahmen).
 - **Case Studies & Referenzen**: Detaillierte Fallstudien aus Phase 1 und 2 als Vertriebs-Beschleuniger.
 - **Empfehlungsprogramm**: Bestehende Kunden erhalten 1 Monat kostenlosen Service pro empfohlenem Neukunden.
@@ -527,12 +550,12 @@ PrivateMind GmbH
 |---|---|---|---|
 | Qualifizierte Gespräche/Monat | 5 | 15 | 30 |
 | Angebote versandt | 3 | 8 | 20 |
-| Conversion Rate (Angebot → Abschluss) | 30% | 35% | 40% |
+| Conversion Rate (Angebot -> Abschluss) | 30% | 35% | 40% |
 | Neue Kunden/Monat | 1 | 2–3 | 4–6 |
 | Monatliche Inbound-Leads (Website) | 0 | 5 | 20 |
 | NPS Bestandskunden | — | >50 | >60 |
 
----
+<!-- pagebreak -->
 
 ## 7. Organisation & Aufbau
 
@@ -543,12 +566,14 @@ PrivateMind GmbH
 *Hintergrund:* Jahrzehntelange Erfahrung als Softwareentwickler in der IT-Branche. Tiefes technisches Verständnis von Systemarchitektur, Software-Entwicklung und IT-Infrastruktur. Kombination aus Hands-on-Entwickler-Mentalität und strategischem Denken.
 
 *Relevante Kompetenzen für PrivateMind:*
+
 - **Software-Entwicklung**: Eigenentwicklung des PrivateMind Dashboards und der Update-Pipeline — kein externer Entwickler für das MVP nötig, senkt Gründungskosten signifikant
 - **Systemadministration & Linux**: NVIDIA DGX OS ist Ubuntu-basiert — vollständige Handlungsfähigkeit für Hardware-Setup, Netzwerk-Integration, Troubleshooting
 - **Technischer Kundensupport**: Direkte Problemlösung ohne Delegation in der Frühphase
 - **Vertrieb und Kommunikation**: Fähigkeit, technisch komplexe Lösungen verständlich zu erklären
 
 *Kompetenzlücken & Kompensation:*
+
 - **Vertrieb/Sales**: Erfahrung aufbauen durch systematische Akquise, ggf. Vertriebspartner in Phase 2
 - **Buchhaltung/Steuer**: Steuerberater wird frühzeitig eingebunden
 - **Recht**: Rechtsanwalt für AGB, Verträge, DSGVO-Dokumentation
@@ -589,7 +614,7 @@ Dresden bietet strukturelle Vorteile, die für ein KI-Hardware-Startup in der Fr
 - **GRW-Lohnkostenzuschüsse** (Gemeinschaftsaufgabe Wirtschaftsstruktur) für neue Arbeitsplätze in Sachsen
 - **Halbleiter-Ökosystem**: TSMC, Infineon, Globalfoundries in der Region — Affinität zu Hardware-Themen bei lokalen Talenten
 
----
+<!-- pagebreak -->
 
 ## 8. Finanzplanung
 
@@ -598,15 +623,15 @@ Dresden bietet strukturelle Vorteile, die für ein KI-Hardware-Startup in der Fr
 | Position | Betrag (netto, ca.) | Anmerkung |
 |---|---|---|
 | GmbH-Gründung (Notar, Handelsregister, Stammkapital) | €26.500 | Stammkapital €25.000 + ~€1.500 Gebühren |
-| Demo-/Entwicklungsgerät (1× GX10, 4 TB) | €0 | Bereits vorhanden ✓ |
+| Demo-/Entwicklungsgerät (1× GX10, 4 TB) | €0 | Bereits vorhanden |
 | Website & Branding | €3.000–€6.000 | Inkl. Domain, Hosting, Design-Grundlage |
 | Software-Entwicklung Dashboard MVP | €0 | Eigenleistung des Gründers |
 | Rechtsberatung (AGB, Verträge, DSGVO-Dokumentation) | €3.000–€5.000 | Einmalig, unbedingt nötig |
 | Steuerberatung (Erstberatung + Einrichtung) | €500–€1.000 | |
-| Erstausstattung Büro/IT | €1.000–€2.000 | Minimal |
+| Erstausstattung Büro/IT | €0 | Bereits vorhanden |
 | Versicherungen (Erstprämien) | €500–€800 | Betriebshaftpflicht, D&O |
 | Marketing-Startmaterialien | €500–€1.000 | Pitch Deck, Broschüren |
-| **Gesamt Gründungskosten** | **€38.550–€47.350** | |
+| **Gesamt Gründungskosten** | **€34.000–€40.300** | |
 
 *Das Stammkapital (€25.000) ist Eigenkapital des Unternehmens, keine Ausgabe — bleibt als Liquiditätspuffer.*
 
@@ -678,6 +703,7 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional-Tier 
 | **Ergebnis (vor Steuern)** | **~-€110.000** | **~-€59.000** | **-€20k bis +€70k** | **+€130k bis +€300k** |
 
 **Break-even-Analyse:**
+
 - Break-even operativ (MRR deckt Fixkosten ~€11.500/Mo.): ~17 Professional-Kunden (€699/Mo.) oder ~78 Starter-Kunden (€149/Mo.) — realistisch: Mix aus beiden, ca. 20–25 aktive Kunden
 - Break-even operativ erreichbar: ca. Q3 Jahr 2 (konservativ) / Q2 Jahr 2 (optimistisch)
 - Break-even kumuliert (Verluste aus Jahr 1 ausgeglichen): Laufe Jahr 3 (konservativ) / Ende Jahr 2 (optimistisch)
@@ -687,19 +713,19 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional-Tier 
 | Finanzierungsquelle | Betrag (ca.) | Empfänger | Verfügbarkeit |
 |---|---|---|---|
 | Eigenkapital (Stammkapital GmbH) | €25.000 | GmbH | Bei Gründung |
-| **KfW ERP-Gründerkredit StartGeld** | **bis €125.000** | **GmbH** | **Über Hausbank, ≤ 3 Mo. nach Gründung — PRIORITÄT** |
+| **KfW ERP-Gründerkredit StartGeld** | **bis €125.000** | **GmbH** | **Über Hausbank, innerhalb von 3 Monaten nach Gründung — PRIORITÄT** |
 | SAB Mikrodarlehen | bis €20.000 | GmbH | 3 Monate nach Gründung |
 | Gründungszuschuss AfA (15 Mo.) ¹ | ~€16.500 | Gründer (persönlich) | Bewilligung vor Gründung |
 | InnoStartBonus Sachsen ¹ | ~€12.600 | Gründer (persönlich) | Bei Bewilligung |
 | **Gesamt GmbH-Finanzierung** | **~€145.000–€170.000** | GmbH | |
-| **Kapitalbedarf Jahr 1 (konservativ)** | **~€130.000–€145.000** | GmbH | Gründungskosten + Betriebsverlust inkl. GF-Gehalt |
+| **Kapitalbedarf Jahr 1 (konservativ)** | **~€128.000–€145.000** | GmbH | Gründungskosten + Betriebsverlust inkl. GF-Gehalt |
 | **Puffer** | **~€5.000–€25.000** | | |
 
 *¹ Gründungszuschuss und InnoStartBonus fließen dem Gründer persönlich zu — sie sind von der GmbH-Finanzierung unabhängig und verbessern die persönliche Liquiditätslage zusätzlich zur GmbH-Vergütung.*
 
 *Das GF-Gehalt (€115.000/Jahr Vollkosten) ist expliziter Bestandteil der Finanzierungsplanung. Der KfW ERP-Gründerkredit StartGeld ist damit keine optionale Ergänzung, sondern Pflichtbaustein der Kapitalstruktur.*
 
----
+<!-- pagebreak -->
 
 ## 9. Risikoanalyse
 
@@ -707,16 +733,16 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional-Tier 
 
 | Risiko | W'keit | Auswirkung | Risiko-Score | Gegenmaßnahme |
 |---|---|---|---|---|
-| **Langsame Kundenakquise** | Hoch | Hoch | 🔴 Kritisch | Niedrige Fixkosten halten, Pilotkunden früh; Fördermittel sichern als Puffer |
-| **LPDDR5X-Preise steigen weiter** | Hoch | Mittel | 🟠 Erheblich | Bundle-Modell puffert; mehrere OEM-Quellen; Preisgleitklausel in AGB |
-| **Abhängigkeit NVIDIA/ASUS** | Hoch | Mittel | 🟠 Erheblich | Dell/Lenovo/HP als Backup-Lieferanten qualifiziert; Service-Wert ist hardware-agnostisch |
-| **Cloud-KI wird "sicher genug"** | Mittel | Mittel | 🟡 Moderat | Regulierte Branchen bleiben; DSGVO bleibt; Positionierung auf Compliance stärken |
-| **Große Systemhäuser kopieren** | Mittel | Hoch | 🟠 Erheblich | First-Mover-Vorteil nutzen; Nische durch Spezialisierung verteidigen; Referenzen aufbauen |
-| **Support-Überlastung (Solo-Betrieb)** | Mittel | Mittel | 🟡 Moderat | Abo-Tiering begrenzt Support-Anfragen; Monitoring automatisieren; klare SLA-Grenzen |
-| **Technischer Fehler/Hardware-Ausfall beim Kunden** | Mittel | Hoch | 🟠 Erheblich | Betriebshaftpflicht; klare Haftungsbegrenzung in AGB; schneller Austauschprozess |
-| **Regulatory Surprise (EU AI Act neue Pflichten)** | Niedrig | Mittel | 🟡 Moderat | Rechtsberatung verfolgt EU AI Act; lokale Kontrolle ist compliance-vorteilhaft |
-| **Gründer fällt aus (Krankheit etc.)** | Niedrig | Hoch | 🟠 Erheblich | Versicherung (Berufsunfähigkeit), Notfall-Dokumentation, frühzeitig Netzwerk aufbauen |
-| **Demo-Gerät defekt** | Niedrig | Mittel | 🟡 Moderat | GX10 4TB bereits vorhanden; Backup-Lieferant (Dell/Lenovo GB10) identifiziert |
+| **Langsame Kundenakquise** | Hoch | Hoch | Kritisch | Niedrige Fixkosten halten, Pilotkunden früh; Fördermittel sichern als Puffer |
+| **LPDDR5X-Preise steigen weiter** | Hoch | Mittel | Erheblich | Bundle-Modell puffert; mehrere OEM-Quellen; Preisgleitklausel in AGB |
+| **Abhängigkeit NVIDIA/ASUS** | Hoch | Mittel | Erheblich | Dell/Lenovo/HP als Backup-Lieferanten qualifiziert; Service-Wert ist hardware-agnostisch |
+| **Cloud-KI wird "sicher genug"** | Mittel | Mittel | Moderat | Regulierte Branchen bleiben; DSGVO bleibt; Positionierung auf Compliance stärken |
+| **Große Systemhäuser kopieren** | Mittel | Hoch | Erheblich | First-Mover-Vorteil nutzen; Nische durch Spezialisierung verteidigen; Referenzen aufbauen |
+| **Support-Überlastung (Solo-Betrieb)** | Mittel | Mittel | Moderat | Abo-Tiering begrenzt Support-Anfragen; Monitoring automatisieren; klare SLA-Grenzen |
+| **Technischer Fehler/Hardware-Ausfall beim Kunden** | Mittel | Hoch | Erheblich | Betriebshaftpflicht; klare Haftungsbegrenzung in AGB; schneller Austauschprozess |
+| **Regulatory Surprise (EU AI Act neue Pflichten)** | Niedrig | Mittel | Moderat | Rechtsberatung verfolgt EU AI Act; lokale Kontrolle ist compliance-vorteilhaft |
+| **Gründer fällt aus (Krankheit etc.)** | Niedrig | Hoch | Erheblich | Versicherung (Berufsunfähigkeit), Notfall-Dokumentation, frühzeitig Netzwerk aufbauen |
+| **Demo-Gerät defekt** | Niedrig | Mittel | Moderat | GX10 4TB bereits vorhanden; Backup-Lieferant (Dell/Lenovo GB10) identifiziert |
 
 ### 9.2 Strategische Risikominimierung
 
@@ -732,15 +758,15 @@ Keine Abhängigkeit von einem nationalen Markt. Fällt DACH schwächer aus als g
 **Prinzip 4: Recurring Revenue als Stabilitätsanker.**
 Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten inkl. GF-Gehalt (€11.500/Mo.). Von diesem Punkt an sind Hardware-Verkäufe "Bonus", nicht Überlebensbedingung.
 
----
+<!-- pagebreak -->
 
 ## 10. Meilensteine & Zeitplan
 
 | Zeitraum | Meilenstein | Konkrete Aktivitäten | Erfolgskriterium |
 |---|---|---|---|
-| **Vor Monat 1** | GZ-Antrag ⚠️ | Arbeitslos melden (Tag 1 nach AU-Ende), Gründungszuschuss beantragen (VOR GmbH-Gründung!), IHK-Stellungnahme einholen, InnoStartBonus prüfen | GZ-Antrag eingereicht |
+| **Vor Monat 1** | GZ-Antrag (kritisch) | Arbeitslos melden (Tag 1 nach AU-Ende), Gründungszuschuss beantragen (VOR GmbH-Gründung!), IHK-Stellungnahme einholen, InnoStartBonus prüfen | GZ-Antrag eingereicht |
 | **Monat 1** | Rechtliche Gründung | GmbH-Notar (erst nach GZ-Bewilligung!), Gesellschaftervertrag, Handelsregistereintrag, Geschäftskonto eröffnen | GmbH eingetragen |
-| **Monat 1–2** | Infrastruktur | Entwicklungsumgebung aufbauen, E-Mail-Setup *(Demo-Gerät GX10 4TB und Domains bereits vorhanden ✓)* | Gerät konfiguriert, Domain aktiv |
+| **Monat 1–2** | Infrastruktur | Entwicklungsumgebung aufbauen, E-Mail-Setup *(Demo-Gerät GX10 4TB und Domains bereits vorhanden)* | Gerät konfiguriert, Domain aktiv |
 | **Monat 2–4** | Dashboard MVP | Chat-Interface, Dokument-Upload, Modellverwaltung, System-Monitor bauen | Interne Demo-fähig |
 | **Monat 2–4** | Rechtliche Grundlagen | AGB + Serviceverträge (Englisch), Datenschutzkonzept, Haftungsfragen klären | Verträge unterschriftsreif |
 | **Monat 3–5** | Pilotkunden | 3–5 Pilotkunden in DACH identifizieren und gewinnen, Installationen durchführen | Mindestens 2 zahlende Kunden |
@@ -752,14 +778,15 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 | **Jahr 2, Q3** | Break-even operational | MRR deckt Fixkosten | MRR > €5.400/Monat |
 | **Jahr 3** | Nachhaltiges Wachstum | Team 4–6 Personen, 70+ Kunden, TGFS/MBG für Wachstumskapital prüfen | Profitabel, skalierbar |
 
----
+<!-- pagebreak -->
 
 ## 11. Fördermöglichkeiten
 
 ### 11.1 Phase 1: Sofort handeln (vor/bei Gründung)
 
 **Gründungszuschuss (Agentur für Arbeit) — HÖCHSTE PRIORITÄT**
-- Voraussetzung: Gründer ist arbeitslos gemeldet ✅
+
+- Voraussetzung: Gründer ist arbeitslos gemeldet
 - Phase 1: 6 Monate, ALG I-Betrag + €300/Monat
 - Phase 2: 9 Monate, €300/Monat (auf separaten Antrag)
 - Gesamtdauer: bis 15 Monate
@@ -767,69 +794,80 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 - *Achtung: Antrag muss vor Gewerbeanmeldung/GmbH-Eintragung gestellt werden!*
 
 **InnoStartBonus Sachsen**
+
 - €1.050/Monat × 12 Monate = **€12.600** (zzgl. €150/Kind/Monat)
-- Für innovative Gründer mit Wohnsitz in Sachsen ✅
+- Für innovative Gründer mit Wohnsitz in Sachsen
 - Beantragung über futureSAX-Plattform
 - Kombinierbarkeit mit Gründungszuschuss prüfen (rechtlich komplex)
 
 **ESF Plus Gründungsberatung Sachsen**
+
 - €2.000 Zuschuss für Gründungsberatungsleistungen
 - Sofort beantragen für Steuer-/Rechtsberatung
 
 ### 11.2 Phase 2: Nach Gründung (Monat 1–6)
 
 **SAB Mikrodarlehen**
+
 - Bis zu €20.000, direkt bei der Sächsischen Aufbaubank
 - Bis zu 3 Jahre nach Gründung beantragbar
 - Rückzahlung innerhalb von 5 Jahren
 - Sinnvoll für: Hardware-Nachbeschaffung, Marketing-Investitionen
 
 **Sachsenkredit "Gründen und Wachsen" (SAB)**
+
 - Zinsgünstige Darlehen bis €5 Mio.
 - Basistilgungszuschuss 6–10%
 - Über Hausbank beantragt (Durchleitung SAB)
 
 **KfW ERP-Gründerkredit StartGeld**
+
 - Bis zu €125.000
 - Günstige Zinsen, teilweise KfW-besichert
 - Relevant als Ergänzung wenn Eigenkapital knapp wird
 
 **NVIDIA Inception Programm**
+
 - Kostenlose technische Ressourcen, DGX Cloud-Credits, Netzwerkzugang
 - Keine Kapital-Beteiligung
 - Beantragung: nvidia.com/en-us/startups
 - Gibt Credibility gegenüber Kunden ("NVIDIA Inception Member")
 
 **Silicon Saxony e.V. beitreten**
+
 - Jahresbeitrag: ~€500–€1.000
 - ROI: Netzwerk, Matchmaking, Zugang zu Investoren und Partnern
 
 ### 11.3 Phase 3: Wachstumsphase (ab Jahr 2)
 
 **GRW RIGA Investitionszuschuss**
+
 - Bis 50% auf förderfähiges Investitionsvolumen
 - Mindestinvestition in Dresden: €70.000
 - Voraussetzung: Schaffung dauerhafter Arbeitsplätze
 - Relevant wenn: Hardware-Lagerbestand aufgebaut wird oder erste Mitarbeiter kommen
 
 **Technologiegründerfonds Sachsen (TGFS)**
+
 - TGFS Basic bis €500.000 (Eigenkapital-Beteiligung)
 - TGFS Plus bis €4 Mio.
 - Für spätere Wachstumsphase
 
 **MBG Sachsen (Mittelständische Beteiligungsgesellschaft)**
+
 - Stille Beteiligungen €25.000–€1 Mio.
 - Stärkt Eigenkapitalbasis ohne Kontrollverlust
 
 **EU-Förderprogramme (Horizon Europe / EIC / Digital Europe)**
+
 - Komplex, besser für Jahr 2–3 geeignet
 - Beratung durch dresden|exists empfohlen
 
 ### 11.4 Empfohlene Fördermittel-Timeline
 
-![Fördermittel-Timeline](foerdermittel-timeline.svg)
+![Fördermittel-Timeline](../assets/foerdermittel-timeline.svg)
 
----
+<!-- pagebreak -->
 
 ## 12. Offene Punkte & Nächste Schritte
 
@@ -878,7 +916,7 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 - [ ] Detaillierten Liquiditätsplan (Monat für Monat, 24 Monate) als Tabelle führen
 - [ ] Geschäftskonto eröffnen (Empfehlung: Commerzbank, Deutsche Bank oder FinTech wie Qonto für KMU)
 
----
+<!-- pagebreak -->
 
 ## Anhang
 
@@ -886,14 +924,14 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 
 | Plattform | Status | Begründung |
 |---|---|---|
-| **ASUS Ascent GX10 (1TB/2TB/4TB)** | ✅ Primäre Wahl | Günstigstes GB10-System (ab ~€3.050), drei SSD-Varianten, optimiert für LLM-Inferenz, Clustering möglich. ASUS bietet keinen Support → USP für PrivateMind |
-| NVIDIA DGX Spark Founders Edition | ⚠️ Alternative / Backup | Identische Hardware, aber nur 4TB-Konfiguration, €4.800 EU-Marketplace. ~€750–€1.750 teurer. Vorteil: NVIDIA-eigene Garantie |
-| Dell Pro Max GB10 | ⚠️ Backup-Lieferant | Gleicher Chip, höherer Preis, aber mit Dell-Support. Relevant bei ASUS-Lieferengpässen |
-| Lenovo PGX / HP ZGX | ⚠️ Backup-Lieferant | Wie Dell |
-| Gigabyte AI TOP ATOM (ATAGB10-9000) | ⚠️ Preislich ähnlich | ab €4.000, 4TB — kein Vorteil gegenüber ASUS |
-| MSI EdgeXpert 11SUS | ⚠️ Preislich ähnlich | ab €3.700, 4TB |
-| NVIDIA Jetson Thor (T5000/T4000) | ❌ Ausgeschlossen | Für Robotik optimiert, schwache LLM-Leistung (~10 tok/s für Llama 70B) |
-| NVIDIA Jetson AGX Orin | ❌ Ausgeschlossen | Ampere (2 Generationen alt), max 64 GB RAM — unzureichend für aktuelle 70B-Modelle |
+| **ASUS Ascent GX10 (1TB/2TB/4TB)** | Primäre Wahl | Günstigstes GB10-System (ab ~€3.050), drei SSD-Varianten, optimiert für LLM-Inferenz, Clustering möglich. ASUS bietet keinen Support -> USP für PrivateMind |
+| NVIDIA DGX Spark Founders Edition | Alternative / Backup | Identische Hardware, aber nur 4TB-Konfiguration, €4.800 EU-Marketplace. ~€750–€1.750 teurer. Vorteil: NVIDIA-eigene Garantie |
+| Dell Pro Max GB10 | Backup-Lieferant | Gleicher Chip, höherer Preis, aber mit Dell-Support. Relevant bei ASUS-Lieferengpässen |
+| Lenovo PGX / HP ZGX | Backup-Lieferant | Wie Dell |
+| Gigabyte AI TOP ATOM (ATAGB10-9000) | Preislich ähnlich | ab €4.000, 4TB — kein Vorteil gegenüber ASUS |
+| MSI EdgeXpert 11SUS | Preislich ähnlich | ab €3.700, 4TB |
+| NVIDIA Jetson Thor (T5000/T4000) | Ausgeschlossen | Für Robotik optimiert, schwache LLM-Leistung (~10 tok/s für Llama 70B) |
+| NVIDIA Jetson AGX Orin | Ausgeschlossen | Ampere (2 Generationen alt), max 64 GB RAM — unzureichend für aktuelle 70B-Modelle |
 
 *Preishinweis: NVIDIA hat den DGX-Spark-Preis im Februar 2026 um ~€650 erhöht (weltweite LPDDR5X-Lieferengpässe). ASUS bleibt günstigstes GB10-System am Markt.*
 
@@ -915,6 +953,7 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 ### C. Idealkunden-Profil (ICP — Ideal Customer Profile)
 
 **Persona 1: Die Kanzlei (Primär)**
+
 - Rechtsanwaltskanzlei, 3–15 Anwälte, spezialisiert (Arbeitsrecht, Familienrecht, Unternehmensrecht)
 - Nutzt bereits digitale Aktenführung
 - Schmerzpunkt: Mitarbeiter nutzen ChatGPT privat, Inhaber besorgt wegen Mandantengeheimnis
@@ -923,6 +962,7 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 - Akquisepfad: LinkedIn, Rechtsanwaltsverein-Netzwerk, Empfehlung
 
 **Persona 2: Der Steuerberater/WP (Primär)**
+
 - 5–30 Mitarbeiter, KMU-fokussiert
 - Nutzt DATEV, will KI für Mandantenkorrespondenz, Reporterstellung, Recherche
 - Schmerzpunkt: DATEV-KI noch nicht ausreichend; externe Cloud-KI wegen Steuergeheimnis nicht nutzbar
@@ -930,6 +970,7 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 - Akquisepfad: Steuerberaterverband, LinkedIn, persönliches Netzwerk
 
 **Persona 3: Das Ingenieurbüro (Sekundär)**
+
 - 10–50 Mitarbeiter, Spezialisierung (Maschinenbau, Elektro, Architektur)
 - Schmerzpunkt: proprietäre Konstruktionsdaten, Kunden-NDAs
 - Potenzial: KI für technische Dokumentation, Normenrecherche, Ausschreibungen
