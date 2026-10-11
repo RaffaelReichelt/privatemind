@@ -3,6 +3,8 @@ papersize: a4
 geometry: margin=2.2cm
 lang: de
 colorlinks: false
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
 ---
 
 # Kapitalbedarfsplan
@@ -42,7 +44,18 @@ colorlinks: false
 
 *Diese Positionen sind bereits vorhanden und reduzieren den Finanzierungsbedarf entsprechend. Sachinvestitionen entfallen damit vollständig aus dem Kapitalbedarf. Odoo-Hosting-Kosten (SaaS oder Self-Hosted) sind in den Software-Lizenzen §2.1 enthalten.*
 
-### 1.3 Stammkapital (Eigenkapital GmbH)
+### 1.3 Pilotgeräte für nicht zahlende Pilotkunden (Neuanschaffung)
+
+Bis zu 3 der 3–5 geplanten Pilotkunden (siehe Vertriebsplan, Businessplan 6.1) zahlen in der Erprobungsphase weder Hardware noch Abo. Die Geräte werden gestellt, bleiben aber Eigentum der PrivateMind GmbH (Leihstellung, keine Übereignung) — anders als die bereits vorhandenen Positionen in 1.2 handelt es sich um eine Neuanschaffung, die den Kapitalbedarf erhöht.
+
+| Position | Betrag (netto) |
+|---|---:|
+| Bis zu 3× ASUS Ascent GX10 Standard (EK je ~€3.050) | €9.150 |
+| **Summe Pilotgeräte** | **€9.150** |
+
+*Bilanziell handelt es sich um Anlagevermögen (Abschreibung über die Nutzungsdauer), nicht um einen sofortigen Verlust — die Geräte bleiben Eigentum der GmbH und sind bei Vertragsabschluss oder Rückgabe weiterverwendbar.*
+
+### 1.4 Stammkapital (Eigenkapital GmbH)
 
 | Position | Betrag |
 |---|---:|
@@ -87,13 +100,14 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 | Bedarfsposition | Betrag |
 |---|---:|
 | Gründungskosten (einmalig) | €6.700 |
+| Pilotgeräte für nicht zahlende Pilotkunden (Neuanschaffung) | €9.150 |
 | Betriebsmittel Jahr 1 (Fehlbetrag Fixkosten ./. Einnahmen) | €110.000 |
 | Liquiditätspuffer / Reserve (~10 %) | €11.700 |
-| **Gesamtkapitalbedarf (GmbH)** | **€128.400** |
+| **Gesamtkapitalbedarf (GmbH)** | **€137.550** |
 
-*Gerundet auf: **€129.000** (konservative Planung)*
+*Gerundet auf: **€138.000** (konservative Planung)*
 
-*Hinweis: Demo-/Entwicklungsgerät (ASUS GX10, 4 TB, ~€4.200), Domains, Website (Odoo 18.0) sowie Büroerstausstattung (~€1.500) bereits vorhanden — kein Finanzierungsbedarf für diese Positionen. Sachinvestitionen entfallen daher vollständig aus dem Kapitalbedarf.*
+*Hinweis: Demo-/Entwicklungsgerät (ASUS GX10, 4 TB, ~€4.200), Domains, Website (Odoo 18.0) sowie Büroerstausstattung (~€1.500) bereits vorhanden — kein Finanzierungsbedarf für diese Positionen. Die Pilotgeräte (1.3) sind dagegen eine Neuanschaffung und erhöhen den Kapitalbedarf entsprechend.*
 
 ---
 
@@ -107,8 +121,8 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 | KfW ERP-Gründerkredit StartGeld | Fremdkapital (Darlehen) | €100.000 | innerhalb von 3 Monaten nach Gründung |
 | SAB Mikrodarlehen Sachsen | Fremdkapital (Darlehen) | €20.000 | Ab Monat 3 |
 | **Summe GmbH-Finanzierung** | | **€145.000** | |
-| **Kapitalbedarf GmbH** | | **€128.400** | |
-| **Puffer** | | **€16.600** | |
+| **Kapitalbedarf GmbH** | | **€137.550** | |
+| **Puffer** | | **€7.450** | |
 
 ### 4.2 Persönliche Finanzierung des Gründers (außerhalb GmbH)
 
@@ -126,11 +140,11 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 
 | | Betrag |
 |---|---:|
-| **Gesamtkapitalbedarf GmbH** | **€128.400** |
+| **Gesamtkapitalbedarf GmbH** | **€137.550** |
 | — Eigenkapital (Stammkapital) | -€25.000 |
 | — KfW ERP StartGeld | -€100.000 |
 | — SAB Mikrodarlehen | -€20.000 |
-| **Verbleibender Bedarf** | **-€16.600** *(gedeckt durch Puffer)* |
+| **Verbleibender Bedarf** | **-€7.450** *(gedeckt durch Puffer)* |
 
 **Ergebnis: Der Kapitalbedarf ist vollständig gedeckt. Kein externer Investor erforderlich.**
 
@@ -166,7 +180,7 @@ Da in den ersten zwei Monaten noch keine Umsätze erzielt werden und der Umsatz 
 | 12 | €6.140 | -€11.500 | -€5.360 | -€109.805 |
 | **Gesamt** | **€28.195** | **-€138.000** | | **-€109.805** |
 
-*Maximalem Liquiditätsbedarf Ende Jahr 1: ca. €110.000 — gedeckt durch Stammkapital (€25.000) + KfW (€100.000) = €125.000 verfügbar. Puffer: ~€15.000.*
+*Maximaler Liquiditätsbedarf Ende Jahr 1: ca. €110.000 zzgl. €9.150 Pilotgeräte (1.3) = ~€119.150 — gedeckt durch Stammkapital (€25.000) + KfW (€100.000) = €125.000 verfügbar. Puffer: ~€5.850.*
 
 <!-- pagebreak -->
 

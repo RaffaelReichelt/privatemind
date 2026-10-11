@@ -1,3 +1,12 @@
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
+---
+
 # PrivateMind GmbH — Profit & Loss (3-Jahres-Planung)
 
 *Stand: Juli 2026 — Planwerte, nicht geprüft. Alle Beträge in EUR netto.*
@@ -112,7 +121,7 @@
 | **Jahresergebnis (netto)** | **-€68.600** | **+€31.800** | **+€232.870** |
 | Kumuliertes Ergebnis | -€68.600 | -€36.800 | +€196.070 |
 
-*¹ Verlustvortrag (§ 10d EStG) aus J1: €68.600. J2-EBT (+€31.800) durch VV gedeckt — keine Steuern in J2. Verbleibender VV nach J2: €36.800. J3: Steuerpflichtiges Einkommen = €316.900 − €36.800 = €280.100; Ertragsteuern ~30 % = €84.030.*
+*¹ Verlustvortrag (§ 10d EStG) aus J1: €68.600. J2-EBT (+€31.800) durch VV gedeckt — keine Steuern in J2. Verbleibender VV nach J2: €36.800. J3: Steuerpflichtiges Einkommen = €316.900 - €36.800 = €280.100; Ertragsteuern ~30 % = €84.030.*
 
 ---
 
@@ -125,35 +134,35 @@ UMSATZ
   Hardware-Umsatz (VK netto)        €46.300
   Setup-Erlöse                       €8.000
   Abo-Erlöse (kumuliert Monate 3–12) €9.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Gesamtumsatz                      €63.300
 
 COGS
   Hardware-Einkaufskosten           -€35.100
-  ──────────────────────────────────────────
+  ------------------------------------------
   Bruttogewinn                      €28.200   (44,5 %)
 
 OPERATING EXPENSES
-  GF-Vergütung Vollkosten          -€115.000   ← €5.000 netto/Monat
+  GF-Vergütung Vollkosten          -€115.000   <- €5.000 netto/Monat
   Marketing & Vertrieb               -€6.000
   Büro / Coworking                   -€4.800
   Versicherungen                     -€2.400
   Software & Tools                   -€1.800
   Steuer- & Rechtsberatung           -€4.800
   Sonstiges                          -€3.200
-  ──────────────────────────────────────────
+  ------------------------------------------
   Fixkosten gesamt                 -€138.000
 
   Abschreibungen (AfA)               -€1.700
   Gründungsaufwand (einmalig)        -€5.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBIT                             -€116.500
 
   Zinsen (KfW-Darlehen ~€100k)       -€3.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBT                              -€119.500
   Ertragsteuern                         €0   (Verlustvortrag)
-  ──────────────────────────────────────────
+  ------------------------------------------
   JAHRESERGEBNIS                   -€119.500
 ```
 
@@ -164,8 +173,8 @@ OPERATING EXPENSES
 | KfW ERP-Gründerkredit StartGeld | €100.000 | GmbH |
 | SAB Mikrodarlehen | €20.000 | GmbH |
 | **Gesamt GmbH-Finanzierung** | **€145.000** | |
-| Kapitalbedarf inkl. Puffer | ~€130.000–€140.000 | |
-| **Puffer** | **~€5.000–€15.000** | |
+| Kapitalbedarf (siehe Kapitalbedarfsplan) | €137.550 (gerundet €138.000) | |
+| **Puffer** | **€7.450** | |
 | — | — | — |
 | Gründungszuschuss AfA (persönlich) ¹ | ~€16.500 | Gründer |
 | InnoStartBonus Sachsen (persönlich) ¹ | ~€12.600 | Gründer |
@@ -181,26 +190,26 @@ UMSATZ
   Hardware-Umsatz (VK netto)       €124.100
   Setup-Erlöse                      €25.000
   Abo-Erlöse (kumuliert)            €31.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Gesamtumsatz                     €180.100
 
 COGS
   Hardware-Einkaufskosten          -€101.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Bruttogewinn                      €79.100   (43,9 %)
 
 OPERATING EXPENSES
   Fixkosten gesamt                 -€138.000
   Abschreibungen (AfA)               -€1.700
   Gründungsaufwand (einmalig)        -€5.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBIT                              -€65.600
 
   Zinsen (KfW)                       -€3.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBT                               -€68.600
   Ertragsteuern                         €0   (Verlustvortrag)
-  ──────────────────────────────────────────
+  ------------------------------------------
   JAHRESERGEBNIS                    -€68.600
 ```
 
@@ -213,30 +222,30 @@ UMSATZ
   Hardware-Umsatz (VK netto)       €100.000
   Setup-Erlöse                      €20.000
   Abo-Erlöse (Ø MRR €6.250 × 12)   €75.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Gesamtumsatz                     €195.000
 
 COGS
   Hardware-Einkaufskosten           -€75.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Bruttogewinn                     €120.000   (61,5 %)
 
 OPERATING EXPENSES
   Fixkosten gesamt (kein neuer FTE) -€144.200
   Abschreibungen (AfA)               -€1.700
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBIT                              -€25.900
 
   Zinsen (KfW, Tilgung läuft)        -€2.500
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBT                               -€28.400
   Ertragsteuern                         €0   (Verlustvortrag)
-  ──────────────────────────────────────────
+  ------------------------------------------
   JAHRESERGEBNIS                    -€28.400
 ```
 
 > **Hinweis konservativ J2:** Noch leicht negativ — Break-even operativ wird ca. Q3 Jahr 2 erreicht
-> (MRR ~€11.500 ≙ ~17 Professional-Kunden oder ~25 Mischkunden). Der Fehlbetrag ist planbar
+> (MRR ~€11.500 entspricht ~17 Professional-Kunden oder ~25 Mischkunden). Der Fehlbetrag ist planbar
 > und durch den KfW-Kreditrahmen gedeckt.
 
 ---
@@ -248,29 +257,29 @@ UMSATZ
   Hardware-Umsatz (VK netto)       €200.000
   Setup-Erlöse                      €50.000
   Abo-Erlöse (Ø MRR €12.500 × 12) €150.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Gesamtumsatz                     €400.000
 
 COGS
   Hardware-Einkaufskosten          -€150.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Bruttogewinn                     €250.000   (62,5 %)
 
 OPERATING EXPENSES
   GF-Vergütung Vollkosten          -€115.000
   1 zusätzlicher FTE               -€60.000
   Weitere Fixkosten                 -€40.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Fixkosten gesamt                 -€215.000
   Abschreibungen (AfA)               -€1.700
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBIT                             +€33.300
 
   Zinsen                             -€1.500
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBT                              +€31.800
   Ertragsteuern                         €0   (Verlustvortrag aus J1 genutzt)
-  ──────────────────────────────────────────
+  ------------------------------------------
   JAHRESERGEBNIS                        €0   (Gewinn = Verlustverrechnung)
 ```
 
@@ -283,29 +292,29 @@ UMSATZ
   Hardware-Umsatz (VK netto)       €210.000
   Setup-Erlöse                      €55.000
   Abo-Erlöse (Ø MRR €19.000 × 12) €228.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Gesamtumsatz                     €493.000
 
 COGS
   Hardware-Einkaufskosten          -€160.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Bruttogewinn                     €333.000   (67,5 %)
 
 OPERATING EXPENSES
   GF-Vergütung Vollkosten          -€115.000
   1 zusätzlicher FTE               -€60.000
   Weitere Fixkosten                 -€37.200
-  ──────────────────────────────────────────
+  ------------------------------------------
   Fixkosten gesamt                 -€212.200
   Abschreibungen (AfA)               -€1.700
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBIT                            +€119.100
 
   Zinsen (Restschuld KfW)            -€1.500
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBT                             +€117.600
   Ertragsteuern (nach Verlustv.)         €0   (Verlustvortrag ~€147.900 > Gewinn)
-  ──────────────────────────────────────────
+  ------------------------------------------
   JAHRESERGEBNIS                  +€117.600
 ```
 
@@ -318,29 +327,29 @@ UMSATZ
   Hardware-Umsatz (VK netto)       €400.000
   Setup-Erlöse                     €100.000
   Abo-Erlöse (Ø MRR €37.500 × 12) €450.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Gesamtumsatz                     €950.000
 
 COGS
   Hardware-Einkaufskosten          -€300.000
-  ──────────────────────────────────────────
+  ------------------------------------------
   Bruttogewinn                     €650.000   (68,4 %)
 
 OPERATING EXPENSES
   GF-Vergütung Vollkosten          -€115.000
   2–3 FTE                         -€150.000
   Weitere Fixkosten                 -€66.400
-  ──────────────────────────────────────────
+  ------------------------------------------
   Fixkosten gesamt                 -€331.400
   Abschreibungen (AfA)               -€1.700
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBIT                            +€316.900
 
   Zinsen                                €0
-  ──────────────────────────────────────────
+  ------------------------------------------
   EBT                             +€316.900
   Ertragsteuern (~30 %, nach Verl.)  -€95.070
-  ──────────────────────────────────────────
+  ------------------------------------------
   JAHRESERGEBNIS                  +€221.830
 ```
 
@@ -365,10 +374,10 @@ OPERATING EXPENSES
 
 | Schwelle | Bedingung | Szenario |
 |---|---|---|
-| **Operativer Break-even (monatlich)** | MRR ≥ €11.500 | ~17 Professional-Kunden (€699) **oder** ~78 Starter-Kunden (€149) **oder** Mix aus ~20–25 aktiven Kunden |
-| **Break-even operativ erreicht** | MRR ≥ Fixkosten | Konservativ: ~Q3 Jahr 2 / Optimistisch: ~Q2 Jahr 2 |
+| **Operativer Break-even (monatlich)** | MRR >= €11.500 | ~17 Professional-Kunden (€699) **oder** ~78 Starter-Kunden (€149) **oder** Mix aus ~20–25 aktiven Kunden |
+| **Break-even operativ erreicht** | MRR >= Fixkosten | Konservativ: ~Q3 Jahr 2 / Optimistisch: ~Q2 Jahr 2 |
 | **Break-even kumuliert** | Verluste aus J1/J2 ausgeglichen | Konservativ: ~Jahr 4 / Optimistisch: ~Jahr 3 |
-| **GF-Gehalt kostendeckend** | Abo-MRR ≥ €9.600 | ~14 Professional-Kunden oder ~65 Starter-Kunden |
+| **GF-Gehalt kostendeckend** | Abo-MRR >= €9.600 | ~14 Professional-Kunden oder ~65 Starter-Kunden |
 | **Erste Enterprise-RZ-Kunden (Upside)** | 1 Kunde = €1.999/Mo. + €62.500 Hardware | Verbessert Break-even erheblich — 1 Enterprise = ~13 Professional |
 
 ---
@@ -379,11 +388,11 @@ OPERATING EXPENSES
 | Quelle | Betrag | Wann |
 |---|---|---|
 | Stammkapital (Eigenkapital) | €25.000 | Tag 1 |
-| KfW ERP-Gründerkredit StartGeld | bis €125.000 | ≤ 3 Monate nach Gründung |
-| SAB Mikrodarlehen Sachsen | bis €20.000 | Ab Monat 3 |
-| **Gesamt verfügbar (GmbH)** | **bis €165.000** | |
-| **Bedarf Jahr 1 (konservativ)** | **~€130.000–€145.000** | |
-| **Puffer** | **~€20.000–€35.000** | |
+| KfW ERP-Gründerkredit StartGeld | €100.000 | <= 3 Monate nach Gründung |
+| SAB Mikrodarlehen Sachsen | €20.000 | Ab Monat 3 |
+| **Gesamt verfügbar (GmbH)** | **€145.000** | |
+| **Bedarf Jahr 1 (konservativ)** | **€137.550 (gerundet €138.000)** | |
+| **Puffer** | **€7.450** | |
 
 ### Persönliche Fördermittel des Gründers (zusätzlich, unabhängig von GmbH)
 | Quelle | Betrag | Hinweis |

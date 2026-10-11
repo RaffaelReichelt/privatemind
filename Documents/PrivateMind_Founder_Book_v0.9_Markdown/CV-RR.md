@@ -1,3 +1,12 @@
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
+---
+
 # Profil Raffael Reichelt
 
 **Senior IT Consultant & Softwareentwickler | KI-Infrastruktur**
@@ -42,7 +51,7 @@ E-Mail: [raffael.reichelt@mac.com](mailto:raffael.reichelt@mac.com)
 | Freier Softwareentwickler        | Diverse Kunden, Köln                                 | 1995 – 1997       |
 
 
-<p style="break-before: page;">&nbsp;</p>
+<!-- pagebreak -->
 
 ## Kernkompetenzen
 
@@ -59,7 +68,6 @@ E-Mail: [raffael.reichelt@mac.com](mailto:raffael.reichelt@mac.com)
 | • KI-Infrastruktur, Local LLM Deployment & NVIDIA-Stack (CUDA, TensorRT-LLM)<br>• Frontendentwicklung & moderne Web-Technologien<br>• Datenbanken, Datawarehousing & Business Intelligence<br>• ERP- & CRM-Systeme<br>• Cloud-basierte Lösungen & Microservices<br>• Projektmanagement & Ressourcenplanung |
 
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
 
 ## Technologisches Portfolio
 
@@ -75,7 +83,6 @@ E-Mail: [raffael.reichelt@mac.com](mailto:raffael.reichelt@mac.com)
 | **Software-Tools**         | Atlassian Suite (Jira, Confluence, Bitbucket), Microsoft Visual Studio/VS Code, Eclipse, Apache Ant, Docker             |
 
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
 
 ## Zertifizierungen
 
@@ -86,149 +93,257 @@ E-Mail: [raffael.reichelt@mac.com](mailto:raffael.reichelt@mac.com)
 | Microsoft Certified: Azure Data Fundamentals | Februar 2023          | 1615-1345                 |
 
 
-<p style="break-before: page;">&nbsp;</p>
+<!-- pagebreak -->
 
 # Projekthistorie
 
 ## Aktuelle und jüngste Projekte
 
-|                  | **PrivateMind GmbH (in Gründung)**                                                                                                                                                                                                                                                                                                                                   |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | KI-Infrastruktur / IT-Dienstleistungen                                                                                                                                                                                                                                                                                                                               |
-| **Zeitraum**     | 2026 (in Vorbereitung)                                                                                                                                                                                                                                                                                                                                               |
-| **Beschreibung** | **Gründung KI-Appliance-Unternehmen:**<br>• Entwicklung und Vertrieb schlüsselfertiger, DSGVO-konformer KI-Systeme für europäische KMU<br>• Zielgruppe: Kanzleien, Steuerberater, Arztpraxen, Unternehmensberatungen — Branchen mit gesetzlicher Geheimhaltungspflicht<br>• Eigenentwicklung des PrivateMind Dashboards (Web-UI für lokale LLM-Verwaltung und -Nutzung) |
-| **Eigene Rolle** | **Gründer & Geschäftsführer:**<br>• Produktentwicklung (Dashboard, Software-Stack, Update-Pipeline)<br>• Technischer Betrieb (NVIDIA GB10/GX10, NVIDIA DGX OS, TensorRT-LLM, Ollama)<br>• Vertrieb, Marketing und Kundenbetreuung                                                                                                                                    |
-| **Technologien** | Python, TypeScript, Angular, NVIDIA CUDA, TensorRT-LLM, Ollama, Docker, PostgreSQL, Linux/DGX OS                                                                                                                                                                                                                                                                    |
+### PrivateMind GmbH (in Gründung)
+*KI-Infrastruktur / IT-Dienstleistungen · 2026 (in Vorbereitung)*
+
+**Gründung KI-Appliance-Unternehmen**
+
+- Entwicklung und Vertrieb schlüsselfertiger, DSGVO-konformer KI-Systeme für europäische KMU
+- Zielgruppe: Kanzleien, Steuerberater, Arztpraxen, Unternehmensberatungen — Branchen mit gesetzlicher Geheimhaltungspflicht
+- Eigenentwicklung des PrivateMind Dashboards (Web-UI für lokale LLM-Verwaltung und -Nutzung)
+
+*Eigene Rolle — Gründer & Geschäftsführer:*
+
+- Produktentwicklung (Dashboard, Software-Stack, Update-Pipeline)
+- Technischer Betrieb (NVIDIA GB10/GX10, NVIDIA DGX OS, TensorRT-LLM, Ollama)
+- Vertrieb, Marketing und Kundenbetreuung
+
+**Technologien:** Python, TypeScript, Angular, NVIDIA CUDA, TensorRT-LLM, Ollama, Docker, PostgreSQL, Linux/DGX OS
 
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
+### Configpoint Managed Services GmbH & Co. KG
+*IT und Rechenzentrum-Dienstleistungen · 03/2023 – 07/2026*
 
-|                  | **Configpoint Managed Services GmbH & Co. KG**                                                                                                                                                                                                                                                                                                                           |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | IT und Rechenzentrum-Dienstleistungen                                                                                                                                                                                                                                                                                                                                     |
-| **Zeitraum**     | 03/2023 – 07/2026                                                                                                                                                                                                                                                                                                                                                         |
-| **Beschreibung** | **Implementierung ConfigPoint Datawarehouse:**<br>• Konzeption und Aufbau einer Datawarehouse-Lösung zur Bereitstellung und Visualisierung von Unternehmensdaten<br>• Entwicklung von Automatisierungsprozessen zur Datenintegration und -verarbeitung<br>• Implementierung eines benutzerfreundlichen Reporting-Systems                                                    |
-| **Eigene Rolle** | **Fullstack-Entwickler:**<br>• Backend-Entwicklung mit Python und PostgreSQL<br>• Frontend-Implementierung mit Angular und Material Design<br>• Datenmodellierung und API-Design                                                                                                                                                                                           |
-| **Technologien** | Python, Git, PostgreSQL, Odoo, TypeScript, TypeORM, Angular, Material Design                                                                                                                                                                                                                                                                                              |
+**Implementierung ConfigPoint Datawarehouse**
 
+- Konzeption und Aufbau einer Datawarehouse-Lösung zur Bereitstellung und Visualisierung von Unternehmensdaten
+- Entwicklung von Automatisierungsprozessen zur Datenintegration und -verarbeitung
+- Implementierung eines benutzerfreundlichen Reporting-Systems
 
-<p style="break-before: page;">&nbsp;</p>
+*Eigene Rolle — Fullstack-Entwickler:*
 
-|                  | **Northland Power Europe GmbH**                                                                                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | Energieversorger                                                                                                                                                                            |
-| **Zeitraum**     | 07/2022 – 08/2022                                                                                                                                                                           |
-| **Beschreibung** | **IT-Abteilungsunterstützung:**<br>• Beratung zu IT-Strukturen und Prozessoptimierung<br>• Analyse bestehender IT-Systeme und -Dienstleistungen                                             |
-| **Eigene Rolle** | **Externer Service Manager:**<br>• Koordination von IT-Aufgaben und Ressourcen<br>• Erstellung und Priorisierung von Budgetanforderungen<br>• Beratung zu IT-Strategie und Lösungsansätzen  |
-| **Technologien** | Microsoft Office Suite (Word, Project, Visio), Projektmanagement-Tools                                                                                                                      |
+- Backend-Entwicklung mit Python und PostgreSQL
+- Frontend-Implementierung mit Angular und Material Design
+- Datenmodellierung und API-Design
 
+**Technologien:** Python, Git, PostgreSQL, Odoo, TypeScript, TypeORM, Angular, Material Design
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
+<!-- pagebreak -->
 
-|                  | **Schleswig-Holstein Netz AG**                                                                                                                                                                                                                                                                                   |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | Energieversorger                                                                                                                                                                                                                                                                                                 |
-| **Zeitraum**     | 08/2021 – 02/2023                                                                                                                                                                                                                                                                                                |
-| **Beschreibung** | **Projekt "Power Flow Calculation Cloud":**<br>• Entwicklung einer Cloud-Plattform zur Visualisierung von Energiewende-Szenarien im Mittelspannungsnetz<br>• Implementierung von Simulationsmodellen zur Prognose von Netzbelastungen<br>• Integration von IoT-Daten für Partner der Schleswig-Holstein Netz AG  |
-| **Eigene Rolle** | **Fullstack-Entwickler:**<br>• Backend-Implementierung mit Python und Azure Functions<br>• Frontend-Entwicklung mit React und TypeScript<br>• Integration von Cloud-Services und Microservices-Architekturen                                                                                                     |
-| **Technologien** | Python, Azure Functions, Azure Logic App, Azure DevOps, GitLab, React, TypeScript, Material Design                                                                                                                                                                                                               |
+### Northland Power Europe GmbH
+*Energieversorger · 07/2022 – 08/2022*
 
+**IT-Abteilungsunterstützung**
 
-<p style="break-before: page;">&nbsp;</p>
+- Beratung zu IT-Strukturen und Prozessoptimierung
+- Analyse bestehender IT-Systeme und -Dienstleistungen
 
-|                  | **Gemeinde Aidlingen**                                                                                                                                                                                                                                                  |
-| ---------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | Öffentliche Verwaltung                                                                                                                                                                                                                                                  |
-| **Zeitraum**     | 01/2021 – 08/2021                                                                                                                                                                                                                                                       |
-| **Beschreibung** | **IT-Outsourcing-Projekt:**<br>• Migration der IT-Infrastruktur und des Application Managements an ConfigPoint<br>• Transition und Transformation von 36 Non-SAP Anwendungen ins ConfigPoint Datacenter<br>• Aufbau eines nachhaltigen Application Management Services  |
-| **Eigene Rolle** | **Teilprojektleiter für Transformation & Transition:**<br>• Steuerung des Wissenstransfers zwischen Gemeinde und AMS-Team<br>• Durchführung fachlicher und technischer Interviews mit Stakeholdern<br>• Planung und Koordination der Migration inklusive Risikoanalyse  |
-| **Technologien** | Parallels, Java, Microsoft 365 (SharePoint/Teams), MS SQL Server, diverse Fachverfahren                                                                                                                                                                                 |
+*Eigene Rolle — Externer Service Manager:*
+
+- Koordination von IT-Aufgaben und Ressourcen
+- Erstellung und Priorisierung von Budgetanforderungen
+- Beratung zu IT-Strategie und Lösungsansätzen
+
+**Technologien:** Microsoft Office Suite (Word, Project, Visio), Projektmanagement-Tools
 
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
+### Schleswig-Holstein Netz AG
+*Energieversorger · 08/2021 – 02/2023*
 
-|                  | **Apleona GmbH**                                                                                                                                                                                                                                                         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Branche**      | Facility Management                                                                                                                                                                                                                                                      |
-| **Zeitraum**     | 08/2020 – 11/2020                                                                                                                                                                                                                                                        |
-| **Beschreibung** | **Entwicklung Apleona Ecosystem V.2:**<br>• Modernisierung der bestehenden Plattform für Facility-Management-Services<br>• Implementierung einer skalierbaren Microservices-Architektur<br>• Entwicklung einer intuitiven Benutzeroberfläche für verschiedene Endgeräte  |
-| **Eigene Rolle** | **Softwareentwickler:**<br>• Implementierung von HTML5/SCSS-Templates gemäß UI/UX-Vorgaben<br>• Entwicklung und Integration von REST-APIs<br>• Optimierung der Datenbank-Performance                                                                                     |
-| **Technologien** | NestJS, TypeScript, MongoDB, Mongoose, Cosmos DB, OpenAPI, Angular 8, HTML, SASS, CSS, Bootstrap                                                                                                                                                                         |
+**Projekt "Power Flow Calculation Cloud"**
 
-<p style="break-before: page;">&nbsp;</p>
+- Entwicklung einer Cloud-Plattform zur Visualisierung von Energiewende-Szenarien im Mittelspannungsnetz
+- Implementierung von Simulationsmodellen zur Prognose von Netzbelastungen
+- Integration von IoT-Daten für Partner der Schleswig-Holstein Netz AG
+
+*Eigene Rolle — Fullstack-Entwickler:*
+
+- Backend-Implementierung mit Python und Azure Functions
+- Frontend-Entwicklung mit React und TypeScript
+- Integration von Cloud-Services und Microservices-Architekturen
+
+**Technologien:** Python, Azure Functions, Azure Logic App, Azure DevOps, GitLab, React, TypeScript, Material Design
+
+<!-- pagebreak -->
+
+### Gemeinde Aidlingen
+*Öffentliche Verwaltung · 01/2021 – 08/2021*
+
+**IT-Outsourcing-Projekt**
+
+- Migration der IT-Infrastruktur und des Application Managements an ConfigPoint
+- Transition und Transformation von 36 Non-SAP Anwendungen ins ConfigPoint Datacenter
+- Aufbau eines nachhaltigen Application Management Services
+
+*Eigene Rolle — Teilprojektleiter für Transformation & Transition:*
+
+- Steuerung des Wissenstransfers zwischen Gemeinde und AMS-Team
+- Durchführung fachlicher und technischer Interviews mit Stakeholdern
+- Planung und Koordination der Migration inklusive Risikoanalyse
+
+**Technologien:** Parallels, Java, Microsoft 365 (SharePoint/Teams), MS SQL Server, diverse Fachverfahren
+
+
+### Apleona GmbH
+*Facility Management · 08/2020 – 11/2020*
+
+**Entwicklung Apleona Ecosystem V.2**
+
+- Modernisierung der bestehenden Plattform für Facility-Management-Services
+- Implementierung einer skalierbaren Microservices-Architektur
+- Entwicklung einer intuitiven Benutzeroberfläche für verschiedene Endgeräte
+
+*Eigene Rolle — Softwareentwickler:*
+
+- Implementierung von HTML5/SCSS-Templates gemäß UI/UX-Vorgaben
+- Entwicklung und Integration von REST-APIs
+- Optimierung der Datenbank-Performance
+
+**Technologien:** NestJS, TypeScript, MongoDB, Mongoose, Cosmos DB, OpenAPI, Angular 8, HTML, SASS, CSS, Bootstrap
+
+<!-- pagebreak -->
 
 ## Weitere ausgewählte Projekte
 
-|                  | **Messe München Outsourcing**                                                                                                                                                                                                                                                        |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Branche**      | Messewirtschaft                                                                                                                                                                                                                                                                      |
-| **Zeitraum**     | 04/2019 – 03/2020                                                                                                                                                                                                                                                                    |
-| **Beschreibung** | **IT-Outsourcing-Großprojekt:**<br>• Transition und Transformation von über 60 Non-SAP Anwendungen der Messe München ins Datagroup Datacenter<br>• Etablierung eines strukturierten Application Management Prozesses<br>• Integration bestehender Systeme in die neue IT-Landschaft  |
-| **Eigene Rolle** | **Teilprojektleiter:**<br>• Koordinierung des Wissenstransfers zwischen Messe München und AMS-Team<br>• Durchführung von Anwendungs- und Prozessanalysen<br>• Erstellung und Umsetzung des Migrationskonzepts                                                                        |
-| **Technologien** | PRINCE2, Java, Microsoft 365, Windows Server, MS SQL Server                                                                                                                                                                                                                          |
+### Messe München Outsourcing
+*Messewirtschaft · 04/2019 – 03/2020*
+
+**IT-Outsourcing-Großprojekt**
+
+- Transition und Transformation von über 60 Non-SAP Anwendungen der Messe München ins Datagroup Datacenter
+- Etablierung eines strukturierten Application Management Prozesses
+- Integration bestehender Systeme in die neue IT-Landschaft
+
+*Eigene Rolle — Teilprojektleiter:*
+
+- Koordinierung des Wissenstransfers zwischen Messe München und AMS-Team
+- Durchführung von Anwendungs- und Prozessanalysen
+- Erstellung und Umsetzung des Migrationskonzepts
+
+**Technologien:** PRINCE2, Java, Microsoft 365, Windows Server, MS SQL Server
 
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
+### Hansa GmbH
+*Wirtschaft · 2019*
 
-|                  | **Hansa GmbH**                                                                                                                                                                                                                                               |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Branche**      | Wirtschaft                                                                                                                                                                                                                                                   |
-| **Zeitraum**     | 2019                                                                                                                                                                                                                                                         |
-| **Beschreibung** | **Entwicklung Produktsetkonfigurator:**<br>• Konzeption und Implementierung einer modernen Webanwendung zur Produktkonfiguration<br>• Frontend-Entwicklung mit Angular Framework<br>• Integration mit bestehenden Backend-Systemen über REST-Schnittstellen   |
-| **Eigene Rolle** | **Frontend-Entwickler:**<br>• Umsetzung des UI/UX-Designs in HTML5/SCSS Templates<br>• Entwicklung responsiver Komponenten mit Angular 7.x<br>• Anbindung an REST-API und Implementierung von Datenflüssen                                                   |
-| **Technologien** | HTML5, SASS/CSS, TypeScript, Angular/CLI 7.x, Material Design, REST                                                                                                                                                                                          |
+**Entwicklung Produktsetkonfigurator**
 
+- Konzeption und Implementierung einer modernen Webanwendung zur Produktkonfiguration
+- Frontend-Entwicklung mit Angular Framework
+- Integration mit bestehenden Backend-Systemen über REST-Schnittstellen
 
-<p style="break-before: page;">&nbsp;</p>
+*Eigene Rolle — Frontend-Entwickler:*
 
-|                  | **Tank & Rast**                                                                                                                                                                                                                                                     |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | Dienstleistung / Verkehrswesen                                                                                                                                                                                                                                      |
-| **Zeitraum**     | 2018 – 2019                                                                                                                                                                                                                                                         |
-| **Beschreibung** | **SAP-Modernisierungsprojekt:**<br>• Entwicklung eines SAP UI5 Fiori Frontends für ein SAP OnPremise Plant Maintenance System<br>• Implementierung auf SAP Neo Cloud Plattform mit SAP HANA<br>• Aufbau einer Echtzeit-Datenreplikation von SAP PM zu HANA via SLT  |
-| **Eigene Rolle** | **Datenbankentwickler & Softwareentwickler:**<br>• Datenmigration und -import nach SAP HANA<br>• Entwicklung und Optimierung von XS OData-Services<br>• Integration der Services in die Gesamtarchitektur                                                           |
-| **Technologien** | SAP Cloud Platform, SAP HANA, SAP CDS, SAP UI5 / Fiori                                                                                                                                                                                                              |
+- Umsetzung des UI/UX-Designs in HTML5/SCSS Templates
+- Entwicklung responsiver Komponenten mit Angular 7.x
+- Anbindung an REST-API und Implementierung von Datenflüssen
 
+**Technologien:** HTML5, SASS/CSS, TypeScript, Angular/CLI 7.x, Material Design, REST
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
+<!-- pagebreak -->
 
-|                  | **MAN Truck & Bus**                                                                                                                                                                                                                                                    |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | Automobil                                                                                                                                                                                                                                                              |
-| **Zeitraum**     | 2018                                                                                                                                                                                                                                                                   |
-| **Beschreibung** | **SAP-Applikationsoptimierung:**<br>• Fehleranalyse einer bestehenden SAP Netweaver BSP Applikation zur Rechnungsprüfung<br>• Behebung von Performanceproblemen und funktionalen Fehlern<br>• Optimierung der Benutzeroberfläche und Verbesserung der User Experience   |
-| **Eigene Rolle** | **Softwareentwickler:**<br>• Analyse und Debugging der bestehenden Anwendung<br>• Implementierung von Fehlerbehebungen in JavaScript/HTML<br>• Dokumentation der Änderungen und Wissenstransfer an interne Teams                                                       |
-| **Technologien** | SAP Netweaver BSP, HTML, JavaScript                                                                                                                                                                                                                                    |
+### Tank & Rast
+*Dienstleistung / Verkehrswesen · 2018 – 2019*
 
+**SAP-Modernisierungsprojekt**
 
-<p style="break-before: page;">&nbsp;</p>
+- Entwicklung eines SAP UI5 Fiori Frontends für ein SAP OnPremise Plant Maintenance System
+- Implementierung auf SAP Neo Cloud Plattform mit SAP HANA
+- Aufbau einer Echtzeit-Datenreplikation von SAP PM zu HANA via SLT
 
-|                  | **Complimenti Due GmbH**                                                                                                                                                                                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | Handel                                                                                                                                                                                                                                            |
-| **Zeitraum**     | 2015 – 2017                                                                                                                                                                                                                                       |
-| **Beschreibung** | **Kundencommunity & Social Networking Webapp:**<br>• Migration von Oxwall zu Drupal als Content-Management-System<br>• Entwicklung einer modernen Angular-basierten Frontend-Anwendung<br>• Integration mit headless Drupal via RESTful Services   |
-| **Eigene Rolle** | **Technologieberater & Fullstack-Entwickler:**<br>• Frontend-Entwicklung mit JavaScript, HTML und SASS/CSS<br>• Backend-Implementierung mit PHP und MySQL<br>• Datenbank- und Systemarchitektur<br>• Anwenderschulung und Wissenstransfer          |
-| **Technologien** | JavaScript, Angular 1.x, HTML, SASS/CSS, Drupal 8.x, REST, MySQL, Apache Webserver                                                                                                                                                               |
+*Eigene Rolle — Datenbankentwickler & Softwareentwickler:*
+
+- Datenmigration und -import nach SAP HANA
+- Entwicklung und Optimierung von XS OData-Services
+- Integration der Services in die Gesamtarchitektur
+
+**Technologien:** SAP Cloud Platform, SAP HANA, SAP CDS, SAP UI5 / Fiori
 
 
-<p style="margin-top: 0.5cm;">&nbsp;</p>
+### MAN Truck & Bus
+*Automobil · 2018*
 
-|                  | **OLPC / Sugarlabs Foundation**                                                                                                                                                                                                                                        |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Branche**      | Bildungswesen                                                                                                                                                                                                                                                          |
-| **Zeitraum**     | 2011 – 2013                                                                                                                                                                                                                                                            |
-| **Beschreibung** | **Projekt "Sugar on a Stick":**<br>• Mitwirkung am Desktop-UI der XO-Laptops der One Laptop Per Child Foundation<br>• Entwicklung eines bootfähigen Fedora-Systems für Bildungseinrichtungen<br>• Gewinner des 1. Preises beim Wettbewerb "Berlins Zukunft ist offen"  |
-| **Eigene Rolle** | **Open-Source-Entwickler & Projektkoordinator:**<br>• Erstellung lokalisierter Builds in deutscher Sprache<br>• Organisation und Repräsentation auf Messen (Linuxtag 2011, 2012)<br>• Entwicklung eines Businessplans für sugarlabs Deutschland                        |
-| **Technologien** | Fedora, Git, Kickstart/Anaconda, Python                                                                                                                                                                                                                                |
+**SAP-Applikationsoptimierung**
+
+- Fehleranalyse einer bestehenden SAP Netweaver BSP Applikation zur Rechnungsprüfung
+- Behebung von Performanceproblemen und funktionalen Fehlern
+- Optimierung der Benutzeroberfläche und Verbesserung der User Experience
+
+*Eigene Rolle — Softwareentwickler:*
+
+- Analyse und Debugging der bestehenden Anwendung
+- Implementierung von Fehlerbehebungen in JavaScript/HTML
+- Dokumentation der Änderungen und Wissenstransfer an interne Teams
+
+**Technologien:** SAP Netweaver BSP, HTML, JavaScript
+
+<!-- pagebreak -->
+
+### Complimenti Due GmbH
+*Handel · 2015 – 2017*
+
+**Kundencommunity & Social Networking Webapp**
+
+- Migration von Oxwall zu Drupal als Content-Management-System
+- Entwicklung einer modernen Angular-basierten Frontend-Anwendung
+- Integration mit headless Drupal via RESTful Services
+
+*Eigene Rolle — Technologieberater & Fullstack-Entwickler:*
+
+- Frontend-Entwicklung mit JavaScript, HTML und SASS/CSS
+- Backend-Implementierung mit PHP und MySQL
+- Datenbank- und Systemarchitektur
+- Anwenderschulung und Wissenstransfer
+
+**Technologien:** JavaScript, Angular 1.x, HTML, SASS/CSS, Drupal 8.x, REST, MySQL, Apache Webserver
 
 
-<p style="break-before: page;">&nbsp;</p>
+### OLPC / Sugarlabs Foundation
+*Bildungswesen · 2011 – 2013*
 
-|                  | **HSE24 / Home Shopping Europe / hot networks AG**                                                                                                                                                                                                           |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Branche**      | Handel / E-Commerce / TV-Shopping                                                                                                                                                                                                                            |
-| **Zeitraum**     | 1997 – 2010                                                                                                                                                                                                                                                  |
-| **Beschreibung** | **Teamleiter ERP & IT-Konsolidierung (2005–2010):**<br>• Desintegration internationaler Systeme (SAP R/3, Siebel, Oracle DWH, Show-Planning-Tool)<br>• Migration von Siebel CRM zu SAP CRM<br>• Technologiewechsel Business Intelligence und Datawarehouse<br><br>**Head of IT Development Services (2001–2005):**<br>• E-Commerce-Relaunch: Neugestaltung der internationalen Plattform<br>• Integration von SAP, Intershop und Oracle<br>• Aufbau zentrales Datawarehouse auf Oracle-Basis<br>• Führung des internationalen Entwicklungsteams<br><br>**Softwareentwickler (1997–2001):**<br>• Entwicklung TV-Showplanner und erster Internetauftritt HOT.de<br>• Aufbau 7/24 Business Critical First Level Support für europäische Gesellschaften |
-| **Eigene Rolle** | **Teamleiter / Head of IT / Softwareentwickler** (Aufstieg vom Entwickler zum Teamleiter über 13 Jahre)                                                                                                                                                      |
-| **Technologien** | Java, SAP R/3/CRM/HCM/Portal, Oracle, Siebel CRM, Intershop Enfinity, MS SQL Server, MS SharePoint, MS Visual Basic, ABAP, Perl                                                                                                                             |
+**Projekt "Sugar on a Stick"**
+
+- Mitwirkung am Desktop-UI der XO-Laptops der One Laptop Per Child Foundation
+- Entwicklung eines bootfähigen Fedora-Systems für Bildungseinrichtungen
+- Gewinner des 1. Preises beim Wettbewerb "Berlins Zukunft ist offen"
+
+*Eigene Rolle — Open-Source-Entwickler & Projektkoordinator:*
+
+- Erstellung lokalisierter Builds in deutscher Sprache
+- Organisation und Repräsentation auf Messen (Linuxtag 2011, 2012)
+- Entwicklung eines Businessplans für sugarlabs Deutschland
+
+**Technologien:** Fedora, Git, Kickstart/Anaconda, Python
+
+<!-- pagebreak -->
+
+### HSE24 / Home Shopping Europe / hot networks AG
+*Handel / E-Commerce / TV-Shopping · 1997 – 2010*
+
+**Teamleiter ERP & IT-Konsolidierung (2005–2010)**
+
+- Desintegration internationaler Systeme (SAP R/3, Siebel, Oracle DWH, Show-Planning-Tool)
+- Migration von Siebel CRM zu SAP CRM
+- Technologiewechsel Business Intelligence und Datawarehouse
+
+**Head of IT Development Services (2001–2005)**
+
+- E-Commerce-Relaunch: Neugestaltung der internationalen Plattform
+- Integration von SAP, Intershop und Oracle
+- Aufbau zentrales Datawarehouse auf Oracle-Basis
+- Führung des internationalen Entwicklungsteams
+
+**Softwareentwickler (1997–2001)**
+
+- Entwicklung TV-Showplanner und erster Internetauftritt HOT.de
+- Aufbau 7/24 Business Critical First Level Support für europäische Gesellschaften
+
+*Eigene Rolle:* Teamleiter / Head of IT / Softwareentwickler (Aufstieg vom Entwickler zum Teamleiter über 13 Jahre)
+
+**Technologien:** Java, SAP R/3/CRM/HCM/Portal, Oracle, Siebel CRM, Intershop Enfinity, MS SQL Server, MS SharePoint, MS Visual Basic, ABAP, Perl

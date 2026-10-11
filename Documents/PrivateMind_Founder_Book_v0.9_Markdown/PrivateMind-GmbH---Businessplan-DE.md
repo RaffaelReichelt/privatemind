@@ -3,6 +3,8 @@ papersize: a4
 geometry: margin=2.2cm
 lang: de
 colorlinks: false
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
 ---
 
 # PrivateMind GmbH — Businessplan
@@ -16,18 +18,18 @@ colorlinks: false
 
 ## Inhaltsverzeichnis
 
-1. [Executive Summary](#1-executive-summary)
-2. [Problem & Marktchance](#2-problem--marktchance)
-3. [Marktanalyse](#3-marktanalyse)
-4. [Produkt & Dienstleistung](#4-produkt--dienstleistung)
-5. [Geschäftsmodell & Preisgestaltung](#5-geschäftsmodell--preisgestaltung)
-6. [Marketing & Vertrieb](#6-marketing--vertrieb)
-7. [Organisation & Aufbau](#7-organisation--aufbau)
-8. [Finanzplanung](#8-finanzplanung)
-9. [Risikoanalyse](#9-risikoanalyse)
-10. [Meilensteine & Zeitplan](#10-meilensteine--zeitplan)
-11. [Fördermöglichkeiten](#11-fördermöglichkeiten)
-12. [Offene Punkte & Nächste Schritte](#12-offene-punkte--nächste-schritte)
+1. [Executive Summary](#executive-summary)
+2. [Problem & Marktchance](#problem-marktchance)
+3. [Marktanalyse](#marktanalyse)
+4. [Produkt & Dienstleistung](#produkt-dienstleistung)
+5. [Geschäftsmodell & Preisgestaltung](#geschäftsmodell-preisgestaltung)
+6. [Marketing & Vertrieb](#marketing-vertrieb)
+7. [Organisation & Aufbau](#organisation-aufbau)
+8. [Finanzplanung](#finanzplanung)
+9. [Risikoanalyse](#risikoanalyse)
+10. [Meilensteine & Zeitplan](#meilensteine-zeitplan)
+11. [Fördermöglichkeiten](#fördermöglichkeiten)
+12. [Offene Punkte & Nächste Schritte](#offene-punkte-nächste-schritte)
 
 * [Anhang](#anhang)
 
@@ -243,11 +245,13 @@ Alle PrivateMind-Appliances basieren auf dem ASUS Ascent GX10, der günstigsten 
 
 | Modell | Parameter | Format | Tokens/Sekunde (ca.) | Praxisbedeutung |
 |---|---|---|---|---|
-| Llama 3.3 Instruct | 70B | FP16 | ~25–35 tok/s | Flüssige Konversation, Enterprise-Qualität |
-| Llama 3.1 | 405B | INT4 | ~8–15 tok/s | Leistungsfähigstes Open-Weight-Modell |
-| DeepSeek-R1 | 70B | FP16 | ~25–35 tok/s | Stark bei Reasoning, Analyse |
-| Qwen2.5 | 72B | FP16 | ~25–35 tok/s | Mehrsprachigkeit, Dokumente |
-| Gemma 3 | 27B | FP16 | ~60–80 tok/s | Schnell, gut für Zusammenfassungen |
+| Mistral Small 3.x | 24B | Q8/BF16 | ~50–65 tok/s | Default-Modell, Tool Calling + Vision, Einzelgerät |
+| Qwen3.6-27B | 27B (dense) | Q8/BF16 | ~50–65 tok/s | Alternative Default, Kontext bis 1 Mio. Token, Einzelgerät |
+| Mistral Large 2 / Pixtral Large | 123B | Q8 | ~15–25 tok/s | Premium-Qualität, europäischer Anbieter, Cluster |
+| Llama 4 Scout | 109B gesamt / 17B aktiv (MoE) | Q8 | ~45–60 tok/s | Sehr lange Dokumente, schnell trotz Modellgröße |
+| DeepSeek-R1 *(Nischenoption)* | 70B | FP16 | ~25–35 tok/s | Reasoning-Spezialist, Analyse |
+| Gemma 3 *(Nischenoption)* | 27B | FP16 | ~60–80 tok/s | Schnell, gut für Zusammenfassungen |
+| Qwen3.6-35B-A3B *(Nischenoption)* | 35B gesamt / 3B aktiv (MoE) | Q8 | ~120–150 tok/s | Hoher Durchsatz, latenzkritische Workflows (Qualität unter 27B-Dense) |
 
 *Cluster (2× GX10): verdoppelt Durchsatz, ermöglicht 200B FP16 / 405B INT4.*
 
@@ -258,6 +262,8 @@ ASUS ist der einzige OEM, der den GX10 in drei SSD-Konfigurationen anbietet und 
 **Backup-Lieferanten (GX10-Linie):** Dell Pro Max GB10, Lenovo PGX, HP ZGX — gleicher Chip, höherer Preis, aber mit Hersteller-Support (relevant bei ASUS-Lieferengpässen).
 
 **Enterprise-Linie:** ASUS ESC4000A-E12 und Dell PowerEdge R760xa sind gleichwertige OEM-Optionen mit identischer GPU-Spezifikation (4× NVIDIA L40S 48 GB) — beide qualifizieren sich gegenseitig als Fallback.
+
+**Garantie & Beschaffung (kritisch für EU-Rollout):** ASUS leistet keinen Garantieservice außerhalb des Kauflandes. Beschaffung erfolgt daher ausschließlich über einen ASUS-Vertriebspartner/-Reseller mit Sitz in Deutschland bzw. der EU, damit Garantie- und Reparaturansprüche vor Ort durchsetzbar sind — dies ist als hartes Kriterium in die Lieferantenauswahl aufgenommen. Eine erweiterte Garantie (z. B. +3 Jahre) ist bei ASUS nicht als Self-Service-Kauf verfügbar, sondern nur über direkten Kontakt zum ASUS Business/Commercial Support; ein entsprechendes Angebot wird aktiv angefragt und in die Professional-/Enterprise-Tier-Kalkulation eingepreist. Da ASUS ausdrücklich keine Verantwortung für Datenverlust bei Reparatur/Austausch übernimmt, wird vor jedem RMA-Versand ein Daten-Löschprozess (Backup + sichere Löschung/Verschlüsselung) als Standardverfahren angewendet — insbesondere relevant bei Kanzleikunden mit Mandatstrennung. Details siehe Anlage *Garantie & Gewährleistung ASUS Ascent GX10*.
 
 ### 4.2 Produktlinien
 
@@ -320,11 +326,13 @@ Nicht jedes verfügbare Modell wird angeboten. PrivateMind kuratiert eine schlan
 
 | Modell | Stärke | Empfohlen für |
 |---|---|---|
-| Llama 3.3 70B Instruct | Allzweck, beste Balance | Standard-Empfehlung für alle |
-| DeepSeek-R1 70B | Reasoning, Analyse, Argumentation | Kanzleien, Beratungen |
-| Qwen2.5 72B | Mehrsprachigkeit, strukturierte Ausgabe | Internationales Geschäft |
-| Gemma 3 27B | Schnell, sparsam | Einfache Tasks, hoher Durchsatz |
-| Mistral Large (lokal) | Europäisches Modell, Französisch/Deutsch | DACH-spezifische Use Cases |
+| Mistral Small 3.x (24B) | Europäischer Anbieter, Tool Calling + Vision, Einzelgerät | Standard-Empfehlung für alle |
+| Qwen3.6-27B | Kontext bis 1 Mio. Token, Vision, Einzelgerät | Kanzleien, lange Verträge/Dokumente |
+| Mistral Large 2 / Pixtral Large (123B) | Höchste Qualität, europäischer Anbieter | Premium-/Enterprise-Tier, Cluster |
+| Llama 4 Scout (109B, MoE) | Sehr lange Dokumente, schnell trotz Größe | Große Dokumentenbestände, Cluster |
+| DeepSeek-R1 70B *(Nischenoption)* | Reasoning, Analyse, Argumentation | Spezialfälle mit hohem Reasoning-Bedarf |
+| Gemma 3 27B *(Nischenoption)* | Schnell, sparsam | Einfache Tasks, hoher Durchsatz |
+| Qwen3.6-35B-A3B *(Nischenoption)* | 3–4× schneller als Qwen3.6-27B, geringere Qualität (MoE) | Hoher Durchsatz, latenzkritische Anwendungen |
 | [Branchen-spezifisch] | Finetuned auf Kundendaten | Enterprise-Option (gegen Aufpreis) |
 
 ### 4.4 Service-Portfolio
@@ -353,6 +361,23 @@ Nicht jedes verfügbare Modell wird angeboten. PrivateMind kuratiert eine schlan
 - API-Integration in bestehende Software (CRM, DMS, ERP)
 - Erweiterter Vor-Ort-Support
 
+### 4.5 Backup-Optionen (Zusatzoption je Produktlinie)
+
+**Lücke identifiziert:** Bisher gibt es keine standardisierte Backup-Lösung für Kundendaten (Chat-Verläufe, hochgeladene Dokumente, RAG-Indizes, Finetuning-Ergebnisse, Audit-Logs), die auf der SSD der Appliance liegen. Bei Geräteausfall, Diebstahl oder Bedienfehler sind diese Daten ohne Backup unwiderruflich verloren — ein Risiko, das bislang nur für den Sonderfall RMA (Daten-Löschprozess vor Rückversand, siehe 4.1) adressiert ist, nicht für den laufenden Betrieb.
+
+**Grundprinzip: konsequent On-Premises.** Damit das zentrale USP "keine Cloud-Abhängigkeit, kein Datentransfer" (siehe 1. Das Angebot, 3.5) durch das Backup nicht unterlaufen wird, bleiben alle Backup-Optionen physisch beim Kunden — verschlüsselte lokale Redundanz statt Cloud-Speicher. Das Backup-Medium wird räumlich vom Gerät getrennt aufbewahrt (Brandschutz-Empfehlung: anderer Raum/Brandabschnitt), Verschlüsselung erfolgt at-rest (LUKS/VeraCrypt-Container) mit kundenseitig verwahrtem Schlüssel.
+
+| | **Backup Basic** | **Backup Plus** | **Backup Cluster** | **Backup Enterprise** |
+|---|---|---|---|---|
+| Passt zu Produktlinie | Standard (1× GX10, 1 TB) | Professional (1× GX10, 2 TB) | Premium (2× GX10 Cluster, je 2 TB) | Enterprise (Rack, 4× NVMe 8+ TB) |
+| Backup-Medium | Externe verschlüsselte NVMe/USB-C-SSD, 2 TB | Lokales NAS, RAID 1, 4 TB | Lokales NAS, RAID 5/6, 8 TB — sichert beide Cluster-Knoten | Dediziertes Backup-Storage-Array, RAID 6, 16+ TB |
+| Methode | Wöchentliches verschlüsseltes Snapshot-Backup (Restic/Borg), Cron-gesteuert | Tägliches inkrementelles Backup, 30 Tage Versionierung | Tägliches Backup beider Knoten, 30 Tage Versionierung, halbjährlicher Restore-Test | Tägliches Backup + Snapshot-Rotation, 90 Tage Versionierung, quartalsweiser Restore-Test |
+| Geo-Redundanz | — | — | Optional: zweites NAS an Kunden-Zweitstandort | Empfohlen: zweites Rack-Gerät am Zweitstandort (Kundeneigentum, kein Drittanbieter) |
+| Aufbewahrungsort | Getrennt vom Gerät beim Kunden | Getrennt vom Gerät beim Kunden | Getrennter Brandabschnitt | Zweitstandort |
+| **Hardware-EK (ca.)** | **~€150** | **~€400** | **~€700** | **~€2.500–€5.000** |
+
+Details zu Preisen und optionalem Managed-Backup-Service siehe 5.2.
+
 <!-- pagebreak -->
 
 ## 5. Geschäftsmodell & Preisgestaltung
@@ -378,6 +403,19 @@ Die Unternehmenslogik ist einfach: **Je mehr Kunden im Abo, desto stabiler das U
 | PrivateMind Enterprise | 4× NVIDIA L40S 48 GB, 192 GB GPU-VRAM, 2U Rack — ASUS ESC4000A-E12 oder Dell PowerEdge R760xa (je nach Kundenpräferenz) | €74.375 brutto / €62.500 netto | ~€45.000–€55.000 | ~€7.500–€17.500 |
 
 *Preise netto = B2B-Preise für Geschäftskunden. MwSt. 19% (DE).*
+
+**Backup-Optionen (Zusatzoption, siehe 4.5 — einmalig + optional monatlich verwaltet):**
+
+| | **Backup Basic** | **Backup Plus** | **Backup Cluster** | **Backup Enterprise** |
+|---|---|---|---|---|
+| Passt zu Produktlinie | Standard | Professional | Premium | Enterprise |
+| Hardware (VK netto, einmalig) | €250 | €650 | €1.100 | €4.000–€7.500 |
+| Einrichtung (VK netto, einmalig) | €300 | €450 | €600 | €1.500 |
+| **Marge Hardware (ca.)** | **~€100** | **~€250** | **~€400** | **~€1.500–€2.500** |
+| Managed-Backup (optional, mtl. netto) | €29 | €59 | €99 | €249 |
+| Managed-Backup umfasst | Backup-Status-Check, Alarmierung bei Fehlschlag | + jährlicher Restore-Test | + halbjährlicher Restore-Test | + quartalsweiser Restore-Test, Priorität im Enterprise-SLA |
+
+*Managed-Backup ist eine optionale Ergänzung zum Service-Abo, keine Pflichtkomponente — empfohlen ab Professional aufwärts. Hardware + Einrichtung sind auch ohne laufendes Abo einzeln buchbar.*
 
 **Service-Abos (monatlich, netto, Mindestlaufzeit 12 Monate):**
 
@@ -674,7 +712,7 @@ Annahmen: Gründung Monat 1, erste Umsätze Monat 3, je 1 Neukunde/Monat ab Mona
 | 12 | 1 | 10 | €1.740 | €2.400 | €2.000 | €6.140 | -€11.500 | -€5.360 | -€109.805 |
 | **Gesamt Jahr 1** | **10** | **10** | **€8.995** | **€11.200** | **€8.000** | **€28.195** | **-€138.000** | | **-€109.805** |
 
-*Hinweis: Monat 7 und 12: Premium-Verkauf angenommen. Kumulierter Fehlbetrag ~€110k erfordert KfW ERP StartGeld Darlehen (bis €125.000) + Stammkapital + Fördermittel — siehe 8.6.*
+*Hinweis: Monat 7 und 12: Premium-Verkauf angenommen. Kumulierter Fehlbetrag ~€110k erfordert KfW ERP StartGeld Darlehen (€100.000) + Stammkapital + Fördermittel — siehe 8.6.*
 
 ### 8.4 Monatliche Planung — Jahr 1 (Optimistisches Szenario)
 
@@ -713,13 +751,13 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional-Tier 
 | Finanzierungsquelle | Betrag (ca.) | Empfänger | Verfügbarkeit |
 |---|---|---|---|
 | Eigenkapital (Stammkapital GmbH) | €25.000 | GmbH | Bei Gründung |
-| **KfW ERP-Gründerkredit StartGeld** | **bis €125.000** | **GmbH** | **Über Hausbank, innerhalb von 3 Monaten nach Gründung — PRIORITÄT** |
-| SAB Mikrodarlehen | bis €20.000 | GmbH | 3 Monate nach Gründung |
+| **KfW ERP-Gründerkredit StartGeld** | **€100.000** | **GmbH** | **Über Hausbank, innerhalb von 3 Monaten nach Gründung — PRIORITÄT** |
+| SAB Mikrodarlehen | €20.000 | GmbH | 3 Monate nach Gründung |
 | Gründungszuschuss AfA (15 Mo.) ¹ | ~€16.500 | Gründer (persönlich) | Bewilligung vor Gründung |
 | InnoStartBonus Sachsen ¹ | ~€12.600 | Gründer (persönlich) | Bei Bewilligung |
-| **Gesamt GmbH-Finanzierung** | **~€145.000–€170.000** | GmbH | |
-| **Kapitalbedarf Jahr 1 (konservativ)** | **~€128.000–€145.000** | GmbH | Gründungskosten + Betriebsverlust inkl. GF-Gehalt |
-| **Puffer** | **~€5.000–€25.000** | | |
+| **Gesamt GmbH-Finanzierung** | **€145.000** | GmbH | |
+| **Kapitalbedarf Jahr 1 (konservativ)** | **€137.550 (ger. €138.000)** | GmbH | Gründungskosten + Betriebsverlust inkl. GF-Gehalt |
+| **Puffer** | **€7.450** | | |
 
 *¹ Gründungszuschuss und InnoStartBonus fließen dem Gründer persönlich zu — sie sind von der GmbH-Finanzierung unabhängig und verbessern die persönliche Liquiditätslage zusätzlich zur GmbH-Vergütung.*
 
@@ -740,9 +778,11 @@ Annahmen: 2–3 Neukunden/Monat ab Monat 4, größerer Anteil Professional-Tier 
 | **Große Systemhäuser kopieren** | Mittel | Hoch | Erheblich | First-Mover-Vorteil nutzen; Nische durch Spezialisierung verteidigen; Referenzen aufbauen |
 | **Support-Überlastung (Solo-Betrieb)** | Mittel | Mittel | Moderat | Abo-Tiering begrenzt Support-Anfragen; Monitoring automatisieren; klare SLA-Grenzen |
 | **Technischer Fehler/Hardware-Ausfall beim Kunden** | Mittel | Hoch | Erheblich | Betriebshaftpflicht; klare Haftungsbegrenzung in AGB; schneller Austauschprozess |
+| **Datenverlust beim Kunden (Geräteausfall, Diebstahl, Bedienfehler)** | Mittel | Hoch | Erheblich | Backup-Optionen je Produktlinie (siehe 4.5), on-prem, verschlüsselt; empfohlen ab Kaufabschluss aktiv anzubieten, nicht nur auf Nachfrage |
 | **Regulatory Surprise (EU AI Act neue Pflichten)** | Niedrig | Mittel | Moderat | Rechtsberatung verfolgt EU AI Act; lokale Kontrolle ist compliance-vorteilhaft |
 | **Gründer fällt aus (Krankheit etc.)** | Niedrig | Hoch | Erheblich | Versicherung (Berufsunfähigkeit), Notfall-Dokumentation, frühzeitig Netzwerk aufbauen |
 | **Demo-Gerät defekt** | Niedrig | Mittel | Moderat | GX10 4TB bereits vorhanden; Backup-Lieferant (Dell/Lenovo GB10) identifiziert |
+| **Garantie im Kaufland gebunden, nicht in DE durchsetzbar** | Mittel | Mittel | Erheblich | Beschaffung ausschließlich über ASUS-Vertriebspartner mit Sitz DE/EU; als Lieferantenkriterium fixiert |
 
 ### 9.2 Strategische Risikominimierung
 
@@ -902,7 +942,8 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 - [ ] DSGVO-Dokumentation: Verarbeitungsverzeichnis-Vorlage für Kunden
 - [ ] Haftungsfragen: KI-generierte Inhalte, Produkthaftung Hardware, Garantieausschluss
 - [ ] Umsatzsteuer-Registrierung / OSS für EU-Verkauf
-- [ ] Lieferantenbedingungen ASUS/Dell prüfen (Wiederverkaufsrechte, Garantieübertragung)
+- [ ] Lieferantenbedingungen ASUS/Dell prüfen (Wiederverkaufsrechte, Garantieübertragung); verbindliche Basis-Garantiedauer und Angebot erweiterte 3-Jahres-Garantie beim ASUS-Vertrieb DACH einholen, deutschen/EU-Reseller mit Garantiezuständigkeit fixieren (siehe Anlage *Garantie & Gewährleistung ASUS Ascent GX10*)
+- [ ] Daten-Löschprozess für RMA-/Garantiefälle (Backup + sichere Löschung/Verschlüsselung) in Betriebsdokumentation aufnehmen
 
 ### Vertrieb
 
@@ -986,6 +1027,19 @@ Ab ~17 Professional-Kunden (€699/Mo.) deckt der MRR alle laufenden Fixkosten i
 - Newegg, Amazon EU — aktuelle Marktpreise (Stand: April 2026)
 - EU AI Act — Volltext und Umsetzungsberichte
 - DSGVO-Bußgeldstatistiken 2024 (EDPB Annual Report)
+- ASUS Support-/Garantieseite (asus.com/us, GX10-Produktseite), Stand 16.08.2026
+
+### E. Garantie & Gewährleistung ASUS Ascent GX10 (Kurzfassung)
+
+Vollständige Fassung mit Ausschlüssen und offenen To-Dos: siehe eigenständige Anlage *Garantie & Gewährleistung ASUS Ascent GX10*.
+
+| Punkt | Status |
+|---|---|
+| Standardgarantie | Dauer nicht tabellarisch ausgewiesen; verbindliche Bestätigung beim ASUS-Vertrieb DACH ausstehend |
+| Erweiterte Garantie (+3 Jahre) | Nur über direkten Kontakt zum ASUS Business/Commercial Support, kein Self-Service-Kauf; Angebot wird aktiv angefragt |
+| Internationale Gültigkeit | **Kein Garantieservice außerhalb des Kauflandes** → Beschaffung ausschließlich über ASUS-Vertriebspartner mit Sitz DE/EU |
+| Rückgabe | Alle Käufe endgültig (kein reguläres Rückgaberecht); defekte Geräte innerhalb der Garantiezeit reparabel/austauschbar nach ASUS-Freigabe |
+| Datenverlust bei RMA | ASUS übernimmt keine Verantwortung für Datenverlust/vertrauliche Daten bei Reparatur/Austausch → Daten-Löschprozess vor jedem Versand verpflichtend |
 
 ---
 

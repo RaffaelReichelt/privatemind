@@ -3,6 +3,8 @@ papersize: a4
 geometry: margin=2.2cm
 lang: de
 colorlinks: false
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
 ---
 
 # PrivateMind GmbH -- Founder Book 2026
@@ -19,21 +21,21 @@ colorlinks: false
 
 ## Inhaltsverzeichnis
 
-1.  [Die Vision](#1-die-vision)
-2.  [Die Gründergeschichte](#2-die-gr%C3%BCndergeschichte)
-3.  [Warum PrivateMind?](#3-warum-privatemind)
-4.  [Werte](#4-werte)
-5.  [Markt](#5-markt)
-6.  [Produkte](#6-produkte)
-7.  [Die eigentliche Innovation](#7-die-eigentliche-innovation)
-8.  [Vertrieb](#8-vertrieb)
-9.  [Marketing](#9-marketing)
-10. [Roadmap](#10-roadmap)
-11. [Finanzen](#11-finanzen)
-12. [Risiken](#12-risiken)
-13. [Erfolgsfaktoren](#13-erfolgsfaktoren)
-14. [Persönliche Gedanken](#14-pers%C3%B6nliche-gedanken)
-15. [Anhänge](#anh%C3%A4nge)
+1.  [Die Vision](#die-vision)
+2.  [Die Gründergeschichte](#die-gründergeschichte)
+3.  [Warum PrivateMind?](#warum-privatemind)
+4.  [Werte](#werte)
+5.  [Markt](#markt)
+6.  [Produkte](#produkte)
+7.  [Die eigentliche Innovation](#die-eigentliche-innovation)
+8.  [Vertrieb](#vertrieb)
+9.  [Marketing](#marketing)
+10. [Roadmap](#roadmap)
+11. [Finanzen](#finanzen)
+12. [Risiken](#risiken)
+13. [Erfolgsfaktoren](#erfolgsfaktoren)
+14. [Persönliche Gedanken](#persönliche-gedanken)
+15. [Anhänge](#anhänge)
 
 ------------------------------------------------------------------------
 
@@ -180,7 +182,7 @@ wiederholen.
 PrivateMind bündelt über 30 Jahre Erfahrung aus Softwareentwicklung,
 Digitalisierung und IT-Beratung -- konkret: Systemarchitektur,
 Linux-Betrieb, Datawarehousing, Projekt- und Teamleitung sowie direkter
-technischer Kundensupport (siehe [Kapitel 2](#2-die-gr%C3%BCndergeschichte)).
+technischer Kundensupport (siehe [Kapitel 2](#die-gründergeschichte)).
 Diese Kombination ist selten: Die meisten Anbieter lokaler KI sind
 entweder reine Hardwarehändler ohne Software-Tiefe, oder
 Entwickler-Tools ohne KMU-tauglichen Support. PrivateMind deckt beides
@@ -202,14 +204,14 @@ Die Kernprobleme vieler Unternehmen sind:
 Aus diesen Problemen folgt der Anspruch: KI einfach, sicher und lokal
 nutzbar machen -- als Service, nicht als Selbstbau-Projekt. Was das für
 das eigentliche Produkt von PrivateMind bedeutet, vertieft
-[Kapitel 7](#7-die-eigentliche-innovation); die Herleitung aus
-Marktproblem und Marktlücke steht in [Kapitel 5](#5-markt).
+[Kapitel 7](#die-eigentliche-innovation); die Herleitung aus
+Marktproblem und Marktlücke steht in [Kapitel 5](#markt).
 
 ------------------------------------------------------------------------
 
 # 4. Werte
 
--   **Vertrauen** -- das eigentliche Produkt (siehe [Kapitel 7](#7-die-eigentliche-innovation)).
+-   **Vertrauen** -- das eigentliche Produkt (siehe [Kapitel 7](#die-eigentliche-innovation)).
     Wird verdient durch Nachvollziehbarkeit, nicht durch
     Marketingversprechen.
 -   **Einfachheit** -- der Kunde muss keine KI-Kenntnisse mitbringen.
@@ -271,7 +273,7 @@ Rechenzentrum brauchte, passt heute in eine Box von 15×15×5 cm.
 Der regulatorische Rückenwind ist real: EU AI Act und harte
 DSGVO-Durchsetzung (über 1,6 Mrd. € Bußgelder 2024 EU-weit) machen
 lokale KI-Infrastruktur zur Compliance-Anforderung statt zur Kür --
-näher ausgeführt in [Kapitel 1](#1-die-vision).
+näher ausgeführt in [Kapitel 1](#die-vision).
 
 ## Zielmarktsegmente
 
@@ -325,12 +327,15 @@ kein starker Wettbewerber aktiv ist.
 # 6. Produkte
 
 Alle Produktlinien laufen auf dem ASUS Ascent GX10 (NVIDIA GB10 Grace
-Blackwell, 128 GB Unified Memory) -- der günstigsten verfügbaren
-Implementierung dieser Chip-Generation. Die Enterprise-Linie nutzt
-alternativ ein 2U-Rack-System (ASUS ESC4000A-E12 oder Dell PowerEdge
-R760xa, je 4× NVIDIA L40S). Der Kundennutzen steht dabei immer vor der
-Technik: Der Kunde kauft keine Hardware, er kauft eine fertig
-eingerichtete, laufend betreute KI-Abteilung.
+Blackwell, 128 GB Unified Memory je Gerät) -- der günstigsten
+verfügbaren Implementierung dieser Chip-Generation. Standard und
+Professional nutzen je ein Gerät, Premium einen Cluster aus zwei GX10
+(256 GB Unified Memory, ermöglicht Modelle bis 405B Parameter in
+4-Bit-Quantisierung). Die Enterprise-Linie nutzt alternativ ein
+2U-Rack-System (ASUS ESC4000A-E12 oder Dell PowerEdge R760xa, je 4×
+NVIDIA L40S). Der Kundennutzen steht dabei immer vor der Technik: Der
+Kunde kauft keine Hardware, er kauft eine fertig eingerichtete, laufend
+betreute KI-Abteilung.
 
 | | **Standard** | **Professional** | **Premium** | **Enterprise** |
 |---|---|---|---|---|
@@ -345,12 +350,23 @@ Betriebsausgabe, 36--60 Monate Laufzeit) -- steuerlich attraktiv und
 ohne Kapitalbindung.
 
 **Was in jedem Abo enthalten ist:** kuratierte, getestete Modellauswahl
-(u. a. Llama 3.3 70B, DeepSeek-R1 70B, Qwen2.5 72B, Mistral Large),
-laufende Firmware- und Modell-Updates, technischer Support mit
+(Mistral Small/Large, Qwen3.6-27B, Llama 4 Scout; optional DeepSeek-R1,
+Gemma 3 und Qwen3.6-35B-A3B als Nischenmodelle), laufende Firmware- und
+Modell-Updates,
+technischer Support mit
 gestaffeltem SLA (48h / 4h / 2h Reaktionszeit) sowie das
 PrivateMind-Dashboard -- die eigenentwickelte Bedienoberfläche für
 Chat, Dokumenten-Upload, Modellverwaltung und (ab V2) RAG-Pipeline,
 Nutzerverwaltung und Audit-Log für Compliance-Nachweise.
+
+**Backup-Optionen (neu, je Produktlinie):** Da Kundendaten (Chat-Verläufe,
+Dokumente, RAG-Indizes) sonst nur auf der Geräte-SSD liegen, bietet
+PrivateMind zu jeder Produktlinie eine passende, rein lokale
+Backup-Option an -- externe verschlüsselte SSD bis hin zum
+Backup-Storage-Array mit Zweitstandort bei Enterprise. Bewusst ohne
+Cloud-Anbindung, um das Kernversprechen "keine Cloud-Abhängigkeit"
+nicht zu unterlaufen; optional als verwalteter Service mit
+Restore-Tests buchbar.
 
 Detaillierte Preistabellen, technische Spezifikationen und
 Software-Roadmap siehe Anhang *Businessplan*, Kapitel 4 & 5.
@@ -387,15 +403,17 @@ Der Gründer konzentriert sich auf:
 -   Technik
 -   Beratung
 
-Vertrieb ist explizit als Kompetenzlücke erkannt (siehe [Kapitel 2](#2-die-gr%C3%BCndergeschichte))
+Vertrieb ist explizit als Kompetenzlücke erkannt (siehe [Kapitel 2](#die-gründergeschichte))
 und wird bewusst gemeinsam mit erfahrenen Vertriebspartnern aufgebaut,
 statt sie im Alleingang zu kompensieren.
 
 Aktuelle Gespräche:
 
--   ehemaliger Head of Sales
--   ehemaliger Arbeitgeber
--   weitere Partner
+-   Sebastian Tröger, Dresden -- ehemaliger Head of Sales
+-   Felix Weichert, Dresden --  ehemaliger Arbeitgeber
+    (früherer Geschäftsführer ConfigPoint)
+-   Joachim Huber, Stuttgart -- ehemaliger Kollege bei ConfigPoint,
+    möglicher Kontakt zu Dell (siehe Backup-Lieferant, [Kapitel 12](#risiken))
 
 ## Drei-Phasen-Plan
 
@@ -434,11 +452,11 @@ Vollständige Ansprache-Templates und Sprachstrategie siehe Anhang
 # 9. Marketing
 
 Marketing folgt in der Startphase demselben Prinzip wie der Vertrieb
-(siehe [Kapitel 8](#8-vertrieb)): organisch vor bezahlt, Vertrauen vor
+(siehe [Kapitel 8](#vertrieb)): organisch vor bezahlt, Vertrauen vor
 Reichweite. Ein dediziertes Marketingbudget existiert in Phase 1 nicht
 -- Content und Präsenz entstehen aus der Arbeitszeit des Gründers,
 nicht aus Ad-Spend, passend zur schlanken Kostenstruktur aus
-[Kapitel 11](#11-finanzen). Bezahlte Kanäle kommen erst ab Phase 2
+[Kapitel 11](#finanzen). Bezahlte Kanäle kommen erst ab Phase 2
 gezielt hinzu, sobald erste Case Studies vorliegen.
 
 ## Content-Säulen
@@ -448,7 +466,7 @@ gezielt hinzu, sobald erste Case Studies vorliegen.
     DSGVO-Entwicklungen, Reichweitenaufbau im DACH-Mittelstand.
 -   **Whitepaper** -- branchenspezifische Compliance-Leitfäden (z. B.
     "KI in der Kanzlei: § 203 StGB und der AI Act") als Lead-Magnet für
-    die Primärzielgruppe aus [Kapitel 5](#5-markt).
+    die Primärzielgruppe aus [Kapitel 5](#markt).
 -   **YouTube** -- kurze Produkt-Demos und Erklärvideos, die dasselbe
     Format wie die Live-Demo im Vertrieb nutzen ("Ihr Vertrag in
     10 Sekunden zusammengefasst -- lokal, ohne Cloud").
@@ -456,7 +474,7 @@ gezielt hinzu, sobald erste Case Studies vorliegen.
     Unternehmerveranstaltungen, ab Phase 2 zusätzlich Fachmessen
     (DMEXCO, IT-Security-Messen).
 -   **Pilotkunden** -- die ersten 3--5 Kunden aus Vertriebsphase 1
-    liefern die ersten belastbaren Referenzen (siehe [Kapitel 8](#8-vertrieb)).
+    liefern die ersten belastbaren Referenzen (siehe [Kapitel 8](#vertrieb)).
 -   **Case Studies** -- aus den Pilotkunden entwickelte
     Referenzgeschichten, zentraler Vertriebsbeschleuniger ab Phase 3.
 
@@ -496,10 +514,10 @@ SaaS-Vergleichsportalen (G2, Capterra).
 
 Diese Werte sind grobe Zielgrößen, keine Prognose -- sie dienen als
 Fortschrittsindikator dafür, ob Content und Präsenz genug qualifizierte
-Gespräche für die Vertriebs-KPIs aus [Kapitel 8](#8-vertrieb) erzeugen.
+Gespräche für die Vertriebs-KPIs aus [Kapitel 8](#vertrieb) erzeugen.
 
 Detaillierte Ansprache-Templates und Vertriebsmetriken siehe
-[Kapitel 8](#8-vertrieb) und Anhang *Marketingplan*.
+[Kapitel 8](#vertrieb) und Anhang *Marketingplan*.
 
 ------------------------------------------------------------------------
 
@@ -507,13 +525,13 @@ Detaillierte Ansprache-Templates und Vertriebsmetriken siehe
 
 ## 2026
 
-**Kritischer Pfad, jetzt:** 24.07.2026 ist der erste Handlungstag
+**Kritischer Pfad, jetzt:** 31.07.2026 ist der erste Handlungstag
 (Ende der Arbeitsunfähigkeit) -- Arbeitslos-/Arbeitsuchendmeldung und
 Gründungszuschuss-Antrag müssen an diesem Tag gestellt werden, noch
 **vor** der GmbH-Gründung beim Notar. Ein vorzeitiger Schritt (Notar
 oder Gewerbeanmeldung vor GZ-Bewilligung) würde den Gründungszuschuss
 unwiderruflich sperren -- entsprechend strikt ist die Reihenfolge im
-[Terminplan Gründung](#anh%C3%A4nge) dokumentiert.
+[Terminplan Gründung](#anhänge) dokumentiert.
 
 -   GZ-Antrag stellen, GmbH-Gründung nach Bewilligung (vorauss.
     September/Oktober 2026)
@@ -581,7 +599,7 @@ Operativer Break-even (MRR deckt Fixkosten) wird für Q2/Q3 Jahr 2
 erwartet, bei ca. 17 Professional-Kunden bzw. realistisch 20--25
 aktiven Kunden im Mix. Ab Jahr 3 soll der Serviceumsatz (Abo + Setup)
 mindestens 55 % des Gesamtumsatzes stellen, damit Hardware-Verkäufe
-Bonus sind, nicht Überlebensbedingung (siehe [Kapitel 5](#5-markt)).
+Bonus sind, nicht Überlebensbedingung (siehe [Kapitel 5](#markt)).
 Die vollständige Monatsplanung mit GuV je Kostenart steht im Anhang
 *Finanzmodell* (PnL 3 Jahre).
 
@@ -627,7 +645,7 @@ Gesamtkapitalbedarf Jahr 1 (konservativ): ca. 130.000--145.000 €.
 Finanzierung über Stammkapital (25.000 €), KfW ERP-Gründerkredit
 StartGeld (bis 125.000 €, Priorität) und SAB Mikrodarlehen (bis
 20.000 €) -- ergänzt um Gründungszuschuss und InnoStartBonus, die dem
-Gründer persönlich zufließen (siehe [Kapitel 10](#10-roadmap)). Damit
+Gründer persönlich zufließen (siehe [Kapitel 10](#roadmap)). Damit
 ist auch bei null Umsatz ein Runway von über 12 Monaten gesichert,
 ohne Investorendruck.
 
@@ -656,10 +674,10 @@ ohne Investorendruck.
 
 1. **Der Wert liegt im Service, nicht in der Hardware** -- ein
    eingerichtetes System mit RAG-Index und eingespieltem Support wird
-   nicht ohne Aufwand gewechselt (siehe [Kapitel 7](#7-die-eigentliche-innovation)).
+   nicht ohne Aufwand gewechselt (siehe [Kapitel 7](#die-eigentliche-innovation)).
 2. **Gesicherter Runway als strategischer Vorteil** -- über 12 Monate
    Runway auch bei null Umsatz, dadurch kein Investoren- oder
-   Wachstumszwang (siehe [Kapitel 11](#11-finanzen)).
+   Wachstumszwang (siehe [Kapitel 11](#finanzen)).
 3. **Europäische Diversifikation** -- keine Abhängigkeit von einem
    einzelnen nationalen Markt.
 4. **Recurring Revenue als Stabilitätsanker** -- ab ca. 17
@@ -675,11 +693,11 @@ PrivateMind profitiert von mehreren Entwicklungen gleichzeitig -- keine
 davon muss allein tragen:
 
 -   **Künstliche Intelligenz** wird zur Wettbewerbsvoraussetzung, nicht
-    zur Kür (siehe [Kapitel 5](#5-markt)).
+    zur Kür (siehe [Kapitel 5](#markt)).
 -   **Datenschutz** und harte DSGVO-Durchsetzung machen lokale
     Verarbeitung zum Sicherheitsargument, nicht nur zur Präferenz.
 -   **EU AI Act** verschiebt den regulatorischen Maßstab und damit den
-    Compliance-Druck zugunsten lokaler Lösungen (siehe [Kapitel 1](#1-die-vision)).
+    Compliance-Druck zugunsten lokaler Lösungen (siehe [Kapitel 1](#die-vision)).
 -   **Digitale Souveränität** ist seit dem Präzedenzfall vom Juni 2026
     kein abstraktes Argument mehr, sondern ein belegtes
     Infrastrukturrisiko.
@@ -731,34 +749,42 @@ Berufserfahrung mir mitgegeben haben.
 Diese Dokumente liegen bereits im selben Ordner vor und werden hier
 referenziert statt dupliziert:
 
--   **Lebenslauf** -- `CV-RR.md`
--   **Businessplan** -- `PrivateMind-GmbH---Businessplan-DE.md`
-    (Langfassung), `PrivateMind_Businessplan_Kurzfassung_AfA.md`
-    (Kurzfassung für den Gründungszuschuss-Antrag),
-    `PrivateMind_Businessplan_fuer_Steuerberater.pdf`
--   **Pitch Deck** -- `Pitch_Deck_PrivateMind.md` /
-    `Pitch_Deck_PrivateMind.pptx`
--   **Finanzmodell** -- `PrivateMind_Kapitalbedarfsplan.md`,
-    `PrivateMind_PnL_3Jahre.md`, `Gesamt Finanzierungsbedarf.md`
--   **Vertriebs- & Marketingplan** -- Kapitel 6 im Businessplan
-    (Vertriebsstrategie, Positionierung, Ansprache-Templates,
-    Sprachstrategie, KPIs); eigenständige Pläne stehen noch aus
--   **Gründungs-Terminplan** -- `PrivateMind_Terminplan_Gruendung.md`
--   **Gesellschaftsvertrag** --
-    `PrivateMind_Gesellschaftsvertrag_Entwurf.md` (Einzelgründer; aktuell
-    maßgeblicher Stand). Der Zwei-Gesellschafter-Entwurf liegt archiviert
-    unter `../Archiv/PrivateMind_Gesellschaftsvertrag_Entwurf_V2_ZweiGesellschafter.md`
-    -- Option ist nicht verworfen, aber derzeit nicht aktiv verfolgt.
+-   **Lebenslauf**
+    -   `01-CV-RR.pdf`
+-   **Businessplan**
+    -   `02-PrivateMind-GmbH---Businessplan-DE.pdf` (Langfassung)
+    -   `03-PrivateMind_Businessplan_Kurzfassung_AfA.pdf`
+        (Kurzfassung für den Gründungszuschuss-Antrag)
+    -   `04-PrivateMind_Businessplan_fuer_Steuerberater.pdf`
+-   **Pitch Deck**
+    -   `05-PrivateMind_Pitch_Deck.pdf` / `.pptx` (gestaltete Fassung)
+    -   `Pitch_Deck_PrivateMind.md` als Text-Referenzversion zum
+        Konsistenzabgleich
+-   **Finanzmodell**
+    -   `06-PrivateMind_Kapitalbedarfsplan.pdf`
+    -   `07-PrivateMind_PnL_3Jahre.pdf`
+-   **Vertriebs- & Marketingplan** (eigenständige Dokumente,
+    hergeleitet aus Businessplan Kapitel 6)
+    -   `08-PrivateMind_Vertriebsplan.pdf`
+    -   `09-PrivateMind_Marketingplan.pdf`
+-   **Demo-Dokumente** -- Ordner `Demo-Dokumente/` -- vollständig
+    fiktive Vorlagen für die Live-Demos aus Vertriebsplan Kapitel 7
+    -   `Demo_Mietvertrag.pdf`
+    -   `Demo_Steuerberater_Mandantenanfrage.pdf`
+    -   `Demo_Arztbrief.pdf`
+-   **Gründungs-Terminplan**
+    -   `10-PrivateMind_Terminplan_Gruendung.pdf`
+-   **Gesellschaftsvertrag** (Einzelgründer; aktuell maßgeblicher
+    Stand). Der Zwei-Gesellschafter-Entwurf liegt archiviert im
+    Ordner `Archiv/` -- Option ist nicht verworfen, aber derzeit
+    nicht aktiv verfolgt.
+    -   `11-PrivateMind_Gesellschaftsvertrag_Entwurf.pdf`
 -   **Preislisten** -- Kapitel 5 im Businessplan (Hardware- und
     Abo-Preise je Tier)
 -   **Förderunterlagen** -- Kapitel 11 im Businessplan
     (Gründungszuschuss, InnoStartBonus, KfW, SAB, Silicon Saxony)
--   **Modellvergleich europäische LLMs** --
-    `anlage-modellvergleich-eu-llms.md`
-
-> **Anmerkung:** Vertriebsplan und Marketingplan existieren aktuell
-> nur als Abschnitte im Businessplan, noch nicht als eigenständige
-> Dokumente -- bei Bedarf können sie herausgelöst werden.
+-   **Modellvergleich LLMs**
+    -   `12-anlage-modellvergleich-llms.pdf`
 
 ------------------------------------------------------------------------
 

@@ -3,6 +3,8 @@ papersize: a4
 geometry: margin=2.2cm
 lang: de
 colorlinks: false
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
 ---
 
 # Businessplan Kurzfassung
@@ -201,11 +203,11 @@ Annahmen: 1 Neukunde pro Monat ab Monat 3, Kundenmix 65 % Starter-Abo / 35 % Pro
 | Quelle | Betrag | Empfänger |
 |---|---|---|
 | Eigenkapital (Stammkapital) | €25.000 | GmbH |
-| KfW ERP-Gründerkredit StartGeld | bis €125.000 | GmbH |
-| SAB Mikrodarlehen (Sachsen) | bis €20.000 | GmbH |
+| KfW ERP-Gründerkredit StartGeld | €100.000 | GmbH |
+| SAB Mikrodarlehen (Sachsen) | €20.000 | GmbH |
 | **Gründungszuschuss AfA (beantragt)** | **~€16.500** | **Gründer persönlich** |
 | InnoStartBonus Sachsen (geplant) | ~€12.600 | Gründer persönlich |
-| **Gesamtfinanzierungsrahmen GmbH** | **~€145.000–€170.000** | GmbH |
+| **Gesamtfinanzierungsrahmen GmbH** | **€145.000** | GmbH |
 
 Der Gründungszuschuss der AfA fließt dem Gründer persönlich zu und sichert die persönliche Lebensführung in der Aufbauphase. Er ist von der GmbH-Finanzierung unabhängig und ergänzt diese.
 

@@ -1,3 +1,12 @@
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
+---
+
 # Gesellschaftsvertrag
 ## PrivateMind GmbH
 

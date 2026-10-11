@@ -1,298 +1,244 @@
-# Pitch Deck: PrivateMind GmbH
+---
+papersize: a4
+geometry: margin=2.2cm
+lang: de
+colorlinks: false
+title: "PrivateMind — Pitch Deck"
+subtitle: "Lokale KI-Appliances für KMU – DSGVO-konform · Ohne Cloud · Ohne Kompromisse"
+author: "Raffael Reichelt · Gründer & Geschäftsführer"
+date: "Dresden, Deutschland · geplante Gründung September/Oktober 2026"
+header-includes:
+  - \renewcommand{\familydefault}{\sfdefault}
+  - \let\maketitle\relax
+---
 
-**Gründung:** April 2026  
-**Standort:** Dresden, Deutschland  
-**Gründer:** Raffael Reichelt
+> **Hinweis:** Dies ist die Text-Referenzversion des Pitch Decks. Die
+> gestaltete Fassung liegt unter `PrivateMind_Pitch_Deck.pptx` /
+> `.pdf` / `.key` (Anhang) — diese Datei hält den Inhalt textlich
+> konsistent zu den übrigen Dokumenten nach.
+
+## Das Problem
+
+### KMU stecken im KI-Dilemma
+
+- **Wettbewerbsdruck** – KI wird geschäftskritisch, Wettbewerber automatisieren längst ihre Prozesse.
+- **Cloud-Risiko** – Sensible Mandanten- und Kundendaten verlassen bei Cloud-KI das Unternehmen.
+- **Fehlende Infrastruktur** – Keine eigene IT-Abteilung, keine Expertise für eine eigene Lösung.
+
+**45–55 %** der europäischen KMU haben laut Bitkom/DSGVO-Befragungen Datenschutzbedenken bei Cloud-KI — und benötigen eine DSGVO-konforme Alternative.
 
 ---
 
-## Folie 1: Titel
-**PrivateMind GmbH**
+<!-- pagebreak -->
 
-*Lokale KI-Appliances für KMUs – 100% DSGVO-konform, ohne Cloud, ohne Kompromisse*
+## Unsere Lösung
 
-📅 April 2026 | 📍 Dresden, Deutschland  
-👤 Raffael Reichelt | 🔗 [privatemind.de](https://privatemind.de)
+### KI dort, wo sie hingehört: im Unternehmen
 
----
+PrivateMind bringt leistungsfähige KI-Modelle direkt vor Ort zum Einsatz — ohne dass Daten das Haus verlassen.
 
-## Folie 2: Das Problem
-
-### KMUs stehen vor einem Dilemma:
-
-🔴 **KI ist geschäftskritisch** – Wettbewerber automatisieren Prozesse
-🔴 **Cloud-Lösungen sind problematisch** – Sensible Daten verlassen das Unternehmen
-🔴 **Eigene Infrastruktur ist unerreichbar** – Keine IT-Abteilung, keine Expertise
-
-**85% der europäischen KMUs** arbeiten mit sensiblen Daten und brauchen DSGVO-konforme Lösungen
+- **Lokale Appliance** – NVIDIA GB10 Grace Blackwell auf ASUS Ascent GX10, volle Rechenleistung vor Ort
+- **DSGVO-konform** – alle Daten bleiben vollständig im Unternehmen, ohne Cloud-Anbindung
+- **Komplettservice** – Hardware, Software und Support aus einer Hand
+- **Einfachheit** – funktioniert out of the box, keine IT-Expertise nötig
 
 ---
 
-## Folie 3: Unsere Lösung
+<!-- pagebreak -->
 
-### PrivateMind bringt KI dorthin, wo sie hingehört: **direkt ins Unternehmen**
+## Das Produkt
 
-🔧 **Lokale KI-Appliances** basierend auf NVIDIA GB10 Grace Blackwell
-🔒 **100% DSGVO-konform** – Daten bleiben im Haus
-📦 **Komplettservice** – Hardware, Software, Support aus einer Hand
-💡 **Einfachheit** – Funktioniert out of the box, keine IT-Expertise nötig
+### Vier Editionen, ein Fundament
 
----
+NVIDIA GB10 Grace Blackwell Superchip · 128 GB Unified Memory je Gerät · nur 150×150×51 mm pro Einheit
 
-## Folie 4: Das Produkt
+| Produkt | Hardware | Nutzer | Hardware-VK (netto) | Service-Abo (netto/Mon.) |
+|---|---|---|---|---|
+| **Standard** | 1× ASUS Ascent GX10 | 3–8 | €3.800 | €149 |
+| **Professional** | 1× ASUS Ascent GX10 | 3–8 | €4.500 | €699 |
+| **Premium** | 2× ASUS Ascent GX10 (Cluster) | 8–20 | €9.500 | €699 |
+| **Enterprise** | ASUS ESC4000A-E12 / Dell R760xa (4× L40S) | 20–100 | €62.500 | €1.999 |
 
-### PrivateMind Standard / Professional / Premium
-
-| Produkt | Hardware | Speicher | Preis (VK) | Zielgruppe |
-|---------|----------|----------|------------|------------|
-| **Standard** | 1× ASUS GX10 | 1 TB | €3.800 | Kleine Büros |
-| **Professional** | 1× ASUS GX10 | 2 TB | €4.500 | Mittelstand |
-| **Premium** | 2× ASUS GX10 (Cluster) | 4 TB | €9.500 | Große Teams |
-
-**Technische Daten:**
-- NVIDIA GB10 Grace Blackwell Superchip
-- 128 GB RAM, bis zu 256 GB (Cluster)
-- 200Gbps Netzwerk, Wi-Fi 7
-- 240W Stromverbrauch
-- Kompakt: 150×150×51 mm
+Premium: 2er-Cluster mit 256 GB Unified Memory — unterstützt Modelle bis 405 Mrd. Parameter (4-Bit).
 
 ---
 
-## Folie 5: Technologie-Stack
+<!-- pagebreak -->
 
-### Hardware: ASUS Ascent GX10
-- **Einziger OEM** mit drei SSD-Varianten (1TB/2TB/4TB)
-- **Günstigster GB10-Superchip** am Markt (bis zu €1.700 unter NVIDIA DGX Spark)
-- **Kein Support von ASUS** – PrivateMind füllt diese Lücke
+## Technologie-Stack
 
-### Software:
-- NVIDIA DGX OS mit CUDA 13
-- Kuratierte LLM-Auswahl (Llama 3, Mistral, DeepSeek, Qwen)
-- Eigenes Dashboard für Modellverwaltung
-- Automatische Updates & RAG-Integration
-- **Empfohlene Agenten-Infrastruktur: OpenClaw**
+### Bewährte Bausteine, kuratiert kombiniert
 
----
+**Hardware**
 
-## Folie 6: Geschäftsmodell
+- ASUS Ascent GX10 — günstigste verfügbare GB10-Implementierung
+- Enterprise-Linie alternativ auf 2U-Rack: ASUS ESC4000A-E12 oder Dell R760xa, 4× NVIDIA L40S
 
-### Zwei Optionen für Kunden:
+**Software**
 
-#### Option A: Hardware-Kauf + Service-Abo
-- **Hardware:** Einmaliger Kauf (€3.800-9.500)
-- **Service-Abo:** Monatlich €149-699
-  - Starter: €149 (Basis-Set, 48h Support)
-  - Professional: €349 (Erweitertes Set, 24h Support)
-  - Enterprise: €699 (Maßgeschneidert, 4h SLA)
-
-#### Option B: All-Inclusive-Bundle (Leasing)
-- **36 Monate Laufzeit**
-- Monatlich €299-999 (inkl. Hardware & Service)
-- Nach Laufzeitende: Hardware geht an Kunden über
+- Kuratierte Modellauswahl: Mistral Small/Large (EU), Qwen3.6-27B, Llama 4 Scout — optional DeepSeek-R1/Gemma 3/Qwen3.6-35B-A3B als Nischenmodelle
+- PrivateMind-Dashboard: Chat, Dokumenten-Upload, Modellverwaltung
+- Ab V2: RAG-Pipeline & Audit-Log, laufende Updates
 
 ---
 
-## Folie 7: Markt & Zielgruppe
+<!-- pagebreak -->
 
-### Zielgruppe: KMUs in Europa (10-250 Mitarbeiter)
+## Geschäftsmodell
 
-🏥 **Kanzleien & Steuerberater** – Vertragsanalyse, Rechtsrecherche
-🏥 **Arztpraxen** – Dokumentenverarbeitung (DSGVO-konform)
-🏢 **Ingenieurbüros** – Technische Dokumente, Baupläne
-🏢 **Beratungen** – Wissensmanagement, Kundenkommunikation
+### Zwei Wege zum gleichen Ziel
 
-### Marktgröße:
-- **Adressierbarer Markt:** Mehrere Milliarden Euro
-- **Wachstum:** 25-30% jährlich
-- **Fokusregionen:** DACH, Niederlande, Nordics, UK
+**Option A – Hardware-Kauf + Service-Abo**
+
+- Hardware: einmaliger Kauf, €3.800–€62.500 je nach Tier
+- Service-Abo: monatlich €149–€1.999 (Starter/Professional/Enterprise)
+- Getrennte Abrechnung, volle Kostenkontrolle
+
+**Option B – All-Inclusive-Bundle (Leasing)**
+
+- Laufzeit: 36–60 Monate, Hardware + Service inklusive
+- Vorteil: reine Betriebsausgabe, ohne Kapitalbindung
+- Steuerlich attraktiv für KMU-Kunden
 
 ---
 
-## Folie 8: Wettbewerbsvorteile
+<!-- pagebreak -->
+
+## Markt & Zielgruppe
+
+### Europas KMU mit Vertraulichkeitspflicht
+
+Primäre Zielgruppe: KMU in Europa, 10–50 Mitarbeiter
+
+- **Kanzleien & Steuerberater** – Mandanten-/Steuergeheimnis (§ 203 StGB, § 30 AO)
+- **Arzt- & Zahnarztpraxen, MVZ** – ärztliche Schweigepflicht, DSGVO
+- **Ingenieurbüros & Architekten** – vertragliche NDA-Verpflichtungen
+- **Unternehmensberatungen** – NDA, Mandantenvertrauen
+
+**> €5 Mrd.** geschätzter TAM lokale KI-Infrastruktur EU (eigene, konservative Berechnung) · **25–30 % CAGR** Wachstum des europäischen KI-Markts (IDC, Gartner) · **Phase 1 → 2:** DACH zuerst, dann Niederlande/Nordics/UK
+
+---
+
+<!-- pagebreak -->
+
+## Wettbewerbsvorteile
 
 ### Warum PrivateMind?
 
-✅ **Datensouveränität** – Alles bleibt lokal, DSGVO-konform
-✅ **Null-Expertise-Anforderung** – Funktioniert out of the box
-✅ **Laufende Betreuung** – Kein "kaufen und allein gelassen werden"
-✅ **NVIDIA-Ökosystem** – Gleicher Stack wie im Rechenzentrum
-✅ **Europäisches Unternehmen** – Europäische Werte, Datenschutz als Grundprinzip
+| Wettbewerber | Schwäche aus KMU-Sicht | PrivateMind-Vorteil |
+|---|---|---|
+| ChatGPT Enterprise / Copilot 365 / Gemini | Cloud-basiert, DSGVO-kritisch | Lokale Datenhaltung |
+| Ollama / LocalAI / LM Studio | Kein Support-SLA, IT-Expertise nötig | Schlüsselfertig, mit Support |
+| NVIDIA DGX Spark (direkt) | Kein Service, teurer als ASUS GX10 | Service + günstigere Hardware |
 
-### Vergleich:
-
-| Wettbewerber | Ansatz | Schwäche |
-|--------------|--------|----------|
-| OpenAI, Copilot | Cloud-basiert | Daten verlassen Unternehmen |
-| Ollama, LocalAI | Self-Hosted | Kein Support, IT-Expertise nötig |
-| NVIDIA DGX Spark | Hardware | Kein KMU-Support, kein Setup |
+Differenzierung: **Datensouveränität** · **Zero-Expertise-Betrieb** · **Laufende Betreuung** · **NVIDIA-Ökosystem** · **Europäische Werte**
 
 ---
 
-## Folie 9: Traktion & Meilensteine
+<!-- pagebreak -->
 
-### Erste Erfolge:
+## Traktion & Meilensteine
 
-📌 **Gründung:** April 2026
-📌 **Demo-Gerät:** ASUS Ascent GX10 (4TB) im Einsatz ✓
-📌 **Pilotkunden:** Gespräche mit 3 Kanzleien in Dresden
-📌 **Förderanträge:** EXIST Sachsen, KfW Gründerkredit
+### Von der Idee zur Umsetzung
 
-### Roadmap:
+- **Demo-Gerät** – ASUS Ascent GX10 (4 TB) bereits vorhanden und im Einsatz
+- **Website** – auf Odoo 18.0 erstellt, Launch steht kurz bevor
+- **Förderanträge** – Gründungszuschuss (§ 93 SGB III), InnoStartBonus Sachsen
 
-| Quartal | Ziel |
-|---------|------|
-| Q2 2026 | Erste 10 Kunden gewinnen |
-| Q3 2026 | Team auf 3 Personen erweitern |
-| Q4 2026 | Break-even erreichen |
-| 2027 | Expansion nach Österreich & Schweiz |
+| Zeitraum | Ziel |
+|---|---|
+| 2026 | GZ-Bewilligung, GmbH-Gründung, 3–5 Pilotkunden, mind. 2 zahlend |
+| 2027 | Englischsprachige Website live, europäische Expansion, 10 aktive Kunden |
+| 2028 | Break-even operativ (~17–25 aktive Kunden), erste Mitarbeiter |
 
 ---
 
-## Folie 10: Team
+<!-- pagebreak -->
 
-### Raffael Reichelt – Gründer & Geschäftsführer
+## Team
 
-🔹 **Erfahrung:** 10+ Jahre in der IT-Branche
-🔹 **Rolle:** Softwareentwicklung, Vertrieb, Support
-🔹 **Ausbildung:** Informatik (TU Dresden)
-🔹 **Motivation:** KMUs brauchen lokale KI – ohne Kompromisse
+### Raffael Reichelt — Gründer & Geschäftsführer
 
----
-
-## Folie 11: Finanzplan & Investitionsbedarf
-
-### Gründungskosten (einmalig):
-- GmbH-Gründung: €25.000
-- Demo-Gerät: €0 *(GX10 4TB bereits vorhanden)*
-- Website & Branding: €5.000
-- Rechtsberatung: €4.000
-- Büroausstattung: €1.000
-**Gesamt:** ~€38.550
-
-### Monatliche Fixkosten:
-- Gehalt: €3.500
-- Büro: €400
-- Versicherungen: €200
-- Marketing: €500
-- Tools: €150
-**Gesamt:** ~€4.750/Monat
-
-### Break-even:
-- **Nach 12-18 Monaten** bei 15-20 Kunden
-- **Umsatzprognose Jahr 1:** €150.000-350.000
+- **Erfahrung:** über 30 Jahre Softwareentwicklung, Architektur, Projekt- und Teamleitung
+- **Stationen:** 13 Jahre HSE24/hot networks AG (Head of IT Development Services), zuletzt ConfigPoint (bis 2026)
+- **Rollen:** Entwickler, Architekt, Consultant, Projekt- & Teamleiter, Technologieberater
+- **Motivation:** „KMU brauchen lokale KI — ohne Kompromisse.“
 
 ---
 
-## Folie 12: Finanzierungsstrategie
+<!-- pagebreak -->
 
-### Aktuell:
-- Eigenkapital vorhanden
-- Beantragung: Gründerkredite (KfW), Fördermittel (EXIST Sachsen, GRW, TGFS)
+## Finanzplan
 
-### Investitionsbedarf:
-- **Seed-Runde:** €100.000-150.000
-  - Ziel: Teamaufbau, Marketing, erste Skalierung
-- **Verwendung:**
-  - 40% Vertrieb & Marketing
-  - 30% Entwicklung & Support
-  - 20% Betrieb & Infrastruktur
-  - 10% Puffer
+### Solide kalkuliert, schnell tragfähig
+
+- **€6.700** Gründungskosten einmalig — Notar, Handelsregister, Rechts-/Steuerberatung, Marketing
+- **€11.500** monatliche Fixkosten, davon €9.600 GF-Vollkosten (€5.000 netto Gründergehalt)
+- **Q3/Jahr 2** operativer Break-even bei ~17 Professional- bzw. 20–25 Mischkunden
+- **€63k–180k** Umsatzprognose Jahr 1 — konservativ bis optimistisch
+
+Website und Demo-Gerät sind bereits vorhanden — kein zusätzlicher Investitionsbedarf zum Start.
 
 ---
 
-## Folie 13: Vision & Ziele
+<!-- pagebreak -->
 
-### Kurzfristig (2026-2027):
-- 50+ zufriedene Kunden in DACH
-- Break-even erreichen
-- Team auf 5 Personen erweitern
+## Finanzierungsstrategie
 
-### Mittelfristig (2028-2029):
-- Expansion nach Westeuropa
-- Partnerschaften mit IT-Dienstleistern
-- Eigenes Finetuning-Center
+### Eigenkapital & Förderdarlehen — kein Investor
 
-### Langfristig (2030+):
-- Marktführer für lokale KI-Appliances in Europa
-- Franchise-Modell für lokale Partner
-- Internationalisierung (USA, Asien)
+| Quelle | Betrag | Empfänger |
+|---|---|---|
+| Stammkapital (Eigenkapital) | €25.000 | GmbH |
+| KfW ERP-Gründerkredit StartGeld | €100.000 | GmbH |
+| SAB Mikrodarlehen Sachsen | €20.000 | GmbH |
+| Gründungszuschuss (15 Mon., ca.) | €16.500 | Gründer persönlich |
+| InnoStartBonus Sachsen (in Prüfung) | €12.600 | Gründer persönlich |
 
----
-
-## Folie 14: Warum in PrivateMind investieren?
-
-### Starke Argumente:
-
-💰 **Sichere Einnahmen** – Abo-Modell + Hardware-Marge
-📈 **Wachstumsmarkt** – KI im KMU-Segment wächst um 25-30% pro Jahr
-🔒 **DSGVO-konform** – Einzigartiger USP in Europa
-🛡️ **Geringes Risiko** – Keine Abhängigkeit von Cloud-Anbietern
-🤝 **Starke Partnerschaften** – NVIDIA, ASUS, OpenClaw
-
-### Investitionsrendite:
-- **ROI nach 3 Jahren:** 200-300%
-- **Exit-Strategie:** Verkauf an strategischen Investor oder Börsengang
+Kapitalbedarf Jahr 1: €137.550 — vollständig gedeckt (Puffer €7.450), ohne externen Investor.
 
 ---
 
-## Folie 15: Call-to-Action
+<!-- pagebreak -->
 
-### Wir suchen:
+## Vision & Ziele
 
-🔹 **Investoren** für Seed-Runde (€100.000-150.000)
-🔹 **Pilotkunden** für erste Projekte
-🔹 **Partner** für Vertrieb & Marketing
-🔹 **Mentoren** für strategische Unterstützung
+### Der Weg zum führenden Anbieter
 
-### Kontakt:
-📧 raffael@privatemind.de  
-📞 +49 176 12345678  
-🌐 [privatemind.de](https://privatemind.de)  
-📍 Dresden, Deutschland
+**1 · 2026–2027 · Kurzfristig** — 3–5 Pilotkunden (mind. 2 zahlend) bis Ende 2026. Europäische Expansion, Ziel: 10 aktive Kunden Ende 2027.
 
-**"*Die KI-Abteilung, die sich jedes KMU leisten kann.*"**
+**2 · 2028–2029 · Mittelfristig** — Operativer Break-even, erste Mitarbeiter. Aufbau eines Reseller-/MSP-Partnernetzwerks, Team wächst auf 4–6 Personen.
+
+**3 · 2030+ · Langfristig** — Führender Anbieter lokaler KI-Lösungen im DACH-Raum. Nachhaltiges, profitables Wachstum — Kapital nur bei Bedarf.
 
 ---
 
-## Design-Hinweise für Google Slides:
+<!-- pagebreak -->
 
-### Farbschema:
-- **Primärfarbe:** Dunkelblau (#1a237e) – Professionalität & Vertrauen
-- **Sekundärfarbe:** Hellblau (#00b0ff) – Innovation & Technologie
-- **Akzentfarbe:** Orange (#ff9800) – Energie & Dynamik
-- **Hintergrund:** Weiß oder sehr hellgrau (#f5f5f5) – Lesbarkeit
+## Starke Argumente
 
-### Schriftarten:
-- **Überschriften:** Roboto Bold oder Montserrat
-- **Fließtext:** Open Sans oder Roboto Regular
-- **Größen:**
-  - Titel: 44pt
-  - Überschriften: 32pt
-  - Fließtext: 20pt
-  - Fußnoten: 14pt
+### Was PrivateMind stark macht
 
-### Bilder/Icons:
-- Technologie: NVIDIA-Logo, ASUS-Logo
-- Team: Porträtfoto des Gründers
-- Produkte: ASUS Ascent GX10
-- Diagramme: Marktgröße, Finanzplan
-- Icons: Flaticon oder Material Icons
+- **Wiederkehrende Einnahmen** – Abo-Modell kombiniert mit Hardware-Marge
+- **Wachstumsmarkt** – KI im KMU-Segment wächst um ~25–30 % CAGR
+- **DSGVO-konform** – klarer USP im europäischen Markt
+- **Geringes Risiko** – kein Investorendruck, Runway über 12 Monate
+- **Seltene Kompetenz** – 30 Jahre Software- und Kundenerfahrung in einer Person
 
-### Animationen:
-- Minimalistisch (Fade-In bei Aufzählungspunkten)
-- Keine überladenen Effekte
-- Professioneller Eindruck
-
-### Logo:
-- Einfaches, modernes Logo mit den Worten "PrivateMind" und einem stilisierten KI-Symbol (z.B. neuronales Netz oder Chip)
+„Die KI-Abteilung, die sich jedes KMU leisten kann.“
 
 ---
 
-### Nächste Schritte:
-1. Importiere diese Markdown-Datei in Google Slides (z.B. über ein Tool wie **Markdown to Slides** oder manuell)
-2. Passe das Design an dein Corporate Design an
-3. Füge Bilder, Diagramme und dein Logo ein
-4. Übe die Präsentation mit dem Team
-5. Nutze das Deck für Investorengespräche, Förderanträge und Kundenpräsentationen
+<!-- pagebreak -->
 
-Falls du Hilfe beim Import in Google Slides brauchst, kann ich dir Tools oder Anleitungen dazu geben!
+## Wir suchen
+
+### Gemeinsam KI zugänglich machen
+
+- **Pilotkunden** für die ersten Projekte im DACH-Raum
+- **Vertriebspartner** mit Erfahrung im KMU-Umfeld
+- **Mentoren** für strategische Unterstützung (dresden|exists, Silicon Saxony)
+
+„Die KI-Abteilung, die sich jedes KMU leisten kann.“
+
+**Kontakt:** raffael@privatemind.eu · [privatemind.eu](https://privatemind.eu) · Dresden, Deutschland

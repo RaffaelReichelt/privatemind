@@ -1,0 +1,613 @@
+<meta charset="utf-8">
+<title>PrivateMind Team-Zugänge</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+  :root{
+    --navy:#0A2463;
+    --navy-2:#123a8c;
+    --blue:#3E92CC;
+    --cyan:#00c2f0;
+    --orange:#FF6B35;
+    --green:#1F9D77;
+
+    --bg:#FFFFFF;
+    --bg-page:#F7F9FC;
+    --bg-soft:#F4F6F9;
+    --tint-blue:#EAF4FB;
+    --tint-orange:#FFF1EA;
+    --tint-green:#E7F7F1;
+    --border:#E3E7EE;
+
+    --text:#1C2430;
+    --text-muted:#5B6472;
+    --text-on-navy:#FFFFFF;
+    --text-on-navy-muted:#AFC3E6;
+
+    --shadow: 0 3px 14px rgba(10,36,99,0.08);
+  }
+
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#101826;
+      --bg-page:#0B1220;
+      --bg-soft:#16202F;
+      --tint-blue:#132A42;
+      --tint-orange:#2B1E15;
+      --tint-green:#122A24;
+      --border:#25344A;
+
+      --text:#E8EDF6;
+      --text-muted:#94A6C2;
+
+      --shadow: 0 3px 18px rgba(0,0,0,0.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#101826;
+    --bg-page:#0B1220;
+    --bg-soft:#16202F;
+    --tint-blue:#132A42;
+    --tint-orange:#2B1E15;
+    --tint-green:#122A24;
+    --border:#25344A;
+
+    --text:#E8EDF6;
+    --text-muted:#94A6C2;
+
+    --shadow: 0 3px 18px rgba(0,0,0,0.35);
+  }
+
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background:var(--bg-page);
+    color:var(--text);
+    font-family:'Inter','Helvetica Neue',Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.5;
+  }
+
+  .sheet{
+    max-width:900px;
+    margin:0 auto;
+    background:var(--bg);
+    min-height:100vh;
+  }
+
+  /* ---------- Header ---------- */
+  .header{
+    background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);
+    padding:34px 44px 26px;
+    position:relative;
+    overflow:hidden;
+  }
+  .header::after{
+    content:"";
+    position:absolute; top:-60px; right:-60px;
+    width:260px; height:260px; border-radius:50%;
+    background:rgba(255,255,255,0.05);
+  }
+  .brand-logo-wrap{ position:relative; z-index:1; }
+  .brand-logo{ display:block; width:200px; height:auto; }
+  .brand-logo--print{ display:none; }
+  .header-title{
+    font-family:'Montserrat',sans-serif;
+    font-weight:800;
+    font-size:21px;
+    color:var(--text-on-navy);
+    margin:20px 0 4px;
+    position:relative; z-index:1;
+  }
+  .header-desc{
+    font-size:13.5px;
+    color:var(--text-on-navy-muted);
+    max-width:560px;
+    position:relative; z-index:1;
+  }
+  .header-fields{
+    display:flex; gap:10px; margin-top:16px; flex-wrap:wrap;
+    position:relative; z-index:1;
+  }
+  .header-field{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.14);
+    border-radius:8px;
+    padding:6px 12px;
+    font-size:11.5px;
+    color:var(--text-on-navy-muted);
+  }
+  .header-field b{
+    color:var(--text-on-navy);
+    font-weight:600;
+    font-family:'JetBrains Mono',monospace;
+    margin-left:5px;
+  }
+
+  /* ---------- Intro note ---------- */
+  .note{
+    margin:22px 44px 6px;
+    background:var(--tint-blue);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:13px 16px;
+    display:flex;
+    gap:11px;
+    align-items:flex-start;
+  }
+  .note-icon{
+    flex:none; width:26px; height:26px; border-radius:50%;
+    background:var(--blue);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .note p{
+    margin:0;
+    font-size:12.5px;
+    color:var(--text);
+  }
+  .note strong{ color:var(--navy); }
+  :root[data-theme="dark"] .note strong,
+  @media (prefers-color-scheme: dark){ }
+
+  /* ---------- Section label ---------- */
+  .section-label{
+    margin:30px 44px 14px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .section-label .tag{
+    background:var(--navy);
+    color:var(--text-on-navy);
+    font-family:'Inter',sans-serif;
+    font-size:9.5px;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    padding:4px 10px;
+    border-radius:10px;
+  }
+  .section-label h2{
+    font-family:'Montserrat',sans-serif;
+    font-size:16px;
+    font-weight:800;
+    color:var(--text);
+    margin:0;
+  }
+
+  /* ---------- Tool cards ---------- */
+  .tools{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+    margin:0 44px;
+  }
+  @media (max-width:640px){
+    .tools{ grid-template-columns:1fr; }
+  }
+  .card{
+    border:1px solid var(--border);
+    border-radius:13px;
+    padding:18px 18px 16px;
+    box-shadow:var(--shadow);
+    background:var(--bg);
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+  }
+  .card-top{ display:flex; align-items:flex-start; gap:11px; }
+  .icon-chip{
+    flex:none; width:36px; height:36px; border-radius:10px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .icon-chip svg{ width:18px; height:18px; }
+  .card-title{
+    font-family:'Montserrat',sans-serif;
+    font-weight:800;
+    font-size:15px;
+    color:var(--text);
+    line-height:1.25;
+  }
+  .card-audience{
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:0.4px;
+    text-transform:uppercase;
+    margin-top:2px;
+  }
+  .card-desc{
+    font-size:12px;
+    color:var(--text-muted);
+    margin:0;
+  }
+  .url-row{
+    margin-top:auto;
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:9px 11px;
+    font-family:'JetBrains Mono',monospace;
+    font-size:11.5px;
+    color:var(--text);
+    overflow-x:auto;
+    white-space:nowrap;
+  }
+  .url-row .ph{
+    color:var(--orange);
+    font-weight:600;
+    background:var(--tint-orange);
+    border-radius:4px;
+    padding:0 3px;
+  }
+
+  /* ---------- Placeholder legend ---------- */
+  .legend{
+    margin:18px 44px 0;
+    font-size:11.5px;
+    color:var(--text-muted);
+    display:flex;
+    align-items:center;
+    gap:6px;
+  }
+  .legend .ph{
+    color:var(--orange);
+    font-weight:600;
+    background:var(--tint-orange);
+    border-radius:4px;
+    padding:0 3px;
+    font-family:'JetBrains Mono',monospace;
+  }
+
+  /* ---------- Access info ---------- */
+  .access-grid{
+    margin:26px 44px 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+  }
+  @media (max-width:640px){ .access-grid{ grid-template-columns:1fr; } }
+  .access-card{
+    background:var(--bg-soft);
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:14px 16px;
+  }
+  .access-card h3{
+    font-family:'Montserrat',sans-serif;
+    font-size:12.5px;
+    font-weight:800;
+    color:var(--navy);
+    margin:0 0 6px;
+  }
+  :root[data-theme="dark"] .access-card h3{ color:var(--blue); }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .access-card h3{ color:var(--blue); } }
+  .access-card p{
+    font-size:11.5px;
+    color:var(--text-muted);
+    margin:0;
+  }
+
+  /* ---------- Footer ---------- */
+  .footer{
+    margin:34px 0 0;
+    border-top:1px solid var(--border);
+    padding:18px 44px 26px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  .footer-left{
+    font-size:11px;
+    color:var(--text-muted);
+  }
+  .footer-right{
+    font-family:'Montserrat',sans-serif;
+    font-weight:800;
+    font-size:12px;
+    color:var(--navy);
+  }
+  :root[data-theme="dark"] .footer-right{ color:var(--blue); }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]) .footer-right{ color:var(--blue); } }
+
+  h1,h2,h3{ text-wrap:balance; }
+
+  /* ---------- Print ---------- */
+  @media print {
+    .header{ background:#ffffff !important; }
+    .header::after{ display:none; }
+    .brand-logo--screen{ display:none; }
+    .brand-logo--print{ display:block; }
+    .header-title{ color:var(--navy); }
+    .header-desc{ color:var(--text-muted); }
+    .header-field{
+      background:none;
+      border:1px solid var(--border);
+      color:var(--text-muted);
+    }
+    .header-field b{ color:var(--navy); }
+    .icon-chip, .section-label .tag, .note-icon{
+      -webkit-print-color-adjust:exact;
+      print-color-adjust:exact;
+      color-adjust:exact;
+    }
+  }
+</style>
+
+<div class="sheet">
+
+  <div class="header">
+    <div class="brand-logo-wrap">
+      <svg class="brand-logo brand-logo--screen" viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PrivateMind — Secure Intelligent Private">
+        <defs>
+          <radialGradient id="coreGlowDark" cx="30%" cy="50%" r="45%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+            <stop offset="35%" stop-color="#00e0ff" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="nodeGradDark" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+            <stop offset="40%" stop-color="#00d4ff" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#8b2af8" stop-opacity="1"/>
+          </radialGradient>
+          <linearGradient id="linkGradDark" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#00d4ff"/>
+            <stop offset="50%" stop-color="#44a8ff"/>
+            <stop offset="100%" stop-color="#8b2af8"/>
+          </linearGradient>
+          <filter id="softGlowDark" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="2.4" result="blur"/>
+            <feColorMatrix in="blur" type="matrix"
+              values="0 0 0 0 0.1
+                      0 0 0 0 0.8
+                      0 0 0 0 1
+                      0 0 0 0.9 0" result="glow"/>
+            <feMerge>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <g transform="translate(80,100)" filter="url(#softGlowDark)">
+          <circle cx="0" cy="0" r="44" fill="url(#coreGlowDark)"/>
+          <g stroke="url(#linkGradDark)" stroke-width="2.2" stroke-linecap="round">
+            <path d="M -72 0 Q -36 -10 0 0 T 72 0" fill="none" opacity="0.95"/>
+            <path d="M -52 -42 Q -16 -18 0 0 T 58 40" fill="none" opacity="0.9"/>
+            <path d="M -58 37 Q -22 12 0 0 T 52 -42" fill="none" opacity="0.85"/>
+            <path d="M -82 -12 Q -42 -38 0 -26 T 68 -48" fill="none" opacity="0.6"/>
+            <path d="M -78 22 Q -38 38 0 26 T 72 38" fill="none" opacity="0.6"/>
+            <path d="M -26 -6 Q -11 -26 0 -19 T 19 -6" fill="none" opacity="0.95"/>
+            <path d="M -19 11 Q -6 27 0 19 T 21 9" fill="none" opacity="0.95"/>
+            <path d="M -11 -23 Q 0 -32 11 -21" fill="none" opacity="0.75"/>
+            <path d="M -9 23 Q 0 32 13 21" fill="none" opacity="0.75"/>
+          </g>
+          <g fill="url(#nodeGradDark)">
+            <circle cx="-72" cy="0" r="5.7"/>
+            <circle cx="72" cy="0" r="6.1"/>
+            <circle cx="-52" cy="-42" r="5.1"/>
+            <circle cx="58" cy="40" r="5.3"/>
+            <circle cx="-58" cy="37" r="5.1"/>
+            <circle cx="52" cy="-42" r="5.3"/>
+            <circle cx="-82" cy="-12" r="4.7"/>
+            <circle cx="68" cy="-48" r="4.9"/>
+            <circle cx="-78" cy="22" r="4.7"/>
+            <circle cx="72" cy="38" r="4.9"/>
+            <circle cx="-26" cy="-6" r="4.6"/>
+            <circle cx="26" cy="-6" r="4.6"/>
+            <circle cx="-19" cy="11" r="4.4"/>
+            <circle cx="23" cy="11" r="4.4"/>
+            <circle cx="0" cy="0" r="11" fill="url(#nodeGradDark)"/>
+          </g>
+        </g>
+
+        <g transform="translate(210,112)">
+          <text x="0" y="0"
+            font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+            font-size="40"
+            font-weight="700"
+            letter-spacing="0.5">
+            <tspan fill="#ffffff">Private</tspan><tspan fill="#00d4ff">Mind</tspan>
+          </text>
+          <text x="0" y="28"
+            font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+            font-size="14"
+            font-weight="500"
+            letter-spacing="0"
+            textLength="232"
+            lengthAdjust="spacing"
+            fill="#a8b7c8">
+            Secure Intelligent Private
+          </text>
+        </g>
+      </svg>
+
+      <svg class="brand-logo brand-logo--print" viewBox="0 0 520 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PrivateMind — Secure Intelligent Private">
+        <defs>
+          <radialGradient id="coreGlow" cx="30%" cy="50%" r="45%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+            <stop offset="35%" stop-color="#00e0ff" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#001020" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="nodeGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+            <stop offset="40%" stop-color="#00d4ff" stop-opacity="1"/>
+            <stop offset="100%" stop-color="#8b2af8" stop-opacity="1"/>
+          </radialGradient>
+          <linearGradient id="linkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#00d4ff"/>
+            <stop offset="50%" stop-color="#44a8ff"/>
+            <stop offset="100%" stop-color="#8b2af8"/>
+          </linearGradient>
+          <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+            <feGaussianBlur stdDeviation="2.2" result="blur"/>
+            <feColorMatrix in="blur" type="matrix"
+              values="0 0 0 0 0.1
+                      0 0 0 0 0.7
+                      0 0 0 0 1
+                      0 0 0 0.7 0" result="glow"/>
+            <feMerge>
+              <feMergeNode in="glow"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+
+        <g transform="translate(80,100)" filter="url(#softGlow)">
+          <circle cx="0" cy="0" r="42" fill="url(#coreGlow)"/>
+          <g stroke="url(#linkGrad)" stroke-width="2.1" stroke-linecap="round">
+            <path d="M -70 0 Q -35 -10 0 0 T 70 0" fill="none" opacity="0.9"/>
+            <path d="M -50 -40 Q -15 -15 0 0 T 55 38" fill="none" opacity="0.85"/>
+            <path d="M -55 35 Q -20 10 0 0 T 50 -40" fill="none" opacity="0.8"/>
+            <path d="M -80 -10 Q -40 -35 0 -25 T 65 -45" fill="none" opacity="0.55"/>
+            <path d="M -75 20 Q -35 35 0 25 T 70 35" fill="none" opacity="0.55"/>
+            <path d="M -25 -5 Q -10 -25 0 -18 T 18 -5" fill="none" opacity="0.9"/>
+            <path d="M -18 10 Q -5 25 0 18 T 20 8" fill="none" opacity="0.9"/>
+            <path d="M -10 -22 Q 0 -30 10 -20" fill="none" opacity="0.7"/>
+            <path d="M -8 22 Q 0 30 12 20" fill="none" opacity="0.7"/>
+          </g>
+          <g fill="url(#nodeGrad)">
+            <circle cx="-70" cy="0" r="5.5"/>
+            <circle cx="70" cy="0" r="6"/>
+            <circle cx="-50" cy="-40" r="5"/>
+            <circle cx="55" cy="38" r="5.2"/>
+            <circle cx="-55" cy="35" r="5"/>
+            <circle cx="50" cy="-40" r="5.2"/>
+            <circle cx="-80" cy="-10" r="4.5"/>
+            <circle cx="65" cy="-45" r="4.8"/>
+            <circle cx="-75" cy="20" r="4.5"/>
+            <circle cx="70" cy="35" r="4.8"/>
+            <circle cx="-25" cy="-5" r="4.5"/>
+            <circle cx="25" cy="-5" r="4.5"/>
+            <circle cx="-18" cy="10" r="4.3"/>
+            <circle cx="22" cy="10" r="4.3"/>
+            <circle cx="0" cy="0" r="10" fill="url(#nodeGrad)"/>
+          </g>
+        </g>
+
+        <g transform="translate(210,112)">
+          <text x="0" y="0"
+            font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+            font-size="40"
+            font-weight="700"
+            letter-spacing="0.5">
+            <tspan fill="#111111">Private</tspan><tspan fill="#007bff">Mind</tspan>
+          </text>
+          <text x="0" y="28"
+            font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+            font-size="14"
+            font-weight="500"
+            letter-spacing="0"
+            textLength="232"
+            lengthAdjust="spacing"
+            fill="#4a5d73">
+            Secure Intelligent Private
+          </text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="header-title">Zugänge zu Ihrer PrivateMind Box</div>
+    <div class="header-desc">Diese Karte fasst alle Werkzeuge zusammen, die auf Ihrer PrivateMind Appliance laufen — mit Adresse und kurzer Erklärung, wofür sie gedacht sind.</div>
+
+    <div class="header-fields">
+      <div class="header-field">Kunde<b>PrivateMind</b></div>
+      <div class="header-field">Tailnet-Name<b>tail5a2ccd.ts.net</b></div>
+      <div class="header-field">Stand<b>26.08.2026</b></div>
+    </div>
+  </div>
+
+  <div class="note">
+    <div class="note-icon">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+    </div>
+    <p><strong>Die Adressen sind nur innerhalb des PrivateMind-Tailscale-Netzwerks (tail5a2ccd.ts.net)</strong> erreichbar — nicht über das öffentliche Internet. Voraussetzung ist ein Gerät mit installierter und verbundener Tailscale-App.</p>
+  </div>
+
+  <div class="section-label">
+    <span class="tag">Werkzeuge</span>
+    <h2>Ihre vier Zugänge auf einen Blick</h2>
+  </div>
+
+  <div class="tools">
+
+    <!-- Open-WebUI -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-chip" style="background:var(--blue)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 9 9 0 0 1-3.2-.6L3 21l1.7-5.1A8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5z"/></svg>
+        </div>
+        <div>
+          <div class="card-title">Open-WebUI</div>
+          <div class="card-audience" style="color:var(--blue)">Für alle Mitarbeitenden</div>
+        </div>
+      </div>
+      <p class="card-desc">Der Haupt-Chat mit Ihrer KI: Fragen stellen, Texte schreiben und zusammenfassen, Dokumente hochladen und durchsuchen (RAG), Bilder analysieren.</p>
+      <div class="url-row">https://open-webui.tail5a2ccd.ts.net</div>
+    </div>
+
+    <!-- Nanobot -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-chip" style="background:var(--navy)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M12 8V4"/><circle cx="12" cy="2.5" r="1.2" fill="#fff" stroke="none"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/></svg>
+        </div>
+        <div>
+          <div class="card-title">Nanobot</div>
+          <div class="card-audience" style="color:var(--navy)">Für Power-User &amp; Automatisierung</div>
+        </div>
+      </div>
+      <p class="card-desc">KI-Assistent, der Aufgaben selbstständig erledigt und dabei mehrere Werkzeuge verbindet — z.&nbsp;B. Termine planen, Recherchen erledigen oder andere Systeme ansteuern.</p>
+      <div class="url-row">https://nanobot.tail5a2ccd.ts.net</div>
+    </div>
+
+    <!-- ComfyUI -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-chip" style="background:var(--orange)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.8"/><path d="M21 15l-5-5L5 21"/></svg>
+        </div>
+        <div>
+          <div class="card-title">ComfyUI</div>
+          <div class="card-audience" style="color:var(--orange)">Für Marketing &amp; Kreativ-Team</div>
+        </div>
+      </div>
+      <p class="card-desc">Bilder mit KI erzeugen und bearbeiten — Produktbilder, Illustrationen, Grafiken für Social Media oder interne Präsentationen, direkt auf Ihrer Appliance.</p>
+      <div class="url-row">https://comfyui.tail5a2ccd.ts.net</div>
+    </div>
+
+    <!-- OpenSearch Dashboards -->
+    <div class="card">
+      <div class="card-top">
+        <div class="icon-chip" style="background:var(--green)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+        </div>
+        <div>
+          <div class="card-title">OpenSearch Dashboards</div>
+          <div class="card-audience" style="color:var(--green)">Für Admins &amp; IT</div>
+        </div>
+      </div>
+      <p class="card-desc">Durchsucht und wertet aus, was in Ihrer Wissensdatenbank gespeichert ist (die Dokumente, die über Open-WebUI hochgeladen wurden), und zeigt den Systemstatus.</p>
+      <div class="url-row">https://opensearch.tail5a2ccd.ts.net</div>
+    </div>
+
+  </div>
+
+  <div class="access-grid">
+    <div class="access-card">
+      <h3>Anmeldedaten</h3>
+      <p>Benutzername und Passwort für jedes Werkzeug erhalten Sie separat von Ihrem PrivateMind-Ansprechpartner bzw. legen sie beim ersten Login selbst fest.</p>
+    </div>
+    <div class="access-card">
+      <h3>Voraussetzung</h3>
+      <p>Auf jedem Gerät, das zugreifen soll, muss die Tailscale-App installiert und mit Ihrem PrivateMind-Netzwerk verbunden sein.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-left">2026 PrivateMind · Vertraulich — nur für den internen Gebrauch</div>
+    <div class="footer-right">privatemind.eu</div>
+  </div>
+
+</div>
